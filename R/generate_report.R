@@ -8,7 +8,7 @@
 #'
 #' @return list
 #' @export
-tt_genReport_1 <- function(.start_date, .end_date, .direct = "export", .money = "usd", .industry_keyword) {
+rpt_by_industry_1 <- function(.start_date, .end_date, .direct = "export", .money = "usd", .industry_keyword) {
   # data time
   date_label <- paste0(.start_date, " to ", .end_date)
   mof_tbl <- tt_read_mof(.start_date, .end_date, direct = .direct, money = .money, period = 1)
@@ -27,11 +27,11 @@ tt_genReport_1 <- function(.start_date, .end_date, .direct = "export", .money = 
     print_with_time(ind_lable)
 
     tmp_tbl <- mof_tbl.industry[mof_tbl.industry$industry == ind_list[i], ]
-    tmp_mix_tbl <- tt_cal_country_value(tmp_tbl, by = "year")
+    tmp_mix_tbl <- cal_country_value(tmp_tbl, by = "year")
     tmp_mix_tbl <- dplyr::mutate(
       tmp_mix_tbl,
       difference = !!c_year - !!l_year,
-      growth_rate = cal_growth_rate(!!l_year, !!c_year),
+      growth_rate = cal_growth_rate(!!c_year, !!l_year),
       shared = cal_share(!!c_year, tmp_mix_tbl[1, ][[ind_year[2]]])
     )
 
@@ -54,7 +54,7 @@ tt_genReport_1 <- function(.start_date, .end_date, .direct = "export", .money = 
 #' @return data.frame
 #' @export
 #' @importFrom stats aggregate
-tt_cal_country_value <- function(.df, by = "year") {
+cal_country_value <- function(.df, by = "year") {
   tmp_tbl <- .df
   must_hav <- c("country", "year", "value")
 

@@ -4,19 +4,19 @@
 \alias{tt_read_mof}
 \title{Read Data from MOF SOURCE}
 \usage{
-tt_read_mof(start_date, end_date, direct = "export", money = "usd",
-  period = 0, columns = NULL)
+tt_read_mof(start_date, end_date, period = 0, direct = "export",
+  money = "usd", columns = NULL)
 }
 \arguments{
 \item{start_date}{Start date with "year-month" format. ex> "2019-01".}
 
 \item{end_date}{End date with "year-month" format. ex> "2019-01".}
 
+\item{period}{Integer}
+
 \item{direct}{A string used to specify `export` and `import` values. The default value is `export`}
 
 \item{money}{A string used to specify `usd` and `twd` value. The default value is `usd`}
-
-\item{period}{Integer}
 
 \item{columns}{a character vector}
 }

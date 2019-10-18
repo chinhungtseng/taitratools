@@ -2,13 +2,14 @@
 #'
 #' @param .start_date start date
 #' @param .end_date end date
+#' @param .industry_keyword industry
+#' @param .region  country or area
 #' @param .direct import or export
 #' @param .money usd or twd
-#' @param .industry_keyword industry
 #'
 #' @return list
 #' @export
-rpt_by_industry_1 <- function(.start_date, .end_date, .direct = "export", .money = "usd", .industry_keyword) {
+rpt_mof_industry_region <- function(.start_date, .end_date, .industry_keyword, .region = "country", .direct = "export", .money = "usd") {
   # data time
   date_label <- paste0(.start_date, " to ", .end_date)
   mof_tbl <- tt_read_mof(.start_date, .end_date, direct = .direct, money = .money, period = 1)
@@ -25,9 +26,17 @@ rpt_by_industry_1 <- function(.start_date, .end_date, .direct = "export", .money
     l_year <- rlang::sym(ind_year[1])
 
     print_with_time(ind_lable)
-
     tmp_tbl <- mof_tbl.industry[mof_tbl.industry$industry == ind_list[i], ]
-    tmp_mix_tbl <- cal_country_value(tmp_tbl, by = "year")
+
+    if (.region == "country") {
+      tmp_mix_tbl <- rpt_country_value(tmp_tbl, by = "year")
+    } else if (.region == "area") {
+      tmp_mix_tbl <- rpt_area_value(tmp_tbl, by = "year")
+    } else {
+      message("Invalid `.reion` argument, `.region` set to `country`!")
+      tmp_mix_tbl <- rpt_country_value(tmp_tbl, by = "year")
+    }
+
     tmp_mix_tbl <- dplyr::mutate(
       tmp_mix_tbl,
       difference = !!c_year - !!l_year,
@@ -45,16 +54,16 @@ rpt_by_industry_1 <- function(.start_date, .end_date, .direct = "export", .money
   output_tbl
 }
 
-
 #' Simple calculate sum of every countries by year or month
 #'
 #' @param .df A data frame. Your date must contain `country`, `year`, and `value` columns!
 #' @param by summarise by year or month
 #'
 #' @return data.frame
+#'
 #' @export
 #' @importFrom stats aggregate
-cal_country_value <- function(.df, by = "year") {
+rpt_country_value <- function(.df, by = "year") {
   tmp_tbl <- .df
   must_hav <- c("country", "year", "value")
 
@@ -94,3 +103,39 @@ cal_country_value <- function(.df, by = "year") {
   tmp_mix_tbl
 }
 
+#' Simple calculate sum of every area by year or month
+#'
+#' @param .df A data frame. Your date must contain `country`, `year`, and `value` columns!
+#' @param by summarise by year or month
+#'
+#' @return data.frame
+#'
+#' @export
+#' @importFrom stats aggregate
+rpt_area_value <- function(.df, by = "year") {
+  tmp_tbl <- .df
+  must_hav <- c("country", "year", "value")
+
+  if (!all(must_hav %in% names(tmp_tbl))) {
+    stop("Your data MUST contains `country`, `year`, and `value` columns!", call. = FALSE)
+  }
+
+  if (!(by %in% c("year", "month"))) {
+    stop(paste0("Invalid argument: '", by, "' ; `by` must `year` or `month`!"), call. = FALSE)
+  }
+
+  if (by == "year") {
+    tmp_tbl <- tidyr::separate(tmp_tbl, year, into = c("year", "month"))
+    year_var <- sort(unique(tmp_tbl$year))
+
+  } else {
+    year_var <- sort(unique(tmp_tbl$year))
+  }
+
+  tmp_tbl <- tt_bind_area(tmp_tbl)
+  tmp_tbl <- tibble::as_tibble(aggregate(value ~ area + year, tmp_tbl, FUN = sum))
+  tmp_tbl <- tidyr::spread(tmp_tbl, year, value)
+  tmp_tbl <- dplyr::mutate_if(tmp_tbl, is.numeric, list(~ replace(., is.na(.), 0)))
+  tmp_tbl <- tmp_tbl[order(tmp_tbl[[(length(year_var) + 1)]], decreasing = TRUE), ]
+  tmp_tbl
+}

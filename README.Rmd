@@ -24,7 +24,99 @@ Most function in `taitratools` are prefix with `tt_`.
 
 You can list all source path with `tt_ls()` funciton, read data with `tt_read_table()` or `tt_read_mof()` ...
 
+
 ``` r
-install.packages("taitratools")
+# install.packages("devtools")
+devtools::install_github("chinhungtseng/taitratools")
 ```
+## Example
+
+### List all source path
+
+```{r}
+library(taitratools)
+
+tt_ls()
+```
+
+Get source path with `tt_get_path(PATH NAME)`
+Read file with `tt_read_table`
+
+```{r}
+path <- tt_get_path("PATH_AREA")
+path
+
+area_tbl <- tt_read_table(path)
+head(area_tbl)
+```
+
+### MOF 
+
+This is a basic example which shows you how to read data from MOF:
+
+```{r}
+# Default is `export` and `usd`
+sample1 <- tt_read_mof("2019-01", "2019-02")
+head(sample1)
+```
+
+If you want to read data with past year, you can set `period = N`,
+
+```{r}
+# Read this year and last year, set period = 1
+sample2 <- tt_read_mof("2019-01", "2019-02", period = 1)
+head(sample2)
+```
+
+Read mof data and input specified industry
+
+```{r}
+ind_sample1 <- rpt_mof_industry_region("2019-01", "2019-03", "手工具", "country")
+# The output is a list.
+head(ind_sample1[[1]])
+
+ind_sample2 <- rpt_mof_industry_region("2019-01", "2019-03", "手工具", "area")
+head(ind_sample2[[2]])
+```
+
+### Other functions
+
+```{r}
+# Create a sample data
+sample3 <- tt_read_mof("2019-01", "2019-03", period = 1)
+
+# output by year
+output3_1 <- rpt_country_value(sample3, by = "year")
+
+head(output3_1)
+
+# output by month
+output3_2 <- rpt_country_value(sample3, by = "month")
+
+head(output3_2)
+```
+
+```{r}
+# Create a sample data
+sample4 <- tt_read_mof("2019-01", "2019-03", period = 1)
+
+# output by year
+head(rpt_area_value(sample4, by = "year"))
+
+# output by month
+head(rpt_area_value(sample4, by = "month"))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 

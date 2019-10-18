@@ -114,5 +114,3 @@ check_ind21 <- function(.df) {
   # If two data are same, return TRUE, else return FALSE.
   return(identical(valid_tbl, check_tbl))
 }
-
-

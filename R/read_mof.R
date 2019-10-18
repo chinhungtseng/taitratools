@@ -4,14 +4,14 @@
 #'
 #' @param start_date Start date with "year-month" format. ex> "2019-01".
 #' @param end_date End date with "year-month" format. ex> "2019-01".
+#' @param period Integer
 #' @param direct A string used to specify `export` and `import` values. The default value is `export`
 #' @param money A string used to specify `usd` and `twd` value. The default value is `usd`
-#' @param period Integer
 #' @param columns a character vector
 #'
 #' @return data.frame
 #' @export
-tt_read_mof <- function(start_date, end_date, direct = "export", money = "usd", period = 0, columns = NULL) {
+tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL) {
   period_list <- period_month(ym2date(start_date), ym2date(end_date), "%Y-%m")
 
   if (period > 0) {

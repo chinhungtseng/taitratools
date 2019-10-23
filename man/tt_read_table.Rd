@@ -4,10 +4,12 @@
 \alias{tt_read_table}
 \title{Easily read files.}
 \usage{
-tt_read_table(path, sheet = NULL)
+tt_read_table(path, col_types = NULL, sheet = NULL)
 }
 \arguments{
 \item{path}{string}
+
+\item{col_types}{column type}
 
 \item{sheet}{integer}
 }
@@ -17,5 +19,5 @@ data.frame
 \description{
 This function is based on readr, readxls, and feather packages.
 You can easily read a file just with one function.
-Support file format: `.csv`, `.tsv`, `.xlsx`, `.xls`, `.feather`.
+Support file format: `.csv`, `.tsv`, `.xlsx`, `.xls`, `.feather`, `.rds`.
 }

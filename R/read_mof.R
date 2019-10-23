@@ -12,6 +12,8 @@
 #' @return data.frame
 #' @export
 tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL) {
+  stopifnot(validate_tt_read_mof(start_date, end_date, period, direct, money))
+
   period_list <- period_month(ym2date(start_date), ym2date(end_date), "%Y-%m")
 
   if (period > 0) {
@@ -43,4 +45,23 @@ tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", mon
   }
 
   tmp_df
+}
+
+validate_tt_read_mof <- function(start_date, end_date, period, direct, money) {
+  if (ym2date(end_date) >= ym2date(format(Sys.Date(), "%Y-%m"))) {
+    stop(paste0("No `", end_date, "` data!"), call. = FALSE)
+  }
+
+  if (ym2date(start_date) > ym2date(end_date)) {
+    stop(paste0("Start date: `", start_date, "` can not greater then End date: `", end_date, "`"), call. = FALSE)
+  }
+  stopifnot(validate_date(start_date), validate_date(end_date))
+  stopifnot(is.numeric(period))
+  stopifnot(direct %in% c("export", "import"))
+  stopifnot(money %in% c("usd", "twd"))
+  TRUE
+}
+
+validate_date <- function(date) {
+  stringr::str_detect(date, "^\\d{4}-([0][1-9])|(1[0-2])$")
 }

@@ -31,9 +31,9 @@ devtools::install_github("chinhungtseng/taitratools")
 ```
 ## Example
 
-### List all source path
+### get data source path
 
-```{r}
+```{r, include=FALSE}
 library(taitratools)
 
 tt_ls()
@@ -43,6 +43,8 @@ Get source path with `tt_get_path(PATH NAME)`
 Read file with `tt_read_table`
 
 ```{r}
+library(taitratools)
+
 path <- tt_get_path("PATH_AREA")
 path
 

@@ -21,31 +21,14 @@ devtools::install_github("chinhungtseng/taitratools")
 
 ## Example
 
-### List all source path
-
-``` r
-library(taitratools)
-
-tt_ls()
-#> :) NAS_DS                       ==>  "//172.20.23.190/ds/"
-#> :) NAS_DSTORE                   ==>  "//172.26.1.102/dstore/"
-#> :) SOURCE_UN.import.insighteye  ==>  "//172.26.1.102/dstore/uncomtrade/un_merge_data/importmerge.csv"
-#> :) SOURCE_UN.export.insighteye  ==>  "//172.26.1.102/dstore/uncomtrade/un_merge_data/exportmerge.csv"
-#> :) SOURCE_UN.jack               ==>  "//172.20.23.190/ds/01_jack/jack工作內容/02_資料彙整與運算/01_UN_data.feather"
-#> :) SOURCE_GTA                   ==>  "//172.20.23.190/ds/01_jack/jack工作內容/02_資料彙整與運算/02_GTA_data.feather"
-#> :) SOURCE_ITC                   ==>  "//172.20.23.190/ds/01_jack/jack工作內容/02_資料彙整與運算/03_ITC_data.feather"
-#> :) SOURCE_MIX                   ==>  "//172.20.23.190/ds/01_jack/jack工作內容/02_資料彙整與運算/05_all_data_20190823.feather"
-#> :) SOURCE_MOF                   ==>  "//172.26.1.102/dstore/Projects/data"
-#> :) PATH_AREA                    ==>  "//172.26.1.102/dstore/重要資料/area.xlsx"
-#> :) PATH_INDUSTRY                ==>  "//172.26.1.102/dstore/重要資料/產業hscode對照表_20191015.xlsx"
-#> :) PATH_FULL_HSCODE             ==>  "//172.26.1.102/dstore/Projects/data/hscode_data/full_hscode11_20191017.tsv"
-#> :) PATH_COUNTRY                 ==>  "//172.26.1.102/dstore/重要資料/國家中英文對照.xlsx"
-```
+### get data source path
 
 Get source path with `tt_get_path(PATH NAME)` Read file with
 `tt_read_table`
 
 ``` r
+library(taitratools)
+
 path <- tt_get_path("PATH_AREA")
 path
 #> [1] "//172.26.1.102/dstore/重要資料/area.xlsx"
@@ -70,8 +53,8 @@ This is a basic example which shows you how to read data from MOF:
 ``` r
 # Default is `export` and `usd`
 sample1 <- tt_read_mof("2019-01", "2019-02")
-#> [2019-10-18 17:12:12] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-18 17:12:13] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
+#> [2019-10-25 12:51:37] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
+#> [2019-10-25 12:51:38] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
 head(sample1)
 #> # A tibble: 6 x 10
 #>   hscode hscode_ch hscode_en country count count_unit weight weight_unit
@@ -90,10 +73,10 @@ If you want to read data with past year, you can set `period = N`,
 ``` r
 # Read this year and last year, set period = 1
 sample2 <- tt_read_mof("2019-01", "2019-02", period = 1)
-#> [2019-10-18 17:12:13] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-18 17:12:13] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-#> [2019-10-18 17:12:13] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
-#> [2019-10-18 17:12:14] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
+#> [2019-10-25 12:51:38] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
+#> [2019-10-25 12:51:38] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
+#> [2019-10-25 12:51:38] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
+#> [2019-10-25 12:51:39] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
 head(sample2)
 #> # A tibble: 6 x 10
 #>   hscode hscode_ch hscode_en country count count_unit weight weight_unit
@@ -111,20 +94,20 @@ Read mof data and input specified industry
 
 ``` r
 ind_sample1 <- rpt_mof_industry_region("2019-01", "2019-03", "手工具", "country")
-#> [2019-10-18 17:12:14] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-18 17:12:15] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-#> [2019-10-18 17:12:15] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
-#> [2019-10-18 17:12:15] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
-#> [2019-10-18 17:12:15] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
-#> [2019-10-18 17:12:15] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
-#> [2019-10-18 17:12:16] 手工具_全部產品 (  1/  4)
-#> [2019-10-18 17:12:16] 手工具_非動力手工具 (  2/  4)
-#> [2019-10-18 17:12:16] 手工具_動力手工具(氣動類) (  3/  4)
-#> [2019-10-18 17:12:17] 手工具_動力手工具(電動類) (  4/  4)
-#> [2019-10-18 17:12:17] 手工具_全部產品
-#> [2019-10-18 17:12:17] 手工具_非動力手工具
-#> [2019-10-18 17:12:17] 手工具_動力手工具(氣動類)
-#> [2019-10-18 17:12:17] 手工具_動力手工具(電動類)
+#> [2019-10-25 12:51:39] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
+#> [2019-10-25 12:51:40] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
+#> [2019-10-25 12:51:40] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
+#> [2019-10-25 12:51:40] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
+#> [2019-10-25 12:51:40] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
+#> [2019-10-25 12:51:40] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
+#> [2019-10-25 12:51:41] 手工具_全部產品 (  1/  4)
+#> [2019-10-25 12:51:41] 手工具_非動力手工具 (  2/  4)
+#> [2019-10-25 12:51:42] 手工具_動力手工具(氣動類) (  3/  4)
+#> [2019-10-25 12:51:42] 手工具_動力手工具(電動類) (  4/  4)
+#> [2019-10-25 12:51:42] 手工具_全部產品
+#> [2019-10-25 12:51:42] 手工具_非動力手工具
+#> [2019-10-25 12:51:42] 手工具_動力手工具(氣動類)
+#> [2019-10-25 12:51:42] 手工具_動力手工具(電動類)
 # The output is a list.
 head(ind_sample1[[1]])
 #> # A tibble: 6 x 8
@@ -138,20 +121,20 @@ head(ind_sample1[[1]])
 #> 6 荷蘭      33303  31416      -1887      -5.67    3.41 手工具_全部產品~ 2019-01 ~
 
 ind_sample2 <- rpt_mof_industry_region("2019-01", "2019-03", "手工具", "area")
-#> [2019-10-18 17:12:17] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-18 17:12:17] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-#> [2019-10-18 17:12:17] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
-#> [2019-10-18 17:12:17] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
-#> [2019-10-18 17:12:17] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
-#> [2019-10-18 17:12:17] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
-#> [2019-10-18 17:12:18] 手工具_全部產品 (  1/  4)
-#> [2019-10-18 17:12:18] 手工具_非動力手工具 (  2/  4)
-#> [2019-10-18 17:12:18] 手工具_動力手工具(氣動類) (  3/  4)
-#> [2019-10-18 17:12:18] 手工具_動力手工具(電動類) (  4/  4)
-#> [2019-10-18 17:12:18] 手工具_全部產品
-#> [2019-10-18 17:12:19] 手工具_非動力手工具
-#> [2019-10-18 17:12:19] 手工具_動力手工具(氣動類)
-#> [2019-10-18 17:12:19] 手工具_動力手工具(電動類)
+#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
+#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
+#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
+#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
+#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
+#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
+#> [2019-10-25 12:51:43] 手工具_全部產品 (  1/  4)
+#> [2019-10-25 12:51:43] 手工具_非動力手工具 (  2/  4)
+#> [2019-10-25 12:51:43] 手工具_動力手工具(氣動類) (  3/  4)
+#> [2019-10-25 12:51:43] 手工具_動力手工具(電動類) (  4/  4)
+#> [2019-10-25 12:51:43] 手工具_全部產品
+#> [2019-10-25 12:51:44] 手工具_非動力手工具
+#> [2019-10-25 12:51:44] 手工具_動力手工具(氣動類)
+#> [2019-10-25 12:51:44] 手工具_動力手工具(電動類)
 head(ind_sample2[[2]])
 #> # A tibble: 6 x 8
 #>   area   `2018` `2019` difference growth_rate shared industry    period    
@@ -169,12 +152,12 @@ head(ind_sample2[[2]])
 ``` r
 # Create a sample data
 sample3 <- tt_read_mof("2019-01", "2019-03", period = 1)
-#> [2019-10-18 17:12:19] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-18 17:12:19] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-#> [2019-10-18 17:12:19] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
-#> [2019-10-18 17:12:19] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
-#> [2019-10-18 17:12:19] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
-#> [2019-10-18 17:12:19] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
+#> [2019-10-25 12:51:44] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
+#> [2019-10-25 12:51:44] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
+#> [2019-10-25 12:51:44] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
+#> [2019-10-25 12:51:44] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
+#> [2019-10-25 12:51:44] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
+#> [2019-10-25 12:51:45] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
 
 # output by year
 output3_1 <- rpt_country_value(sample3, by = "year")
@@ -208,12 +191,12 @@ head(output3_2)
 ``` r
 # Create a sample data
 sample4 <- tt_read_mof("2019-01", "2019-03", period = 1)
-#> [2019-10-18 17:12:21] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-18 17:12:21] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-#> [2019-10-18 17:12:21] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
-#> [2019-10-18 17:12:21] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
-#> [2019-10-18 17:12:21] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
-#> [2019-10-18 17:12:21] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
+#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
+#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
+#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
+#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
+#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
+#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
 
 # output by year
 head(rpt_area_value(sample4, by = "year"))

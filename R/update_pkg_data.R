@@ -1,5 +1,3 @@
-# TODO Adding some common
-
 tt_update_data <- function() {
   # tt_source_path data
   tmp_path <- readxl::read_xlsx("inst/extdata/tt_source_path.xlsx")
@@ -26,7 +24,5 @@ tt_update_data <- function() {
   })
   .full_hscode_tbl <- Reduce(rbind, tmp)
 
-
   save(tt_source_path, tt_ind21_tbl, tt_ind21_list, .full_hscode_tbl, file = "R/sysdata.rda")
 }
-

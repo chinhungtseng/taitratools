@@ -8,10 +8,22 @@
 #' @param direct A string used to specify `export` and `import` values. The default value is `export`
 #' @param money A string used to specify `usd` and `twd` value. The default value is `usd`
 #' @param columns a character vector
+#' @param fixed_cny_nm boolean: fixed country names
+#' @param source_path source path
 #'
 #' @return data.frame
 #' @export
-tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL) {
+tt_read_mof <- function(
+  start_date,
+  end_date,
+  period = 0,
+  direct = "export",
+  money = "usd",
+  columns = NULL,
+  fixed_cny_nm = TRUE,
+  source_path = "SOURCE_MOF"
+)
+{
   stopifnot(validate_tt_read_mof(start_date, end_date, period, direct, money))
 
   period_list <- period_month(ym2date(start_date), ym2date(end_date), "%Y-%m")
@@ -24,7 +36,7 @@ tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", mon
     period_list <- c(period_list, tmp_period_list)
   }
 
-  file_path <- sprintf("%s/mof-%s-%s/%s.tsv", tt_get_path("SOURCE_MOF"), direct, money, period_list)
+  file_path <- sprintf("%s/mof-%s-%s/%s.tsv", tt_get_path(source_path), direct, money, period_list)
 
   tmp_df <- vector("list", length(file_path))
   for (i in seq_along(file_path)) {
@@ -37,11 +49,16 @@ tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", mon
 
   tmp_df <- purrr::reduce(tmp_df, dplyr::bind_rows)
   names(tmp_df) <- c("hscode", "hscode_ch", "hscode_en", "country", "count",
-                     "count_unit", "weight", "weight_unit", "value", "year")
+    "count_unit", "weight", "weight_unit", "value", "year")
 
   tmp_df$hscode <- stringr::str_pad(tmp_df$hscode, width = 11, side = "left", pad = "0")
+
   if (!is.null(columns)) {
     tmp_df <- tmp_df[, columns]
+  }
+
+  if (fixed_cny_nm) {
+    tmp_df <- fixed_country_names(tmp_df)
   }
 
   tmp_df
@@ -65,3 +82,28 @@ validate_tt_read_mof <- function(start_date, end_date, period, direct, money) {
 validate_date <- function(date) {
   stringr::str_detect(date, "^\\d{4}-([0][1-9])|(1[0-2])$")
 }
+
+# 2019-11-01 Adding by Peter
+# reference:
+# //172.20.23.190/ds/01_jack/jack工作內容/02_資料彙整與運算/04_mof.R - Line:57 to line:58.
+fixed_country_names <- function(.tmp_df) {
+  .country_list <- c(
+    "\u53f2\u74e6\u5e1d\u5c3c" = "\u53f2\u74e6\u6fdf\u862d",
+    "\u84cb\u4e9e\u90a3" = "\u572d\u4e9e\u90a3",
+    "\u99ac\u7d39\u723e\u7fa4\u5cf6\u5171\u548c\u570b" = "\u99ac\u7d39\u723e\u7fa4\u5cf6",
+    "\u8499\u7279\u5167\u54e5\u7f85\u5171\u548c\u570b" = "\u8499\u7279\u5167\u54e5\u7f85",
+    "\u8305\u5229\u5854\u5c3c\u4e9e\u4f0a\u65af\u862d\u5171\u548c\u570b" = "\u8305\u5229\u5854\u5c3c\u4e9e",
+    "\u570b\u5bb6" = "\u5730\u5340"
+  )
+
+  for (i in seq_along(.country_list)) {
+    .tmp_df$country <- gsub(
+      names(.country_list[i]),
+      unname(.country_list[i]),
+      .tmp_df$country
+    )
+  }
+
+  .tmp_df
+}
+

@@ -5,7 +5,8 @@
 \title{Output report 1}
 \usage{
 rpt_mof_industry_region(.start_date, .end_date, .industry_keyword,
-  .region = "country", .direct = "export", .money = "usd")
+  .region = "country", .direct = "export", .money = "usd",
+  .fixed_cny_nm = TRUE)
 }
 \arguments{
 \item{.start_date}{start date}
@@ -19,6 +20,8 @@ rpt_mof_industry_region(.start_date, .end_date, .industry_keyword,
 \item{.direct}{import or export}
 
 \item{.money}{usd or twd}
+
+\item{.fixed_cny_nm}{fixed country names}
 }
 \value{
 list

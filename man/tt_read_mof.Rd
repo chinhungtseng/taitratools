@@ -5,7 +5,8 @@
 \title{Read Data from MOF SOURCE}
 \usage{
 tt_read_mof(start_date, end_date, period = 0, direct = "export",
-  money = "usd", columns = NULL)
+  money = "usd", columns = NULL, fixed_cny_nm = TRUE,
+  source_path = "SOURCE_MOF")
 }
 \arguments{
 \item{start_date}{Start date with "year-month" format. ex> "2019-01".}
@@ -19,6 +20,10 @@ tt_read_mof(start_date, end_date, period = 0, direct = "export",
 \item{money}{A string used to specify `usd` and `twd` value. The default value is `usd`}
 
 \item{columns}{a character vector}
+
+\item{fixed_cny_nm}{boolean: fixed country names}
+
+\item{source_path}{source path}
 }
 \value{
 data.frame

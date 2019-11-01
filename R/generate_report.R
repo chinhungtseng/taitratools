@@ -6,13 +6,14 @@
 #' @param .region  country or area
 #' @param .direct import or export
 #' @param .money usd or twd
+#' @param .fixed_cny_nm fixed country names
 #'
 #' @return list
 #' @export
-rpt_mof_industry_region <- function(.start_date, .end_date, .industry_keyword, .region = "country", .direct = "export", .money = "usd") {
+rpt_mof_industry_region <- function(.start_date, .end_date, .industry_keyword, .region = "country", .direct = "export", .money = "usd", .fixed_cny_nm = TRUE) {
   # data time
   date_label <- paste0(.start_date, " to ", .end_date)
-  mof_tbl <- tt_read_mof(.start_date, .end_date, direct = .direct, money = .money, period = 1)
+  mof_tbl <- tt_read_mof(.start_date, .end_date, period = 1, direct = .direct, money = .money, fixed_cny_nm = .fixed_cny_nm)
 
   # filter industry by keyword
   mof_tbl.industry <- tt_bind_industry(mof_tbl, major = .industry_keyword)

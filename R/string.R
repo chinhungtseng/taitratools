@@ -1,9 +1,9 @@
 # Split string by specify character.
 #' @export
-str2regex <- function(x, sep = ",", sub = 1e2) {
+str2regex <- function(x, sep = ",", sub = 1e2, start = "^", end = "") {
   tmp <- trimws(unlist(strsplit(x, sep)))
   tmp <- unique(substr(tmp, 1, sub))
-  paste0("^", tmp, collapse = "|")
+  paste0(start, tmp, end, collapse = "|")
 }
 
 #' @export
@@ -22,4 +22,13 @@ break_line <- function(text, length = 25) {
   Reduce(function(.x, .y) {
     paste0(.x, "\n", .y)
   }, tmp_text)
+}
+
+#' @export
+toChString <- function(x = "") {
+  if (length(x) == 1) return(x)
+  paste0(
+    paste(x[1:length(x) - 1], collapse = "\u3001"),
+    "\u53ca", x[length(x)]
+  )
 }

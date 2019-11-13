@@ -5,25 +5,27 @@
 \title{Read Data from MOF SOURCE}
 \usage{
 tt_read_mof(start_date, end_date, period = 0, direct = "export",
-  money = "usd", columns = NULL, fixed_cny_nm = TRUE,
-  source_path = "SOURCE_MOF")
+  money = "usd", columns = NULL, dep_month_cols = FALSE,
+  fixed_cny_nm = TRUE, source_path = "SOURCE_MOF")
 }
 \arguments{
 \item{start_date}{Start date with "year-month" format. ex> "2019-01".}
 
 \item{end_date}{End date with "year-month" format. ex> "2019-01".}
 
-\item{period}{Integer}
+\item{period}{Integer.}
 
-\item{direct}{A string used to specify `export` and `import` values. The default value is `export`}
+\item{direct}{A string used to specify `export` and `import` values. The default value is `export`.}
 
-\item{money}{A string used to specify `usd` and `twd` value. The default value is `usd`}
+\item{money}{A string used to specify `usd` and `twd` value. The default value is `usd`.}
 
-\item{columns}{a character vector}
+\item{columns}{a character vector.}
 
-\item{fixed_cny_nm}{boolean: fixed country names}
+\item{dep_month_cols}{create year and month column, default is only year column with "\%Y-\%m" format.}
 
-\item{source_path}{source path}
+\item{fixed_cny_nm}{boolean: fixed country names.}
+
+\item{source_path}{source path.}
 }
 \value{
 data.frame

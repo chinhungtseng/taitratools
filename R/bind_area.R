@@ -12,18 +12,18 @@ tt_bind_area <- function(.df) {
     stop("Input data.frame MUST contain a column named `country`!", call. = FALSE)
   }
 
-  tmp_tbl <- tt_read_table(tt_get_path("PATH_AREA"))
-  output <- vector("list", length = nrow(tmp_tbl))
+  output <- vector("list", length = nrow(.area_tbl))
 
   for (i in seq_along(output)) {
-    output_pattern <- str2regex(tmp_tbl[i, ][["countryName"]], sep = ",")
-    output_name <- tmp_tbl[i, ][["areaName"]]
+    output_pattern <- str2regex(.area_tbl[i, ][["countryName"]], sep = ",")
+    output_name <- .area_tbl[i, ][["areaName"]]
 
     if (output_name == "\u5168\u7403") {
       output_pattern <- "[\\w\\W]+"
     }
 
     tmp_output <- .df[stringr::str_detect(.df$country, output_pattern), ]
+    if (nrow(tmp_output) == 0) next()
     tmp_output$area <- output_name
     output[[i]] <- tmp_output
   }

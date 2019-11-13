@@ -7,16 +7,17 @@
 #' @param type Filter specified type.
 #' @param major Filter specified major.
 #' @param minor Filter specified minor.
+#' @param col_more append type, major, minor and industry columns
 #'
 #' @return A data frame
 #'
 #' @export
-tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = NULL, major = NULL, minor = NULL) {
+tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = NULL, major = NULL, minor = NULL, col_more = FALSE) {
   if (!all("hscode" %in% names(.df))) {
     stop("Input data.frame MUST contain a column named `hscode`!", call. = FALSE)
   }
 
-  tmp_tbl <- tt_read_table(tt_get_path("PATH_INDUSTRY"))
+  tmp_tbl <- .industry_tbl
 
   if (nrow(tmp_tbl) != 354 & ncol(tmp_tbl) != 9) {
     stop("The Industry Table must be changed! Please check and update SOURCE_PATH!", call. = FALSE)
@@ -26,7 +27,7 @@ tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = 
     if (!check_ind21(tmp_tbl)) {
       stop(sprintf("Industry21 reference table may be changed. Please check and update `%s`!", tt_get_path("PATH_INDUSTRY")), call. = FALSE)
     }
-    tmp_tbl <- tmp_tbl[tmp_tbl[["\u7DE8\u865F"]] %in% tt_ind21_list, ]
+    tmp_tbl <- tmp_tbl[tmp_tbl[["\u7DE8\u865F"]] %in% .tt_ind21_list, ]
 
   } else {
     # Filter by index
@@ -78,7 +79,7 @@ tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = 
   }
 
   # Only keey `hscode` and `industry` columns
-  tmp_tbl <- tmp_tbl[c("hscode", "industry")]
+  tmp_tbl <- tmp_tbl[c("\u9078\u64C7\u65B9\u5F0F", "\u5927\u9805", "\u7D30\u9805", "hscode", "industry")]
   output <- vector("list", length = nrow(tmp_tbl))
 
   for (i in seq_along(output)) {
@@ -94,7 +95,15 @@ tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = 
     tmp_output <- .df[stringr::str_detect(.df$hscode, output_pattern), ]
     if (nrow(tmp_output) == 0) next()
 
-    tmp_output$industry <- output_name
+    if (!col_more) {
+      tmp_output$industry <- tmp_tbl[i, ][["industry"]]
+    } else {
+      tmp_output$type <- tmp_tbl[i, ][["\u9078\u64C7\u65B9\u5F0F"]]
+      tmp_output$major <- tmp_tbl[i, ][["\u5927\u9805"]]
+      tmp_output$minor <-tmp_tbl[i, ][["\u7D30\u9805"]]
+      tmp_output$industry <- tmp_tbl[i, ][["industry"]]
+    }
+
     output[[i]] <- tmp_output
   }
 
@@ -103,7 +112,7 @@ tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = 
 
 check_ind21 <- function(.df) {
   # Package prestore industry 21 data.
-  valid_tbl <- tt_ind21_tbl
+  valid_tbl <- .tt_ind21_tbl
   # User's data.
   check_tbl <- .df
 

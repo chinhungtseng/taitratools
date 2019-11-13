@@ -42,3 +42,22 @@ tt_hscode_show <- function(hscode = NULL, chinese = NULL) {
     .full_hscode_tbl[stringr::str_detect(.full_hscode_tbl$hscode_cn, patterns), ]
   }
 }
+
+#' tt_area_show
+#'
+#' @param area string
+#'
+#' @return string
+#' @export
+#'
+tt_area_show <- function(area = NULL) {
+  if (is.null(area)) return(.area_tbl)
+
+  area_nm <- .area_tbl[["areaName"]][-1]
+  stopifnot(all(area %in% area_nm))
+
+  cat(paste0(
+    area, " ==> ",
+    .area_tbl[.area_tbl$areaName == area, ][["countryName"]]
+  ))
+}

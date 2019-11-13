@@ -4,26 +4,17 @@
 #'
 #' @param start_date Start date with "year-month" format. ex> "2019-01".
 #' @param end_date End date with "year-month" format. ex> "2019-01".
-#' @param period Integer
-#' @param direct A string used to specify `export` and `import` values. The default value is `export`
-#' @param money A string used to specify `usd` and `twd` value. The default value is `usd`
-#' @param columns a character vector
-#' @param fixed_cny_nm boolean: fixed country names
-#' @param source_path source path
+#' @param period Integer.
+#' @param direct A string used to specify `export` and `import` values. The default value is `export`.
+#' @param money A string used to specify `usd` and `twd` value. The default value is `usd`.
+#' @param columns a character vector.
+#' @param dep_month_cols create year and month column, default is only year column with "\%Y-\%m" format.
+#' @param fixed_cny_nm boolean: fixed country names.
+#' @param source_path source path.
 #'
 #' @return data.frame
 #' @export
-tt_read_mof <- function(
-  start_date,
-  end_date,
-  period = 0,
-  direct = "export",
-  money = "usd",
-  columns = NULL,
-  fixed_cny_nm = TRUE,
-  source_path = "SOURCE_MOF"
-)
-{
+tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL, dep_month_cols = FALSE, fixed_cny_nm = TRUE, source_path = "SOURCE_MOF"){
   stopifnot(validate_tt_read_mof(start_date, end_date, period, direct, money))
 
   period_list <- period_month(ym2date(start_date), ym2date(end_date), "%Y-%m")
@@ -61,6 +52,10 @@ tt_read_mof <- function(
     tmp_df <- fixed_country_names(tmp_df)
   }
 
+  if (dep_month_cols) {
+    tmp_df <- tidyr::separate(tmp_df, year, into = c("year", "month"))
+  }
+
   tmp_df
 }
 
@@ -76,6 +71,7 @@ validate_tt_read_mof <- function(start_date, end_date, period, direct, money) {
   stopifnot(is.numeric(period))
   stopifnot(direct %in% c("export", "import"))
   stopifnot(money %in% c("usd", "twd"))
+
   TRUE
 }
 

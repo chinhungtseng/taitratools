@@ -12,10 +12,9 @@
 #'
 #' @export
 tt_ls <- function() {
-  tmp_df <- tt_source_path
-  cwidth <- max(stringr::str_length(names(tmp_df)))
-  df_nm <- stringr::str_pad(names(tmp_df), width = cwidth, side = "right", pad = " ")
-  df_con <- unname(unlist(tmp_df))
+  cwidth <- max(stringr::str_length(names(.tt_source_path)))
+  df_nm <- stringr::str_pad(names(.tt_source_path), width = cwidth, side = "right", pad = " ")
+  df_con <- unname(unlist(.tt_source_path))
   cat(sprintf("%s %s  ==>  \"%s\"",check_path(df_con), df_nm, df_con), sep = "\n")
 }
 

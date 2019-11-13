@@ -20,7 +20,7 @@ tt_filter_by_area <- function(.df, area) {
     }
   }
 
-  tmp_tbl <- tt_read_table(tt_get_path("PATH_AREA"))
+  tmp_tbl <- .area_tbl
   tmp_tbl <- tmp_tbl[tmp_tbl$areaName %in% area, ]
   output <- vector("list", length = nrow(tmp_tbl))
 

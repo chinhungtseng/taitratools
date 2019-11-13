@@ -14,11 +14,11 @@
 #' tt_get_path("PATH_FULL_HSCODE")
 #'
 tt_get_path <- function(path_name) {
-  ind <- which(names(tt_source_path) == path_name)
+  ind <- which(names(.tt_source_path) == path_name)
 
   if (identical(ind, integer(0))) {
     stop("Incorrect path name\n", call. = FALSE)
   }
 
-  unname(unlist(tt_source_path[ind]))
+  unname(unlist(.tt_source_path[ind]))
 }

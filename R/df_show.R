@@ -22,7 +22,7 @@ tt_hscode_show <- function(hscode = NULL, chinese = NULL) {
     !is.null(hscode) & is.null(chinese) |
     is.null(hscode) & !is.null(chinese)
   )
-  stopifnot(length(hscode) == 1)
+  stopifnot(length(hscode) == 1 | is.null(hscode))
 
   if (is.null(chinese)) {
     hscode <- as.character(hscode)

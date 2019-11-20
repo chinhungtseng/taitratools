@@ -6,7 +6,7 @@
 \usage{
 tt_read_mof(start_date, end_date, period = 0, direct = "export",
   money = "usd", columns = NULL, dep_month_cols = FALSE,
-  fixed_cny_nm = TRUE, source_path = "SOURCE_MOF")
+  fixed_cny_nm = FALSE, source_path = "SOURCE_MOF")
 }
 \arguments{
 \item{start_date}{Start date with "year-month" format. ex> "2019-01".}
@@ -23,7 +23,7 @@ tt_read_mof(start_date, end_date, period = 0, direct = "export",
 
 \item{dep_month_cols}{create year and month column, default is only year column with "\%Y-\%m" format.}
 
-\item{fixed_cny_nm}{boolean: fixed country names.}
+\item{fixed_cny_nm}{boolean: fixed country names. if you want to combine mof and 05_all_data you need to set fixed_cny_cols = TRUE}
 
 \item{source_path}{source path.}
 }

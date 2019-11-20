@@ -9,12 +9,12 @@
 #' @param money A string used to specify `usd` and `twd` value. The default value is `usd`.
 #' @param columns a character vector.
 #' @param dep_month_cols create year and month column, default is only year column with "\%Y-\%m" format.
-#' @param fixed_cny_nm boolean: fixed country names.
+#' @param fixed_cny_nm boolean: fixed country names. if you want to combine mof and 05_all_data you need to set fixed_cny_cols = TRUE
 #' @param source_path source path.
 #'
 #' @return data.frame
 #' @export
-tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL, dep_month_cols = FALSE, fixed_cny_nm = TRUE, source_path = "SOURCE_MOF"){
+tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL, dep_month_cols = FALSE, fixed_cny_nm = FALSE, source_path = "SOURCE_MOF"){
   stopifnot(validate_tt_read_mof(start_date, end_date, period, direct, money))
 
   period_list <- period_month(ym2date(start_date), ym2date(end_date), "%Y-%m")

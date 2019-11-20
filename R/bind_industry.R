@@ -8,11 +8,12 @@
 #' @param major Filter specified major.
 #' @param minor Filter specified minor.
 #' @param col_more append type, major, minor and industry columns
+#' @param suppress TRUE or FALSE
 #'
 #' @return A data frame
 #'
 #' @export
-tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = NULL, major = NULL, minor = NULL, col_more = FALSE) {
+tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = NULL, major = NULL, minor = NULL, col_more = FALSE, suppress = FALSE) {
   if (!all("hscode" %in% names(.df))) {
     stop("Input data.frame MUST contain a column named `hscode`!", call. = FALSE)
   }
@@ -83,7 +84,7 @@ tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = 
   output <- vector("list", length = nrow(tmp_tbl))
 
   for (i in seq_along(output)) {
-    print_with_time(sprintf("%s (%3s/%3s)", tmp_tbl[i, ][["industry"]], i, length(output)))
+    if (!suppress) print_with_time(sprintf("%s (%3s/%3s)", tmp_tbl[i, ][["industry"]], i, length(output)))
 
     output_pattern <- str2regex(tmp_tbl[i, ][["hscode"]], sep = ",", sub = sub)
     output_name <- tmp_tbl[i, ][["industry"]]

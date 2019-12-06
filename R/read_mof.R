@@ -10,11 +10,12 @@
 #' @param columns a character vector.
 #' @param dep_month_cols create year and month column, default is only year column with "\%Y-\%m" format.
 #' @param fixed_cny_nm boolean: fixed country names. if you want to combine mof and 05_all_data you need to set fixed_cny_cols = TRUE
+#' @param suppress suppress read message
 #' @param source_path source path.
 #'
 #' @return data.frame
 #' @export
-tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL, dep_month_cols = FALSE, fixed_cny_nm = FALSE, source_path = "SOURCE_MOF"){
+tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL, dep_month_cols = FALSE, fixed_cny_nm = FALSE, suppress = FALSE, source_path = "SOURCE_MOF"){
   stopifnot(validate_tt_read_mof(start_date, end_date, period, direct, money))
 
   period_list <- period_month(ym2date(start_date), ym2date(end_date), "%Y-%m")
@@ -31,7 +32,9 @@ tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", mon
 
   tmp_df <- vector("list", length(file_path))
   for (i in seq_along(file_path)) {
-    print_with_time(file_path[i])
+
+    if (!suppress) print_with_time(file_path[i])
+
     single_df <- readr::read_delim(file = file_path[i], delim = '\t', col_types = "ccccncncn", progress = FALSE)
     single_df <- dplyr::distinct(single_df)
     single_df$year <- stringr::str_extract(file_path[i], "\\d{4}-\\d{2}")

@@ -77,7 +77,10 @@ rpt_country_value <- function(.df, by = "year") {
   }
 
   if (by == "year") {
-    tmp_tbl <- tidyr::separate(tmp_tbl, year, into = c("year", "month"))
+    if (!all(grepl("^\\d{4}$", unique(tmp_tbl[["year"]])))) {
+      tmp_tbl <- tidyr::separate(tmp_tbl, year, into = c("year", "month"))
+    }
+
     year_var <- sort(unique(tmp_tbl$year))
 
   } else {
@@ -126,7 +129,10 @@ rpt_area_value <- function(.df, by = "year") {
   }
 
   if (by == "year") {
-    tmp_tbl <- tidyr::separate(tmp_tbl, year, into = c("year", "month"))
+    if (!all(grepl("^\\d{4}$", unique(tmp_tbl[["year"]])))) {
+      tmp_tbl <- tidyr::separate(tmp_tbl, year, into = c("year", "month"))
+    }
+
     year_var <- sort(unique(tmp_tbl$year))
 
   } else {

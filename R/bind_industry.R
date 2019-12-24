@@ -2,42 +2,42 @@
 #'
 #' @param .df A data frame. Input data.frame MUST contain `hscode` column!
 #' @param sub The digits of `hscode`. If you set the digit less than 11, alway remember summarise the value of Input data.
-#' @param ind21 Boolean, If TRUE, output industry 21 data.
 #' @param index Filter specified index.
 #' @param type Filter specified type.
 #' @param major Filter specified major.
 #' @param minor Filter specified minor.
-#' @param col_more append type, major, minor and industry columns
-#' @param suppress TRUE or FALSE
+#' @param ind21 Boolean, If TRUE, output industry 21 data.
+#' @param reports choose industry by different report version.
+#' @param col_more append type, major, minor and industry columns.
+#' @param suppress TRUE or FALSE.
 #'
 #' @return A data frame
 #'
 #' @export
-tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = NULL, major = NULL, minor = NULL, col_more = FALSE, suppress = FALSE) {
-  if (!all("hscode" %in% names(.df))) {
-    stop("Input data.frame MUST contain a column named `hscode`!", call. = FALSE)
-  }
+tt_bind_industry <- function(.df, sub = 11, index = NULL, type = NULL, major = NULL, minor = NULL, ind21 = FALSE, reports = NULL, col_more = FALSE, suppress = FALSE) {
 
-  tmp_tbl <- .industry_tbl
-
-  if (nrow(tmp_tbl) != 354 & ncol(tmp_tbl) != 9) {
-    stop("The Industry Table must be changed! Please check and update SOURCE_PATH!", call. = FALSE)
-  }
+  tmp_tbl <- .industry_tbl_en
+  if (!all("hscode" %in% names(.df))) {stop("Input data.frame MUST contain a column named `hscode`!", call. = FALSE)}
+  stopifnot(!(ind21 & !is.null(reports)))
 
   if (ind21) {
-    if (!check_ind21(tmp_tbl)) {
-      stop(sprintf("Industry21 reference table may be changed. Please check and update `%s`!", tt_get_path("PATH_INDUSTRY")), call. = FALSE)
+    if (!check_ind21(tmp_tbl)) {stop(sprintf("Industry21 reference table may be changed. Please check and update `%s`!", tt_get_path("PATH_INDUSTRY")), call. = FALSE)}
+    tmp_tbl <- tmp_tbl[tmp_tbl[["index"]] %in% .tt_ind21_list, ]
+
+  } else if (!is.null(reports)) {
+    stopifnot(reports %in% c("version1", "version2"))
+    if (reports == "version1") {
+      tmp_tbl <- tmp_tbl[tmp_tbl[["index"]] %in% .tt_ind_list_verion_1, ]
+
+    } else if (reports == "version2") {
+      tmp_tbl <- tmp_tbl[tmp_tbl[["index"]] %in% .tt_ind_list_verion_2, ]
     }
-    tmp_tbl <- tmp_tbl[tmp_tbl[["\u7DE8\u865F"]] %in% .tt_ind21_list, ]
 
   } else {
     # Filter by index
     if (!is.null(index)) {
-      if (!all(stringr::str_length(index) == 3)) {
-        stop("Invalid index string-length!", call. = FALSE)
-      }
-
-      tmp_tbl <- tmp_tbl[tmp_tbl[["\u7DE8\u865F"]] %in% index, ]
+      if (!all(stringr::str_length(index) == 3)) {stop("Invalid index string-length!", call. = FALSE)}
+      tmp_tbl <- tmp_tbl[tmp_tbl[["index"]] %in% index, ]
     }
 
     # Filter by type
@@ -48,44 +48,31 @@ tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = 
         "BEC", "\u5168\u90E8\u7522\u54C1",
         "\u8CA1\u653F\u90E8\u5B9A\u7FA9\u7522\u696D-54\u7D30\u9805"
       )
-
-      if (!all(type %in% type_for_check)) {
-        stop("Invalid tyep string!", call. = FALSE)
-      }
-
-      tmp_tbl <- tmp_tbl[tmp_tbl[["\u9078\u64C7\u65B9\u5F0F"]] %in% type, ]
+      if (!all(type %in% type_for_check)) {stop("Invalid tyep string!", call. = FALSE)}
+      tmp_tbl <- tmp_tbl[tmp_tbl[["type"]] %in% type, ]
     }
 
     # Filter by major
     if (!is.null(major)) {
-      major_list <- unique(tmp_tbl[["\u5927\u9805"]])
-
-      if (!all(major %in% major_list)) {
-        stop("Invalid major string!", call. = FALSE)
-      }
-
-      tmp_tbl <- tmp_tbl[tmp_tbl[["\u5927\u9805"]] %in% major, ]
+      major_list <- unique(tmp_tbl[["major"]])
+      if (!all(major %in% major_list)) {stop("Invalid major string!", call. = FALSE)}
+      tmp_tbl <- tmp_tbl[tmp_tbl[["major"]] %in% major, ]
     }
 
     # Filter by minor
     if (!is.null(minor)) {
-      minor_list <- unique(tmp_tbl[["\u7D30\u9805"]])
-
-      if (!all(minor %in% minor_list)) {
-        stop("Invalid minor string!", call. = FALSE)
-      }
-
-      tmp_tbl <- tmp_tbl[tmp_tbl[["\u7D30\u9805"]] %in% minor, ]
+      minor_list <- unique(tmp_tbl[["minor"]])
+      if (!all(minor %in% minor_list)) {stop("Invalid minor string!", call. = FALSE)}
+      tmp_tbl <- tmp_tbl[tmp_tbl[["minor"]] %in% minor, ]
     }
   }
 
   # Only keey `hscode` and `industry` columns
-  tmp_tbl <- tmp_tbl[c("\u9078\u64C7\u65B9\u5F0F", "\u5927\u9805", "\u7D30\u9805", "hscode", "industry")]
+  tmp_tbl <- tmp_tbl[c("type", "major", "minor", "hscode", "industry")]
   output <- vector("list", length = nrow(tmp_tbl))
 
   for (i in seq_along(output)) {
     if (!suppress) print_with_time(sprintf("%s (%3s/%3s)", tmp_tbl[i, ][["industry"]], i, length(output)))
-
     output_pattern <- str2regex(tmp_tbl[i, ][["hscode"]], sep = ",", sub = sub)
     output_name <- tmp_tbl[i, ][["industry"]]
 
@@ -99,28 +86,39 @@ tt_bind_industry <- function(.df, sub = 11, ind21 = FALSE, index = NULL, type = 
     if (!col_more) {
       tmp_output$industry <- tmp_tbl[i, ][["industry"]]
     } else {
-      tmp_output$type <- tmp_tbl[i, ][["\u9078\u64C7\u65B9\u5F0F"]]
-      tmp_output$major <- tmp_tbl[i, ][["\u5927\u9805"]]
-      tmp_output$minor <-tmp_tbl[i, ][["\u7D30\u9805"]]
+      tmp_output$index <- tmp_tbl[i, ][["index"]]
+      tmp_output$type <- tmp_tbl[i, ][["type"]]
+      tmp_output$major <- tmp_tbl[i, ][["major"]]
+      tmp_output$minor <-tmp_tbl[i, ][["minor"]]
       tmp_output$industry <- tmp_tbl[i, ][["industry"]]
     }
-
     output[[i]] <- tmp_output
   }
-
   purrr::reduce(output, dplyr::bind_rows)
 }
 
 check_ind21 <- function(.df) {
   # Package prestore industry 21 data.
-  valid_tbl <- .tt_ind21_tbl
+  valid_tbl <- .tt_ind21_tbl_en
   # User's data.
   check_tbl <- .df
 
   # Extract industry 21 with same rule as prestore data.
-  check_tbl <- check_tbl[check_tbl[["\u7DE8\u865F"]] %in% valid_tbl[["\u7DE8\u865F"]], ]
-  check_tbl <- check_tbl[c("\u7DE8\u865F", "industry")]
+  check_tbl <- check_tbl[check_tbl[["index"]] %in% valid_tbl[["index"]], ]
+  check_tbl <- check_tbl[c("index", "industry", "reports_version_industry21_order")]
 
   # If two data are same, return TRUE, else return FALSE.
   return(identical(valid_tbl, check_tbl))
+}
+
+#' convert report_industry_name
+#'
+#' @param major string
+#' @param minor string
+#'
+#' @return string
+#' @export
+tt_convert_industry_name <- function(major, minor) {
+  fixed_name <- function(name) stringr::str_replace(name, "^\\d{2}_", "")
+  dplyr::if_else(stringr::str_detect(minor, "全部產品"), fixed_name(major), fixed_name(minor))
 }

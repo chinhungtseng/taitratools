@@ -28,7 +28,13 @@ tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", mon
     period_list <- c(period_list, tmp_period_list)
   }
 
-  file_path <- sprintf("%s/mof-%s-%s/%s.tsv", tt_get_path(source_path), direct, money, period_list)
+  defined_path <- source_path %in% names(.tt_source_path)
+
+  if (defined_path) {
+    file_path <- sprintf("%s/mof-%s-%s/%s.tsv", tt_get_path(source_path), direct, money, period_list)
+  } else {
+    file_path <- sprintf("%s/mof-%s-%s/%s.tsv", source_path, direct, money, period_list)
+  }
 
   tmp_df <- vector("list", length(file_path))
   for (i in seq_along(file_path)) {
@@ -106,3 +112,65 @@ fixed_country_names <- function(.tmp_df) {
   .tmp_df
 }
 
+#' vroom Data from MOF SOURCE
+#'
+#' Reading mof data with `start date` and `end date`. If you want to read data with many year you can specify the `period`.
+#'
+#' @param start_date Start date with "year-month" format. ex> "2019-01".
+#' @param end_date End date with "year-month" format. ex> "2019-01".
+#' @param period Integer.
+#' @param direct A string used to specify `export` and `import` values. The default value is `export`.
+#' @param money A string used to specify `usd` and `twd` value. The default value is `usd`.
+#' @param columns a character vector.
+#' @param dep_month_cols create year and month column, default is only year column with "\%Y-\%m" format.
+#' @param fixed_cny_nm boolean: fixed country names. if you want to combine mof and 05_all_data you need to set fixed_cny_cols = TRUE
+#' @param source_path source path.
+#'
+#' @return data.frame
+#' @export
+tt_vroom_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL, dep_month_cols = FALSE, fixed_cny_nm = FALSE, source_path = "SOURCE_MOF"){
+  stopifnot(validate_tt_read_mof(start_date, end_date, period, direct, money))
+
+  period_list <- period_month(ym2date(start_date), ym2date(end_date), "%Y-%m")
+
+  if (period > 0) {
+    tmp_period_list <- NULL
+    for (i in 1:period) {
+      tmp_period_list <- c(tmp_period_list, get_past_year(period_list, period = i))
+    }
+    period_list <- c(period_list, tmp_period_list)
+  }
+
+  defined_path <- source_path %in% names(.tt_source_path)
+
+  if (defined_path) {
+    file_path <- sprintf("%s/mof-%s-%s/%s.tsv", tt_get_path(source_path), direct, money, period_list)
+  } else {
+    file_path <- sprintf("%s/mof-%s-%s/%s.tsv", source_path, direct, money, period_list)
+  }
+
+  colTypes <- list("c", "c", "c", "c", "n", "c", "n", "c", "n")
+  tmp_df <- vroom::vroom(file_path, id = "year", col_types = colTypes)
+
+  names(tmp_df) <- c("year", "hscode", "hscode_ch", "hscode_en", "country", "count",
+    "count_unit", "weight", "weight_unit", "value")
+
+  tmp_df$hscode <- stringr::str_pad(tmp_df$hscode, width = 11, side = "left", pad = "0")
+  tmp_df$year <- stringr::str_extract(tmp_df$year, "\\d{4}-\\d{2}")
+  tmp_df <- tmp_df[c("hscode", "hscode_ch", "hscode_en", "country", "count",
+    "count_unit", "weight", "weight_unit", "value", "year")]
+
+  if (!is.null(columns)) {
+    tmp_df <- tmp_df[, columns]
+  }
+
+  if (fixed_cny_nm) {
+    tmp_df <- fixed_country_names(tmp_df)
+  }
+
+  if (dep_month_cols) {
+    tmp_df <- tidyr::separate(tmp_df, year, into = c("year", "month"))
+  }
+
+  tmp_df
+}

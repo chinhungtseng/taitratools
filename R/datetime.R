@@ -2,16 +2,14 @@
 
 # Convert "year" to date. ex> "2019" ==> "2019-01-01"
 #' @export
-y2date <- function(.date_var, tf = "%Y-%m-%d") {
-  tmp_date <- as.Date(paste0(.date_var, "-01-01"), "%Y-%m-%d")
-  format(tmp_date, tf)
+y2date <- function(.date_var) {
+  as.Date(paste0(.date_var, "-01-01"), "%Y-%m-%d")
 }
 
 # Convert "year-month" to date. ex> "2019-01" ==> "2019-01-01"
 #' @export
-ym2date <- function(.date_var, tf = "%Y-%m-%d") {
-  tmp_date <- as.Date(paste0(.date_var, "-01"), "%Y-%m-%d")
-  format(tmp_date, tf)
+ym2date <- function(.date_var) {
+  as.Date(paste0(.date_var, "-01"), "%Y-%m-%d")
 }
 
 #' @export

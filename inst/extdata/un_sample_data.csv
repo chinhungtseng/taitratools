@@ -1,0 +1,1000 @@
+﻿Classification,Year,Period,Period Desc.,Aggregate Level,Is Leaf Code,Trade Flow Code,Trade Flow,Reporter Code,Reporter,Reporter ISO,Partner Code,Partner,Partner ISO,Commodity Code,Commodity,Qty Unit Code,Qty Unit,Qty,Netweight (kg),Trade Value (US$),Flag
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,9703,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,251,France,FRA,01,Animals; live,1,No Quantity,0,0,162245,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,251,France,FRA,01,Animals; live,1,No Quantity,0,0,292048,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,242968,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,617932,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,8500,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,11366,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,211690,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,373010,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,1656700,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,442,Luxembourg,LUX,01,Animals; live,1,No Quantity,0,0,266500,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,458,Malaysia,MYS,01,Animals; live,1,No Quantity,0,0,907835,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,484,Mexico,MEX,01,Animals; live,1,No Quantity,0,0,287114,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,142645,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,742050,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,554,New Zealand,NZL,01,Animals; live,1,No Quantity,0,0,56570,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,554,New Zealand,NZL,01,Animals; live,1,No Quantity,0,0,3600,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,586,Pakistan,PAK,01,Animals; live,1,No Quantity,0,0,64000,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,591,Panama,PAN,01,Animals; live,1,No Quantity,0,0,36072,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,600,Paraguay,PRY,01,Animals; live,1,No Quantity,0,0,14544,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,600,Paraguay,PRY,01,Animals; live,1,No Quantity,0,0,949300,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,604,Peru,PER,01,Animals; live,1,No Quantity,0,0,65751,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,604,Peru,PER,01,Animals; live,1,No Quantity,0,0,931886,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,21894,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,702,Singapore,SGP,01,Animals; live,1,No Quantity,0,0,480233,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,7293,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,0,102700,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,255101,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,251200,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,752,Sweden,SWE,01,Animals; live,1,No Quantity,0,0,42234,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,757,Switzerland,CHE,01,Animals; live,1,No Quantity,0,0,49557,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,757,Switzerland,CHE,01,Animals; live,1,No Quantity,0,0,139150,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,188,Costa Rica,CRI,01,Animals; live,1,No Quantity,0,0,38050,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,170,Colombia,COL,01,Animals; live,1,No Quantity,0,0,402877,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,156,China,CHN,01,Animals; live,1,No Quantity,0,0,461350,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,152,Chile,CHL,01,Animals; live,1,No Quantity,0,0,2858961,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,152,Chile,CHL,01,Animals; live,1,No Quantity,0,0,402016,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,540540,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,97575,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,18546070,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,68,Bolivia (Plurinational State of),BOL,01,Animals; live,1,No Quantity,0,0,492557,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,270020,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,106423,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,47943,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,159263,0
+H5,2018,2018,2018,2,0,4,Re-Import,32,Argentina,ARG,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,635412,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,635412,0
+H5,2018,2018,2018,2,0,4,Re-Import,32,Argentina,ARG,0,World,WLD,01,Animals; live,1,No Quantity,0,0,635412,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,0,World,WLD,01,Animals; live,1,No Quantity,0,0,37752054,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,0,World,WLD,01,Animals; live,1,No Quantity,0,0,21881722,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,899,"Areas, nes",,01,Animals; live,1,No Quantity,0,0,31008,0
+H5,2018,2018,2018,2,0,2,Export,31,Azerbaijan,AZE,860,Uzbekistan,UZB,01,Animals; live,1,No Quantity,0,0,5880,0
+H5,2018,2018,2018,2,0,2,Export,31,Azerbaijan,AZE,842,USA,USA,01,Animals; live,1,No Quantity,0,0,300,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,842,USA,USA,01,Animals; live,1,No Quantity,0,0,130560,0
+H5,2018,2018,2018,2,0,2,Export,31,Azerbaijan,AZE,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,1,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,15560,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,804,Ukraine,UKR,01,Animals; live,1,No Quantity,0,0,8673901,0
+H5,2018,2018,2018,2,0,2,Export,31,Azerbaijan,AZE,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,34998,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,1241913,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,4070,0
+H5,2018,2018,2018,2,0,2,Export,31,Azerbaijan,AZE,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,1903,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,10475778,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,483551,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,498,Rep. of Moldova,MDA,01,Animals; live,1,No Quantity,0,0,82144,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,414,Kuwait,KWT,01,Animals; live,1,No Quantity,0,0,1983,0
+H5,2018,2018,2018,2,0,2,Export,31,Azerbaijan,AZE,398,Kazakhstan,KAZ,01,Animals; live,1,No Quantity,0,0,301431,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,398,Kazakhstan,KAZ,01,Animals; live,1,No Quantity,0,0,59676,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,376,Israel,ISR,01,Animals; live,1,No Quantity,0,0,129690,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,364,Iran,IRN,01,Animals; live,1,No Quantity,0,0,190691,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,444672,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,8291357,0
+H5,2018,2018,2018,2,0,2,Export,31,Azerbaijan,AZE,268,Georgia,GEO,01,Animals; live,1,No Quantity,0,0,48552,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,268,Georgia,GEO,01,Animals; live,1,No Quantity,0,0,22255061,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,127053,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,4908979,0
+H5,2018,2018,2018,2,0,2,Export,31,Azerbaijan,AZE,0,World,WLD,01,Animals; live,1,No Quantity,0,0,393066,0
+H5,2018,2018,2018,2,0,1,Import,31,Azerbaijan,AZE,0,World,WLD,01,Animals; live,1,No Quantity,0,0,57547654,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,894,Zambia,ZMB,01,Animals; live,1,No Quantity,0,0,70793,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,842,USA,USA,01,Animals; live,1,No Quantity,0,0,2586,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,842,USA,USA,01,Animals; live,1,No Quantity,0,0,9823,4
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,834,United Rep. of Tanzania,TZA,01,Animals; live,1,No Quantity,0,0,2377,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,615,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,334,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,506,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,716,Zimbabwe,ZWE,01,Animals; live,1,No Quantity,0,0,357,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,0,508,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,0,1157574,4
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,678,Sao Tome and Principe,STP,01,Animals; live,1,No Quantity,0,0,69,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,40000,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,,200,4
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,642,Romania,ROU,01,Animals; live,1,No Quantity,0,,1489,4
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,620,Portugal,PRT,01,Animals; live,1,No Quantity,0,0,2837,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,620,Portugal,PRT,01,Animals; live,1,No Quantity,0,0,772156,4
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,566,Nigeria,NGA,01,Animals; live,1,No Quantity,0,0,495,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,1861267,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,516,Namibia,NAM,01,Animals; live,1,No Quantity,0,,345,4
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,516,Namibia,NAM,01,Animals; live,1,No Quantity,0,0,3870370,4
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,508,Mozambique,MOZ,01,Animals; live,1,No Quantity,0,0,80,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,504,Morocco,MAR,01,Animals; live,1,No Quantity,0,0,122760,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,422,Lebanon,LBN,01,Animals; live,1,No Quantity,0,0,114,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,404,Kenya,KEN,01,Animals; live,1,No Quantity,0,0,940,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,376,Israel,ISR,01,Animals; live,1,No Quantity,0,0,28475,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,251,France,FRA,01,Animals; live,1,No Quantity,0,0,4862,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,192,Cuba,CUB,01,Animals; live,1,No Quantity,0,0,2641,4
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,180,Dem. Rep. of the Congo,COD,01,Animals; live,1,No Quantity,0,0,8598,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,180,Dem. Rep. of the Congo,COD,01,Animals; live,1,No Quantity,0,0,24909,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,178,Congo,COG,01,Animals; live,1,No Quantity,0,0,3809,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,156,China,CHN,01,Animals; live,1,No Quantity,0,0,264204,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,156,China,CHN,01,Animals; live,1,No Quantity,0,0,7192,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,525,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,3181,4
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,90029,0
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,1415,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,385,0
+H5,2018,2018,2018,2,0,2,Export,24,Angola,AGO,0,World,WLD,01,Animals; live,1,No Quantity,0,,325107,4
+H5,2018,2018,2018,2,0,1,Import,24,Angola,AGO,0,World,WLD,01,Animals; live,1,No Quantity,0,,8033729,4
+H5,2018,2018,2018,2,0,2,Export,20,Andorra,AND,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,34167,0
+H5,2018,2018,2018,2,0,1,Import,20,Andorra,AND,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,98583,4
+H5,2018,2018,2018,2,0,1,Import,20,Andorra,AND,251,France,FRA,01,Animals; live,1,No Quantity,0,0,15342,0
+H5,2018,2018,2018,2,0,2,Export,20,Andorra,AND,0,World,WLD,01,Animals; live,1,No Quantity,0,0,34167,0
+H5,2018,2018,2018,2,0,1,Import,20,Andorra,AND,0,World,WLD,01,Animals; live,1,No Quantity,0,0,113925,4
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,807,North Macedonia,MKD,01,Animals; live,1,No Quantity,0,0,2257511,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,1591485,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,367529,0
+H5,2018,2018,2018,2,0,2,Export,8,Albania,ALB,688,Serbia,SRB,01,Animals; live,1,No Quantity,0,0,29835,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,686,Senegal,SEN,01,Animals; live,1,No Quantity,0,0,1972,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,7732,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,642,Romania,ROU,01,Animals; live,1,No Quantity,0,0,4003542,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,386966,0
+H5,2018,2018,2018,2,0,2,Export,8,Albania,ALB,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,650375,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,1453557,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,874686,0
+H5,2018,2018,2018,2,0,2,Export,8,Albania,ALB,300,Greece,GRC,01,Animals; live,1,No Quantity,0,0,116,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,300,Greece,GRC,01,Animals; live,1,No Quantity,0,0,15285703,0
+H5,2018,2018,2018,2,0,2,Export,8,Albania,ALB,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,1,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,96929,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,251,France,FRA,01,Animals; live,1,No Quantity,0,0,209550,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,32201,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,191,Croatia,HRV,01,Animals; live,1,No Quantity,0,0,128297,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,100,Bulgaria,BGR,01,Animals; live,1,No Quantity,0,0,6214392,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,79637,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,701952,0
+H5,2018,2018,2018,2,0,2,Export,8,Albania,ALB,0,World,WLD,01,Animals; live,1,No Quantity,0,0,680328,0
+H5,2018,2018,2018,2,0,1,Import,8,Albania,ALB,0,World,WLD,01,Animals; live,1,No Quantity,0,0,33693646,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,355720,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,768,Togo,TGO,01,Animals; live,1,No Quantity,0,0,4496,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,1404660,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,314639,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,5423946,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,842,USA,USA,01,Animals; live,1,No Quantity,0,0,530192,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,842,USA,USA,01,Animals; live,1,No Quantity,0,0,14925800,0
+H5,2018,2018,2018,2,0,1,Import,32,Argentina,ARG,858,Uruguay,URY,01,Animals; live,1,No Quantity,0,0,92832,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,858,Uruguay,URY,01,Animals; live,1,No Quantity,0,0,2032229,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,862,Venezuela,VEN,01,Animals; live,1,No Quantity,0,0,21000,0
+H5,2018,2018,2018,2,0,2,Export,32,Argentina,ARG,899,"Areas, nes",,01,Animals; live,1,No Quantity,0,0,65800,0
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,0,World,WLD,01,Animals; live,1,No Quantity,0,,137944793,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,0,World,WLD,01,Animals; live,1,No Quantity,0,,1360817674,4
+H5,2018,2018,2018,2,0,4,Re-Import,36,Australia,AUS,0,World,WLD,01,Animals; live,1,No Quantity,0,,11701389,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,46275,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,36,Australia,AUS,01,Animals; live,1,No Quantity,0,,11701389,4
+H5,2018,2018,2018,2,0,4,Re-Import,36,Australia,AUS,36,Australia,AUS,01,Animals; live,1,No Quantity,0,,11701389,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,48,Bahrain,BHR,01,Animals; live,1,No Quantity,0,0,2015,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,50,Bangladesh,BGD,01,Animals; live,1,No Quantity,0,0,547092,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,60,Bermuda,BMU,01,Animals; live,1,No Quantity,0,0,1492,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,64,Bhutan,BTN,01,Animals; live,1,No Quantity,0,0,43068,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,3433,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,96,Brunei Darussalam,BRN,01,Animals; live,1,No Quantity,0,0,5377726,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,104,Myanmar,MMR,01,Animals; live,1,No Quantity,0,0,978048,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,852119,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,144,Sri Lanka,LKA,01,Animals; live,1,No Quantity,0,0,222121,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,156,China,CHN,01,Animals; live,1,No Quantity,0,0,194545974,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,196,Cyprus,CYP,01,Animals; live,1,No Quantity,0,,2713,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,2612,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,242,Fiji,FJI,01,Animals; live,1,No Quantity,0,0,16868,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,246,Finland,FIN,01,Animals; live,1,No Quantity,0,0,1642,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,251,France,FRA,01,Animals; live,1,No Quantity,0,,254130,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,258,French Polynesia,PYF,01,Animals; live,1,No Quantity,0,0,3731,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,276,Germany,DEU,01,Animals; live,1,No Quantity,0,,1463720,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,1492,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,344,"China, Hong Kong SAR",HKG,01,Animals; live,1,No Quantity,0,0,61725549,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,352,Iceland,ISL,01,Animals; live,1,No Quantity,0,0,1213405,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,360,Indonesia,IDN,01,Animals; live,1,No Quantity,0,0,472189540,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,,990282,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,,450052,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,376,Israel,ISR,01,Animals; live,1,No Quantity,0,0,61289912,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,392,Japan,JPN,01,Animals; live,1,No Quantity,0,,3840445,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,31495899,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,400,Jordan,JOR,01,Animals; live,1,No Quantity,0,0,10395422,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,410,Rep. of Korea,KOR,01,Animals; live,1,No Quantity,0,0,191560,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,414,Kuwait,KWT,01,Animals; live,1,No Quantity,0,0,25833044,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,422,Lebanon,LBN,01,Animals; live,1,No Quantity,0,0,3904,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,442,Luxembourg,LUX,01,Animals; live,1,No Quantity,0,,812204,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,446,"China, Macao SAR",MAC,01,Animals; live,1,No Quantity,0,0,2521441,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,458,Malaysia,MYS,01,Animals; live,1,No Quantity,0,0,34599430,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,490,"Other Asia, nes",,01,Animals; live,1,No Quantity,0,0,3092574,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,512,Oman,OMN,01,Animals; live,1,No Quantity,0,0,4915956,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,524,Nepal,NPL,01,Animals; live,1,No Quantity,0,0,426472,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,,8552781,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,,85833,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,540,New Caledonia,NCL,01,Animals; live,1,No Quantity,0,0,45528,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,554,New Zealand,NZL,01,Animals; live,1,No Quantity,0,0,68130615,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,554,New Zealand,NZL,01,Animals; live,1,No Quantity,0,0,38062864,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,574,Norfolk Isds,NFK,01,Animals; live,1,No Quantity,0,0,4627,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,586,Pakistan,PAK,01,Animals; live,1,No Quantity,0,0,4201137,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,598,Papua New Guinea,PNG,01,Animals; live,1,No Quantity,0,0,2612,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,608,Philippines,PHL,01,Animals; live,1,No Quantity,0,0,10021778,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,626,Timor-Leste,TLS,01,Animals; live,1,No Quantity,0,0,2351,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,634,Qatar,QAT,01,Animals; live,1,No Quantity,0,0,34634368,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,52207228,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,699,India,IND,01,Animals; live,1,No Quantity,0,0,1597783,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,702,Singapore,SGP,01,Animals; live,1,No Quantity,0,0,124953,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,702,Singapore,SGP,01,Animals; live,1,No Quantity,0,0,10059730,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,704,Viet Nam,VNM,01,Animals; live,1,No Quantity,0,0,236661903,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,,646584,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,5971,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,752,Sweden,SWE,01,Animals; live,1,No Quantity,0,0,1492,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,757,Switzerland,CHE,01,Animals; live,1,No Quantity,0,0,2239,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,3397015,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,,736760,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,13462793,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,32471048,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,41049852,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,4067527,4
+H5,2018,2018,2018,2,0,1,Import,36,Australia,AUS,842,USA,USA,01,Animals; live,1,No Quantity,0,0,1099862,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,842,USA,USA,01,Animals; live,1,No Quantity,0,0,5324551,4
+H5,2018,2018,2018,2,0,2,Export,36,Australia,AUS,858,Uruguay,URY,01,Animals; live,1,No Quantity,0,0,45902,4
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,0,World,WLD,01,Animals; live,1,No Quantity,0,0,278675601,4
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,0,World,WLD,01,Animals; live,1,No Quantity,0,0,170942929,4
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,8,Albania,ALB,01,Animals; live,1,No Quantity,0,0,676945,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,12,Algeria,DZA,01,Animals; live,1,No Quantity,0,0,1554542,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,24,Angola,AGO,01,Animals; live,1,No Quantity,0,0,1157,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,28,Antigua and Barbuda,ATG,01,Animals; live,1,No Quantity,0,0,8505,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,31,Azerbaijan,AZE,01,Animals; live,1,No Quantity,0,0,4417693,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,184,4
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,1503,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,48,Bahrain,BHR,01,Animals; live,1,No Quantity,0,0,341563,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,51,Armenia,ARM,01,Animals; live,1,No Quantity,0,0,340493,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,1113764,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,59599,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,70,Bosnia Herzegovina,BIH,01,Animals; live,1,No Quantity,0,0,350,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,70,Bosnia Herzegovina,BIH,01,Animals; live,1,No Quantity,0,0,66275,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,590,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,100,Bulgaria,BGR,01,Animals; live,1,No Quantity,0,0,781066,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,4791,4
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,3668,4
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,152,Chile,CHL,01,Animals; live,1,No Quantity,0,0,38,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,156,China,CHN,01,Animals; live,1,No Quantity,0,0,1309,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,156,China,CHN,01,Animals; live,1,No Quantity,0,0,207494,4
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,170,Colombia,COL,01,Animals; live,1,No Quantity,0,0,226,4
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,191,Croatia,HRV,01,Animals; live,1,No Quantity,0,0,4917107,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,191,Croatia,HRV,01,Animals; live,1,No Quantity,0,0,3178833,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,196,Cyprus,CYP,01,Animals; live,1,No Quantity,0,0,77030,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,73696381,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,1811463,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,1015933,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,3078,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,251,France,FRA,01,Animals; live,1,No Quantity,0,0,962439,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,117089495,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,38933070,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,328,Guyana,GUY,01,Animals; live,1,No Quantity,0,0,3778,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,344,"China, Hong Kong SAR",HKG,01,Animals; live,1,No Quantity,0,0,283630,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,33898614,4
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,12261742,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,360,Indonesia,IDN,01,Animals; live,1,No Quantity,0,0,6836,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,360,Indonesia,IDN,01,Animals; live,1,No Quantity,0,0,15121,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,8892,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,117806,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,38838142,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,3496,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,101993,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,400,Jordan,JOR,01,Animals; live,1,No Quantity,0,0,31470,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,404,Kenya,KEN,01,Animals; live,1,No Quantity,0,0,170,4
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,410,Rep. of Korea,KOR,01,Animals; live,1,No Quantity,0,0,5425,4
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,414,Kuwait,KWT,01,Animals; live,1,No Quantity,0,0,16812,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,428,Latvia,LVA,01,Animals; live,1,No Quantity,0,0,19199,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,490,"Other Asia, nes",,01,Animals; live,1,No Quantity,0,0,118,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,498,Rep. of Moldova,MDA,01,Animals; live,1,No Quantity,0,0,163865,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,499,Montenegro,MNE,01,Animals; live,1,No Quantity,0,0,246576,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,504,Morocco,MAR,01,Animals; live,1,No Quantity,0,0,455856,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,4380725,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,834361,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,554,New Zealand,NZL,01,Animals; live,1,No Quantity,0,0,29444,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,579,Norway,NOR,01,Animals; live,1,No Quantity,0,0,714,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,586,Pakistan,PAK,01,Animals; live,1,No Quantity,0,0,7017,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,604,Peru,PER,01,Animals; live,1,No Quantity,0,0,70646,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,608,Philippines,PHL,01,Animals; live,1,No Quantity,0,0,15470,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,30021,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,6977961,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,634,Qatar,QAT,01,Animals; live,1,No Quantity,0,0,271184,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,642,Romania,ROU,01,Animals; live,1,No Quantity,0,0,287047,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,642,Romania,ROU,01,Animals; live,1,No Quantity,0,0,2643112,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,8239,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,2538202,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,686,Senegal,SEN,01,Animals; live,1,No Quantity,0,0,61384,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,688,Serbia,SRB,01,Animals; live,1,No Quantity,0,0,2362,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,688,Serbia,SRB,01,Animals; live,1,No Quantity,0,0,1294338,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,12509965,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,109639,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,705,Slovenia,SVN,01,Animals; live,1,No Quantity,0,0,27800427,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,705,Slovenia,SVN,01,Animals; live,1,No Quantity,0,0,7583036,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,2142,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,2558521,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,757,Switzerland,CHE,01,Animals; live,1,No Quantity,0,0,341351,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,757,Switzerland,CHE,01,Animals; live,1,No Quantity,0,0,1644691,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,26619,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,605032,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,788,Tunisia,TUN,01,Animals; live,1,No Quantity,0,0,247556,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,27114425,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,795,Turkmenistan,TKM,01,Animals; live,1,No Quantity,0,0,1124224,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,804,Ukraine,UKR,01,Animals; live,1,No Quantity,0,0,261650,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,807,North Macedonia,MKD,01,Animals; live,1,No Quantity,0,0,23627,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,818,Egypt,EGY,01,Animals; live,1,No Quantity,0,0,106203,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,37156,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,183726,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,842,USA,USA,01,Animals; live,1,No Quantity,0,0,271384,4
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,842,USA,USA,01,Animals; live,1,No Quantity,0,0,11953,0
+H5,2018,2018,2018,2,0,1,Import,40,Austria,AUT,860,Uzbekistan,UZB,01,Animals; live,1,No Quantity,0,0,89183,0
+H5,2018,2018,2018,2,0,2,Export,40,Austria,AUT,860,Uzbekistan,UZB,01,Animals; live,1,No Quantity,0,0,9767628,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,0,World,WLD,01,Animals; live,1,No Quantity,0,0,19643787,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,0,World,WLD,01,Animals; live,1,No Quantity,0,0,1277076,0
+H5,2018,2018,2018,2,0,3,Re-Export,48,Bahrain,BHR,0,World,WLD,01,Animals; live,1,No Quantity,0,0,352736,0
+H5,2018,2018,2018,2,0,4,Re-Import,48,Bahrain,BHR,0,World,WLD,01,Animals; live,1,No Quantity,0,0,11898,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,2694,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,42578,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,13173,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,48,Bahrain,BHR,01,Animals; live,1,No Quantity,0,0,11898,0
+H5,2018,2018,2018,2,0,4,Re-Import,48,Bahrain,BHR,48,Bahrain,BHR,01,Animals; live,1,No Quantity,0,0,11898,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,98359,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,124259,0
+H5,2018,2018,2018,2,0,3,Re-Export,48,Bahrain,BHR,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,11659,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,100,Bulgaria,BGR,01,Animals; live,1,No Quantity,0,0,6755,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,61959,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,15311,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,251,France,FRA,01,Animals; live,1,No Quantity,0,0,1296319,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,262,Djibouti,DJI,01,Animals; live,1,No Quantity,0,0,137963,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,268,Georgia,GEO,01,Animals; live,1,No Quantity,0,0,184046,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,233297,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,364,Iran,IRN,01,Animals; live,1,No Quantity,0,0,2688462,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,36011,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,77733,0
+H5,2018,2018,2018,2,0,3,Re-Export,48,Bahrain,BHR,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,24542,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,24298,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,400,Jordan,JOR,01,Animals; live,1,No Quantity,0,0,4070362,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,400,Jordan,JOR,01,Animals; live,1,No Quantity,0,0,24275,0
+H5,2018,2018,2018,2,0,3,Re-Export,48,Bahrain,BHR,400,Jordan,JOR,01,Animals; live,1,No Quantity,0,0,3075,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,410,Rep. of Korea,KOR,01,Animals; live,1,No Quantity,0,0,322,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,414,Kuwait,KWT,01,Animals; live,1,No Quantity,0,0,875098,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,414,Kuwait,KWT,01,Animals; live,1,No Quantity,0,0,43571,0
+H5,2018,2018,2018,2,0,3,Re-Export,48,Bahrain,BHR,414,Kuwait,KWT,01,Animals; live,1,No Quantity,0,0,265,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,422,Lebanon,LBN,01,Animals; live,1,No Quantity,0,0,367789,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,442,Luxembourg,LUX,01,Animals; live,1,No Quantity,0,0,193403,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,458,Malaysia,MYS,01,Animals; live,1,No Quantity,0,0,752,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,480,Mauritius,MUS,01,Animals; live,1,No Quantity,0,0,268,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,512,Oman,OMN,01,Animals; live,1,No Quantity,0,0,346220,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,512,Oman,OMN,01,Animals; live,1,No Quantity,0,0,1063,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,334196,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,586,Pakistan,PAK,01,Animals; live,1,No Quantity,0,0,98386,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,15552,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,634,Qatar,QAT,01,Animals; live,1,No Quantity,0,0,537,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,3795,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,666,Saint Pierre and Miquelon,SPM,01,Animals; live,1,No Quantity,0,0,152404,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,682,Saudi Arabia,SAU,01,Animals; live,1,No Quantity,0,0,151387,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,682,Saudi Arabia,SAU,01,Animals; live,1,No Quantity,0,0,67678,0
+H5,2018,2018,2018,2,0,3,Re-Export,48,Bahrain,BHR,682,Saudi Arabia,SAU,01,Animals; live,1,No Quantity,0,0,21401,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,688,Serbia,SRB,01,Animals; live,1,No Quantity,0,0,1603,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,699,India,IND,01,Animals; live,1,No Quantity,0,0,48777,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,15848,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,705,Slovenia,SVN,01,Animals; live,1,No Quantity,0,0,4247,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,706,Somalia,SOM,01,Animals; live,1,No Quantity,0,0,4481274,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,0,3706,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,109619,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,729,Sudan,SDN,01,Animals; live,1,No Quantity,0,0,1876362,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,752,Sweden,SWE,01,Animals; live,1,No Quantity,0,0,268,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,993,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,475093,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,264520,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,184811,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,804,Ukraine,UKR,01,Animals; live,1,No Quantity,0,0,37993,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,807,North Macedonia,MKD,01,Animals; live,1,No Quantity,0,0,268,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,818,Egypt,EGY,01,Animals; live,1,No Quantity,0,0,64611,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,737624,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,433679,0
+H5,2018,2018,2018,2,0,3,Re-Export,48,Bahrain,BHR,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,51496,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,837,Bunkers,,01,Animals; live,1,No Quantity,0,0,395,0
+H5,2018,2018,2018,2,0,3,Re-Export,48,Bahrain,BHR,837,Bunkers,,01,Animals; live,1,No Quantity,0,0,395,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,842,USA,USA,01,Animals; live,1,No Quantity,0,0,126326,0
+H5,2018,2018,2018,2,0,2,Export,48,Bahrain,BHR,842,USA,USA,01,Animals; live,1,No Quantity,0,0,239898,0
+H5,2018,2018,2018,2,0,3,Re-Export,48,Bahrain,BHR,842,USA,USA,01,Animals; live,1,No Quantity,0,0,239898,0
+H5,2018,2018,2018,2,0,1,Import,48,Bahrain,BHR,858,Uruguay,URY,01,Animals; live,1,No Quantity,0,0,10744,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,0,World,WLD,01,Animals; live,1,No Quantity,0,0,6671802,0
+H5,2018,2018,2018,2,0,2,Export,51,Armenia,ARM,0,World,WLD,01,Animals; live,1,No Quantity,0,0,2198050,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,357629,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,438478,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,52188,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,136482,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,268,Georgia,GEO,01,Animals; live,1,No Quantity,0,0,1035973,0
+H5,2018,2018,2018,2,0,2,Export,51,Armenia,ARM,268,Georgia,GEO,01,Animals; live,1,No Quantity,0,0,11,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,573085,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,364,Iran,IRN,01,Animals; live,1,No Quantity,0,0,1954705,0
+H5,2018,2018,2018,2,0,2,Export,51,Armenia,ARM,364,Iran,IRN,01,Animals; live,1,No Quantity,0,0,1300,0
+H5,2018,2018,2018,2,0,2,Export,51,Armenia,ARM,368,Iraq,IRQ,01,Animals; live,1,No Quantity,0,0,1041564,0
+H5,2018,2018,2018,2,0,2,Export,51,Armenia,ARM,414,Kuwait,KWT,01,Animals; live,1,No Quantity,0,0,209960,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,466,Mali,MLI,01,Animals; live,1,No Quantity,0,0,2480,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,498,Rep. of Moldova,MDA,01,Animals; live,1,No Quantity,0,0,1815,0
+H5,2018,2018,2018,2,0,2,Export,51,Armenia,ARM,498,Rep. of Moldova,MDA,01,Animals; live,1,No Quantity,0,0,70,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,116715,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,83253,0
+H5,2018,2018,2018,2,0,2,Export,51,Armenia,ARM,634,Qatar,QAT,01,Animals; live,1,No Quantity,0,0,832440,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,1695360,0
+H5,2018,2018,2018,2,0,2,Export,51,Armenia,ARM,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,45395,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,53601,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,705,Slovenia,SVN,01,Animals; live,1,No Quantity,0,0,6210,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,20507,0
+H5,2018,2018,2018,2,0,2,Export,51,Armenia,ARM,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,67308,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,804,Ukraine,UKR,01,Animals; live,1,No Quantity,0,0,80374,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,35320,0
+H5,2018,2018,2018,2,0,1,Import,51,Armenia,ARM,899,"Areas, nes",,01,Animals; live,1,No Quantity,0,0,27620,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,0,World,WLD,01,Animals; live,1,No Quantity,0,0,634905717,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,0,World,WLD,01,Animals; live,1,No Quantity,0,0,695364330,4
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,4,Afghanistan,AFG,01,Animals; live,1,No Quantity,0,0,92966,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,8,Albania,ALB,01,Animals; live,1,No Quantity,0,0,590,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,8,Albania,ALB,01,Animals; live,1,No Quantity,0,0,71251,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,24,Angola,AGO,01,Animals; live,1,No Quantity,0,0,824403,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,31,Azerbaijan,AZE,01,Animals; live,1,No Quantity,0,0,98823,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,256355,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,297453,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,12018,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,4244,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,259259,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,894557,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,48,Bahrain,BHR,01,Animals; live,1,No Quantity,0,0,18166,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,48,Bahrain,BHR,01,Animals; live,1,No Quantity,0,0,52226,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,50,Bangladesh,BGD,01,Animals; live,1,No Quantity,0,0,259505,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,51,Armenia,ARM,01,Animals; live,1,No Quantity,0,0,264183,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,70,Bosnia Herzegovina,BIH,01,Animals; live,1,No Quantity,0,0,62600,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,798522,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,96,Brunei Darussalam,BRN,01,Animals; live,1,No Quantity,0,0,113799,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,100,Bulgaria,BGR,01,Animals; live,1,No Quantity,0,0,281,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,100,Bulgaria,BGR,01,Animals; live,1,No Quantity,0,0,52084,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,104,Myanmar,MMR,01,Animals; live,1,No Quantity,0,0,38405,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,108,Burundi,BDI,01,Animals; live,1,No Quantity,0,0,47870,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,112,Belarus,BLR,01,Animals; live,1,No Quantity,0,0,35845,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,120,Cameroon,CMR,01,Animals; live,1,No Quantity,0,0,1926,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,120,Cameroon,CMR,01,Animals; live,1,No Quantity,0,0,173855,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,190762,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,14816010,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,144,Sri Lanka,LKA,01,Animals; live,1,No Quantity,0,0,8891,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,148,Chad,TCD,01,Animals; live,1,No Quantity,0,0,85786,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,152,Chile,CHL,01,Animals; live,1,No Quantity,0,0,1164109,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,156,China,CHN,01,Animals; live,1,No Quantity,0,0,16769,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,156,China,CHN,01,Animals; live,1,No Quantity,0,0,14150607,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,170,Colombia,COL,01,Animals; live,1,No Quantity,0,0,1439724,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,178,Congo,COG,01,Animals; live,1,No Quantity,0,0,67847,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,180,Dem. Rep. of the Congo,COD,01,Animals; live,1,No Quantity,0,0,1463,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,180,Dem. Rep. of the Congo,COD,01,Animals; live,1,No Quantity,0,0,1114235,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,191,Croatia,HRV,01,Animals; live,1,No Quantity,0,0,53,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,191,Croatia,HRV,01,Animals; live,1,No Quantity,0,0,666588,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,196,Cyprus,CYP,01,Animals; live,1,No Quantity,0,0,180367,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,2644866,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,136682,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,204,Benin,BEN,01,Animals; live,1,No Quantity,0,0,6754,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,204,Benin,BEN,01,Animals; live,1,No Quantity,0,0,181397,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,10248597,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,4061993,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,214,Dominican Rep.,DOM,01,Animals; live,1,No Quantity,0,0,1210,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,218,Ecuador,ECU,01,Animals; live,1,No Quantity,0,0,207,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,231,Ethiopia,ETH,01,Animals; live,1,No Quantity,0,0,430722,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,233,Estonia,EST,01,Animals; live,1,No Quantity,0,0,2851938,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,233,Estonia,EST,01,Animals; live,1,No Quantity,0,0,468685,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,246,Finland,FIN,01,Animals; live,1,No Quantity,0,0,38117,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,246,Finland,FIN,01,Animals; live,1,No Quantity,0,0,1531141,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,251,France,FRA,01,Animals; live,1,No Quantity,0,0,230484142,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,251,France,FRA,01,Animals; live,1,No Quantity,0,0,90322346,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,266,Gabon,GAB,01,Animals; live,1,No Quantity,0,0,12880,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,268,Georgia,GEO,01,Animals; live,1,No Quantity,0,0,227942,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,270,Gambia,GMB,01,Animals; live,1,No Quantity,0,0,10152,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,28266467,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,71941362,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,288,Ghana,GHA,01,Animals; live,1,No Quantity,0,0,1084944,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,300,Greece,GRC,01,Animals; live,1,No Quantity,0,0,74876,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,300,Greece,GRC,01,Animals; live,1,No Quantity,0,0,608556,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,324,Guinea,GIN,01,Animals; live,1,No Quantity,0,0,821667,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,344,"China, Hong Kong SAR",HKG,01,Animals; live,1,No Quantity,0,0,756,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,344,"China, Hong Kong SAR",HKG,01,Animals; live,1,No Quantity,0,0,82449,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,179293,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,526510,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,352,Iceland,ISL,01,Animals; live,1,No Quantity,0,0,2370283,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,360,Indonesia,IDN,01,Animals; live,1,No Quantity,0,0,2471,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,360,Indonesia,IDN,01,Animals; live,1,No Quantity,0,0,372240,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,368,Iraq,IRQ,01,Animals; live,1,No Quantity,0,0,687668,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,4041317,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,6295345,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,376,Israel,ISR,01,Animals; live,1,No Quantity,0,0,1096664,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,376,Israel,ISR,01,Animals; live,1,No Quantity,0,0,1939738,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,1243994,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,22877435,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,384,Côte d'Ivoire,CIV,01,Animals; live,1,No Quantity,0,0,9,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,384,Côte d'Ivoire,CIV,01,Animals; live,1,No Quantity,0,0,304998,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,813125,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,7859837,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,398,Kazakhstan,KAZ,01,Animals; live,1,No Quantity,0,0,19109,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,400,Jordan,JOR,01,Animals; live,1,No Quantity,0,0,177687,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,404,Kenya,KEN,01,Animals; live,1,No Quantity,0,0,38916,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,410,Rep. of Korea,KOR,01,Animals; live,1,No Quantity,0,0,774,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,410,Rep. of Korea,KOR,01,Animals; live,1,No Quantity,0,0,602765,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,414,Kuwait,KWT,01,Animals; live,1,No Quantity,0,0,29991,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,414,Kuwait,KWT,01,Animals; live,1,No Quantity,0,0,2026553,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,417,Kyrgyzstan,KGZ,01,Animals; live,1,No Quantity,0,0,21236,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,422,Lebanon,LBN,01,Animals; live,1,No Quantity,0,0,247781,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,428,Latvia,LVA,01,Animals; live,1,No Quantity,0,0,3323,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,428,Latvia,LVA,01,Animals; live,1,No Quantity,0,0,85672,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,434,Libya,LBY,01,Animals; live,1,No Quantity,0,0,1191247,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,440,Lithuania,LTU,01,Animals; live,1,No Quantity,0,0,37820,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,440,Lithuania,LTU,01,Animals; live,1,No Quantity,0,0,51305,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,442,Luxembourg,LUX,01,Animals; live,1,No Quantity,0,0,11145929,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,442,Luxembourg,LUX,01,Animals; live,1,No Quantity,0,0,1642357,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,454,Malawi,MWI,01,Animals; live,1,No Quantity,0,0,54363,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,458,Malaysia,MYS,01,Animals; live,1,No Quantity,0,0,344134,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,462,Maldives,MDV,01,Animals; live,1,No Quantity,0,0,31812,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,466,Mali,MLI,01,Animals; live,1,No Quantity,0,0,1818183,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,470,Malta,MLT,01,Animals; live,1,No Quantity,0,0,3938,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,470,Malta,MLT,01,Animals; live,1,No Quantity,0,0,91938,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,484,Mexico,MEX,01,Animals; live,1,No Quantity,0,0,1339575,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,490,"Other Asia, nes",,01,Animals; live,1,No Quantity,0,0,25836,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,490,"Other Asia, nes",,01,Animals; live,1,No Quantity,0,0,4521424,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,498,Rep. of Moldova,MDA,01,Animals; live,1,No Quantity,0,0,30500,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,504,Morocco,MAR,01,Animals; live,1,No Quantity,0,0,9377650,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,504,Morocco,MAR,01,Animals; live,1,No Quantity,0,0,2485884,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,512,Oman,OMN,01,Animals; live,1,No Quantity,0,0,1333344,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,516,Namibia,NAM,01,Animals; live,1,No Quantity,0,0,233926,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,310130996,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,327901449,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,531,Curaçao,CUW,01,Animals; live,1,No Quantity,0,0,116513,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,533,Aruba,ABW,01,Animals; live,1,No Quantity,0,0,10488,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,535,Bonaire,BES,01,Animals; live,1,No Quantity,0,0,23814,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,554,New Zealand,NZL,01,Animals; live,1,No Quantity,0,0,25792,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,566,Nigeria,NGA,01,Animals; live,1,No Quantity,0,0,12644,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,579,Norway,NOR,01,Animals; live,1,No Quantity,0,0,54997,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,579,Norway,NOR,01,Animals; live,1,No Quantity,0,0,265427,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,586,Pakistan,PAK,01,Animals; live,1,No Quantity,0,0,553538,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,591,Panama,PAN,01,Animals; live,1,No Quantity,0,0,178439,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,604,Peru,PER,01,Animals; live,1,No Quantity,0,0,220161,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,608,Philippines,PHL,01,Animals; live,1,No Quantity,0,0,240026,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,707447,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,3305947,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,620,Portugal,PRT,01,Animals; live,1,No Quantity,0,0,578286,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,620,Portugal,PRT,01,Animals; live,1,No Quantity,0,0,1589424,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,634,Qatar,QAT,01,Animals; live,1,No Quantity,0,0,10462,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,634,Qatar,QAT,01,Animals; live,1,No Quantity,0,0,1168194,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,642,Romania,ROU,01,Animals; live,1,No Quantity,0,0,199493,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,642,Romania,ROU,01,Animals; live,1,No Quantity,0,0,645931,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,16717,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,1341909,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,646,Rwanda,RWA,01,Animals; live,1,No Quantity,0,0,747557,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,682,Saudi Arabia,SAU,01,Animals; live,1,No Quantity,0,0,29440,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,682,Saudi Arabia,SAU,01,Animals; live,1,No Quantity,0,0,1227310,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,686,Senegal,SEN,01,Animals; live,1,No Quantity,0,0,78641,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,688,Serbia,SRB,01,Animals; live,1,No Quantity,0,0,139110,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,694,Sierra Leone,SLE,01,Animals; live,1,No Quantity,0,0,14099,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,699,India,IND,01,Animals; live,1,No Quantity,0,0,71612,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,702,Singapore,SGP,01,Animals; live,1,No Quantity,0,0,12377,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,702,Singapore,SGP,01,Animals; live,1,No Quantity,0,0,825299,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,359075,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,276307,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,704,Viet Nam,VNM,01,Animals; live,1,No Quantity,0,0,12676,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,704,Viet Nam,VNM,01,Animals; live,1,No Quantity,0,0,477199,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,705,Slovenia,SVN,01,Animals; live,1,No Quantity,0,0,8192,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,706,Somalia,SOM,01,Animals; live,1,No Quantity,0,0,99670,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,0,47848,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,0,1374325,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,716,Zimbabwe,ZWE,01,Animals; live,1,No Quantity,0,0,21802,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,7043316,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,10436574,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,729,Sudan,SDN,01,Animals; live,1,No Quantity,0,0,820269,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,752,Sweden,SWE,01,Animals; live,1,No Quantity,0,0,866961,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,752,Sweden,SWE,01,Animals; live,1,No Quantity,0,0,3657003,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,757,Switzerland,CHE,01,Animals; live,1,No Quantity,0,0,853978,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,757,Switzerland,CHE,01,Animals; live,1,No Quantity,0,0,6809580,4
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,587,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,1743328,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,768,Togo,TGO,01,Animals; live,1,No Quantity,0,0,110373,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,768,Togo,TGO,01,Animals; live,1,No Quantity,0,0,337337,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,772,Tokelau,TKL,01,Animals; live,1,No Quantity,0,0,549,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,780,Trinidad and Tobago,TTO,01,Animals; live,1,No Quantity,0,0,1020,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,20134,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,2362505,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,788,Tunisia,TUN,01,Animals; live,1,No Quantity,0,0,61269,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,397259,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,1485322,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,800,Uganda,UGA,01,Animals; live,1,No Quantity,0,0,1532926,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,804,Ukraine,UKR,01,Animals; live,1,No Quantity,0,0,56571,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,807,North Macedonia,MKD,01,Animals; live,1,No Quantity,0,0,23297,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,818,Egypt,EGY,01,Animals; live,1,No Quantity,0,0,24235,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,818,Egypt,EGY,01,Animals; live,1,No Quantity,0,0,2080517,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,6778950,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,15404136,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,834,United Rep. of Tanzania,TZA,01,Animals; live,1,No Quantity,0,0,969,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,842,USA,USA,01,Animals; live,1,No Quantity,0,0,851804,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,842,USA,USA,01,Animals; live,1,No Quantity,0,0,36021986,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,854,Burkina Faso,BFA,01,Animals; live,1,No Quantity,0,0,528543,0
+H5,2018,2018,2018,2,0,2,Export,56,Belgium,BEL,858,Uruguay,URY,01,Animals; live,1,No Quantity,0,0,19163,0
+H5,2018,2018,2018,2,0,1,Import,56,Belgium,BEL,860,Uzbekistan,UZB,01,Animals; live,1,No Quantity,0,0,17721,0
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,0,World,WLD,01,Animals; live,1,No Quantity,0,,415000,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,36,Australia,AUS,01,Animals; live,1,No Quantity,0,,2295,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,124,Canada,CAN,01,Animals; live,1,No Quantity,0,,3971,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,242,Fiji,FJI,01,Animals; live,1,No Quantity,0,,10,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,344,"China, Hong Kong SAR",HKG,01,Animals; live,1,No Quantity,0,,10,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,360,Indonesia,IDN,01,Animals; live,1,No Quantity,0,,159,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,,17933,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,381,Italy,ITA,01,Animals; live,1,No Quantity,0,,20,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,388,Jamaica,JAM,01,Animals; live,1,No Quantity,0,,1200,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,458,Malaysia,MYS,01,Animals; live,1,No Quantity,0,0,84,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,490,"Other Asia, nes",,01,Animals; live,1,No Quantity,0,,43,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,,345,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,620,Portugal,PRT,01,Animals; live,1,No Quantity,0,,419,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,,1500,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,,20,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,764,Thailand,THA,01,Animals; live,1,No Quantity,0,,38,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,804,Ukraine,UKR,01,Animals; live,1,No Quantity,0,,3431,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,,156562,4
+H5,2018,2018,2018,2,0,1,Import,60,Bermuda,BMU,842,USA,USA,01,Animals; live,1,No Quantity,0,0,226956,4
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,0,World,WLD,01,Animals; live,1,No Quantity,0,0,9852412,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,513383,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,890,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,8853760,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,152,Chile,CHL,01,Animals; live,1,No Quantity,0,0,1478,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,170,Colombia,COL,01,Animals; live,1,No Quantity,0,0,7816,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,192,Cuba,CUB,01,Animals; live,1,No Quantity,0,0,321,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,218,Ecuador,ECU,01,Animals; live,1,No Quantity,0,0,485,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,484,Mexico,MEX,01,Animals; live,1,No Quantity,0,0,799,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,591,Panama,PAN,01,Animals; live,1,No Quantity,0,0,92,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,600,Paraguay,PRY,01,Animals; live,1,No Quantity,0,0,18239,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,604,Peru,PER,01,Animals; live,1,No Quantity,0,0,429860,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,716,Zimbabwe,ZWE,01,Animals; live,1,No Quantity,0,0,190,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,1903,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,842,USA,USA,01,Animals; live,1,No Quantity,0,0,21660,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,862,Venezuela,VEN,01,Animals; live,1,No Quantity,0,0,1379,0
+H5,2018,2018,2018,2,0,1,Import,68,Bolivia (Plurinational State of),BOL,899,"Areas, nes",,01,Animals; live,1,No Quantity,0,0,151,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,0,World,WLD,01,Animals; live,1,No Quantity,0,0,40540571,0
+H5,2018,2018,2018,2,0,2,Export,70,Bosnia Herzegovina,BIH,0,World,WLD,01,Animals; live,1,No Quantity,0,0,6752840,4
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,63843,0
+H5,2018,2018,2018,2,0,2,Export,70,Bosnia Herzegovina,BIH,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,403,4
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,67825,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,191,Croatia,HRV,01,Animals; live,1,No Quantity,0,0,3678029,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,1938779,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,97918,0
+H5,2018,2018,2018,2,0,2,Export,70,Bosnia Herzegovina,BIH,246,Finland,FIN,01,Animals; live,1,No Quantity,0,0,820,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,251,France,FRA,01,Animals; live,1,No Quantity,0,0,1693,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,1896996,0
+H5,2018,2018,2018,2,0,2,Export,70,Bosnia Herzegovina,BIH,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,2485,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,1677344,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,115579,0
+H5,2018,2018,2018,2,0,2,Export,70,Bosnia Herzegovina,BIH,422,Lebanon,LBN,01,Animals; live,1,No Quantity,0,0,48587,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,428,Latvia,LVA,01,Animals; live,1,No Quantity,0,0,413720,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,499,Montenegro,MNE,01,Animals; live,1,No Quantity,0,0,67001,0
+H5,2018,2018,2018,2,0,2,Export,70,Bosnia Herzegovina,BIH,499,Montenegro,MNE,01,Animals; live,1,No Quantity,0,0,546322,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,189452,0
+H5,2018,2018,2018,2,0,2,Export,70,Bosnia Herzegovina,BIH,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,288,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,2594100,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,642,Romania,ROU,01,Animals; live,1,No Quantity,0,0,9515286,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,688,Serbia,SRB,01,Animals; live,1,No Quantity,0,0,17422247,0
+H5,2018,2018,2018,2,0,2,Export,70,Bosnia Herzegovina,BIH,688,Serbia,SRB,01,Animals; live,1,No Quantity,0,0,6153371,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,740981,0
+H5,2018,2018,2018,2,0,1,Import,70,Bosnia Herzegovina,BIH,705,Slovenia,SVN,01,Animals; live,1,No Quantity,0,0,59769,0
+H5,2018,2018,2018,2,0,2,Export,70,Bosnia Herzegovina,BIH,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,561,4
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,0,World,WLD,01,Animals; live,1,No Quantity,0,0,9613049,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,0,World,WLD,01,Animals; live,1,No Quantity,0,0,623543733,4
+H5,2018,2018,2018,2,0,4,Re-Import,76,Brazil,BRA,0,World,WLD,01,Animals; live,1,No Quantity,0,0,63000,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,99825,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,0,16693135,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,12392,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,1442,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,44,Bahamas,BHS,01,Animals; live,1,No Quantity,0,0,580,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,1159705,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,102450,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,68,Bolivia (Plurinational State of),BOL,01,Animals; live,1,No Quantity,0,0,7456885,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,63000,0
+H5,2018,2018,2018,2,0,4,Re-Import,76,Brazil,BRA,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,63000,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,3089921,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,144,Sri Lanka,LKA,01,Animals; live,1,No Quantity,0,0,15078,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,152,Chile,CHL,01,Animals; live,1,No Quantity,0,0,27000,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,152,Chile,CHL,01,Animals; live,1,No Quantity,0,0,5087397,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,170,Colombia,COL,01,Animals; live,1,No Quantity,0,0,10297840,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,196,Cyprus,CYP,01,Animals; live,1,No Quantity,0,0,89,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,95,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,214,Dominican Rep.,DOM,01,Animals; live,1,No Quantity,0,0,1294152,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,218,Ecuador,ECU,01,Animals; live,1,No Quantity,0,0,16650611,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,231,Ethiopia,ETH,01,Animals; live,1,No Quantity,0,0,584626,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,251,France,FRA,01,Animals; live,1,No Quantity,0,0,640900,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,69947,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,74,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,344,"China, Hong Kong SAR",HKG,01,Animals; live,1,No Quantity,0,0,705745,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,368,Iraq,IRQ,01,Animals; live,1,No Quantity,0,0,29472647,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,213500,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,2356,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,241,4
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,400,Jordan,JOR,01,Animals; live,1,No Quantity,0,0,24000488,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,410,Rep. of Korea,KOR,01,Animals; live,1,No Quantity,0,0,31,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,422,Lebanon,LBN,01,Animals; live,1,No Quantity,0,0,45714062,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,450,Madagascar,MDG,01,Animals; live,1,No Quantity,0,0,102156,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,470,Malta,MLT,01,Animals; live,1,No Quantity,0,0,215,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,490,"Other Asia, nes",,01,Animals; live,1,No Quantity,0,0,16765,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,512,Oman,OMN,01,Animals; live,1,No Quantity,0,0,120,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,147752,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,18000,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,579,Norway,NOR,01,Animals; live,1,No Quantity,0,0,518,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,584,Marshall Isds,MHL,01,Animals; live,1,No Quantity,0,0,732,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,591,Panama,PAN,01,Animals; live,1,No Quantity,0,0,610,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,600,Paraguay,PRY,01,Animals; live,1,No Quantity,0,0,9162244,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,604,Peru,PER,01,Animals; live,1,No Quantity,0,0,10956814,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,608,Philippines,PHL,01,Animals; live,1,No Quantity,0,0,8414,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,620,Portugal,PRT,01,Animals; live,1,No Quantity,0,0,261631,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,620,Portugal,PRT,01,Animals; live,1,No Quantity,0,0,6606,4
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,686,Senegal,SEN,01,Animals; live,1,No Quantity,0,0,385228,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,699,India,IND,01,Animals; live,1,No Quantity,0,0,197281,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,702,Singapore,SGP,01,Animals; live,1,No Quantity,0,0,4500,4
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,0,723018,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,67062,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,20,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,216200,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,380350142,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,818,Egypt,EGY,01,Animals; live,1,No Quantity,0,0,54274949,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,346040,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,45,0
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,842,USA,USA,01,Animals; live,1,No Quantity,0,0,3361673,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,842,USA,USA,01,Animals; live,1,No Quantity,0,0,4998269,4
+H5,2018,2018,2018,2,0,1,Import,76,Brazil,BRA,858,Uruguay,URY,01,Animals; live,1,No Quantity,0,0,48808,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,858,Uruguay,URY,01,Animals; live,1,No Quantity,0,0,1612003,0
+H5,2018,2018,2018,2,0,2,Export,76,Brazil,BRA,862,Venezuela,VEN,01,Animals; live,1,No Quantity,0,0,2432753,0
+H5,2018,2018,2018,2,0,1,Import,84,Belize,BLZ,0,World,WLD,01,Animals; live,1,No Quantity,0,0,1109160,0
+H5,2018,2018,2018,2,0,2,Export,84,Belize,BLZ,0,World,WLD,01,Animals; live,1,No Quantity,0,0,36158,0
+H5,2018,2018,2018,2,0,1,Import,84,Belize,BLZ,484,Mexico,MEX,01,Animals; live,1,No Quantity,0,0,256921,0
+H5,2018,2018,2018,2,0,1,Import,84,Belize,BLZ,591,Panama,PAN,01,Animals; live,1,No Quantity,0,0,246,0
+H5,2018,2018,2018,2,0,2,Export,84,Belize,BLZ,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,191,0
+H5,2018,2018,2018,2,0,1,Import,84,Belize,BLZ,842,USA,USA,01,Animals; live,1,No Quantity,0,0,851991,0
+H5,2018,2018,2018,2,0,2,Export,84,Belize,BLZ,842,USA,USA,01,Animals; live,1,No Quantity,0,0,35967,0
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,0,World,WLD,01,Animals; live,1,No Quantity,0,,11518031,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,0,World,WLD,01,Animals; live,1,No Quantity,0,0,55311,4
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,0,World,WLD,01,Animals; live,1,No Quantity,0,0,21663,0
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,5665777,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,5232,4
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,2260,0
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,156,China,CHN,01,Animals; live,1,No Quantity,0,,204315,4
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,196,Cyprus,CYP,01,Animals; live,1,No Quantity,0,,1012,4
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,251,France,FRA,01,Animals; live,1,No Quantity,0,,5374,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,251,France,FRA,01,Animals; live,1,No Quantity,0,0,259,0
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,251,France,FRA,01,Animals; live,1,No Quantity,0,0,259,0
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,344,"China, Hong Kong SAR",HKG,01,Animals; live,1,No Quantity,0,0,259,0
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,344,"China, Hong Kong SAR",HKG,01,Animals; live,1,No Quantity,0,0,259,0
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,360,Indonesia,IDN,01,Animals; live,1,No Quantity,0,0,730,4
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,1525,4
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,408,Dem. People's Rep. of Korea,PRK,01,Animals; live,1,No Quantity,0,,326,4
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,410,Rep. of Korea,KOR,01,Animals; live,1,No Quantity,0,0,327,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,410,Rep. of Korea,KOR,01,Animals; live,1,No Quantity,0,0,259,0
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,410,Rep. of Korea,KOR,01,Animals; live,1,No Quantity,0,0,259,0
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,458,Malaysia,MYS,01,Animals; live,1,No Quantity,0,0,5426826,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,458,Malaysia,MYS,01,Animals; live,1,No Quantity,0,0,12996,4
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,458,Malaysia,MYS,01,Animals; live,1,No Quantity,0,0,7040,0
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,490,"Other Asia, nes",,01,Animals; live,1,No Quantity,0,,413,4
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,512,Oman,OMN,01,Animals; live,1,No Quantity,0,0,1229,4
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,157759,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,531,Curaçao,CUW,01,Animals; live,1,No Quantity,0,0,2690,4
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,531,Curaçao,CUW,01,Animals; live,1,No Quantity,0,0,314,0
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,554,New Zealand,NZL,01,Animals; live,1,No Quantity,0,0,2183,4
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,554,New Zealand,NZL,01,Animals; live,1,No Quantity,0,0,518,0
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,608,Philippines,PHL,01,Animals; live,1,No Quantity,0,0,5254,4
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,608,Philippines,PHL,01,Animals; live,1,No Quantity,0,0,2074,0
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,1599,4
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,699,India,IND,01,Animals; live,1,No Quantity,0,0,1087,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,699,India,IND,01,Animals; live,1,No Quantity,0,0,837,4
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,702,Singapore,SGP,01,Animals; live,1,No Quantity,0,0,5602,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,702,Singapore,SGP,01,Animals; live,1,No Quantity,0,0,8441,4
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,702,Singapore,SGP,01,Animals; live,1,No Quantity,0,0,5594,0
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,3908,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,740,0
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,740,0
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,,933,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,2828,4
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,259,0
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,37479,4
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,12078,4
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,1563,0
+H5,2018,2018,2018,2,0,2,Export,96,Brunei Darussalam,BRN,842,USA,USA,01,Animals; live,1,No Quantity,0,0,518,0
+H5,2018,2018,2018,2,0,3,Re-Export,96,Brunei Darussalam,BRN,842,USA,USA,01,Animals; live,1,No Quantity,0,0,518,0
+H5,2018,2018,2018,2,0,1,Import,96,Brunei Darussalam,BRN,899,"Areas, nes",,01,Animals; live,1,No Quantity,0,0,2531,4
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,0,World,WLD,01,Animals; live,1,No Quantity,0,0,37581174,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,0,World,WLD,01,Animals; live,1,No Quantity,0,0,53837899,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,8,Albania,ALB,01,Animals; live,1,No Quantity,0,0,4409411,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,624763,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,50,Bangladesh,BGD,01,Animals; live,1,No Quantity,0,0,2153,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,493612,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,605,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,1060,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,156,China,CHN,01,Animals; live,1,No Quantity,0,0,574,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,191,Croatia,HRV,01,Animals; live,1,No Quantity,0,0,503499,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,3919838,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,1454069,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,251,France,FRA,01,Animals; live,1,No Quantity,0,0,3118485,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,268,Georgia,GEO,01,Animals; live,1,No Quantity,0,0,2133075,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,4404880,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,300,Greece,GRC,01,Animals; live,1,No Quantity,0,0,83560,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,300,Greece,GRC,01,Animals; live,1,No Quantity,0,0,1683037,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,9225588,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,368,Iraq,IRQ,01,Animals; live,1,No Quantity,0,0,27316,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,376,Israel,ISR,01,Animals; live,1,No Quantity,0,0,14403,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,376,Israel,ISR,01,Animals; live,1,No Quantity,0,0,2667,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,387055,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,36498,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,248,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,400,Jordan,JOR,01,Animals; live,1,No Quantity,0,0,2169,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,422,Lebanon,LBN,01,Animals; live,1,No Quantity,0,0,345,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,428,Latvia,LVA,01,Animals; live,1,No Quantity,0,0,242939,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,498,Rep. of Moldova,MDA,01,Animals; live,1,No Quantity,0,0,22775,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,499,Montenegro,MNE,01,Animals; live,1,No Quantity,0,0,107641,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,1336713,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,608,Philippines,PHL,01,Animals; live,1,No Quantity,0,0,2653,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,10193,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,642,Romania,ROU,01,Animals; live,1,No Quantity,0,0,11474536,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,642,Romania,ROU,01,Animals; live,1,No Quantity,0,0,12659588,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,1897,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,688,Serbia,SRB,01,Animals; live,1,No Quantity,0,0,4107,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,688,Serbia,SRB,01,Animals; live,1,No Quantity,0,0,2386527,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,495394,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,103202,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,0,1512,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,0,471,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,24249,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,757,Switzerland,CHE,01,Animals; live,1,No Quantity,0,0,7479,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,2743,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,1658,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,91112,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,792,Turkey,TUR,01,Animals; live,1,No Quantity,0,0,29475970,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,807,North Macedonia,MKD,01,Animals; live,1,No Quantity,0,0,888,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,807,North Macedonia,MKD,01,Animals; live,1,No Quantity,0,0,156333,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,818,Egypt,EGY,01,Animals; live,1,No Quantity,0,0,105587,0
+H5,2018,2018,2018,2,0,1,Import,100,Bulgaria,BGR,842,USA,USA,01,Animals; live,1,No Quantity,0,0,160544,0
+H5,2018,2018,2018,2,0,2,Export,100,Bulgaria,BGR,842,USA,USA,01,Animals; live,1,No Quantity,0,0,13429,0
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,0,World,WLD,01,Animals; live,1,No Quantity,0,,14404343,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,0,World,WLD,01,Animals; live,1,No Quantity,0,,364164905,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,36,Australia,AUS,01,Animals; live,1,No Quantity,0,0,602690,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,50,Bangladesh,BGD,01,Animals; live,1,No Quantity,0,0,666000,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,,861186,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,96,Brunei Darussalam,BRN,01,Animals; live,1,No Quantity,0,,50,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,116,Cambodia,KHM,01,Animals; live,1,No Quantity,0,,50,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,124,Canada,CAN,01,Animals; live,1,No Quantity,0,0,70,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,156,China,CHN,01,Animals; live,1,No Quantity,0,0,50990,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,156,China,CHN,01,Animals; live,1,No Quantity,0,0,362951676,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,50,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,231,Ethiopia,ETH,01,Animals; live,1,No Quantity,0,0,50,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,251,France,FRA,01,Animals; live,1,No Quantity,0,0,240655,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,300,Greece,GRC,01,Animals; live,1,No Quantity,0,0,50,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,360,Indonesia,IDN,01,Animals; live,1,No Quantity,0,,1680,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,61981,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,225000,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,410,Rep. of Korea,KOR,01,Animals; live,1,No Quantity,0,0,816,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,458,Malaysia,MYS,01,Animals; live,1,No Quantity,0,0,1215385,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,458,Malaysia,MYS,01,Animals; live,1,No Quantity,0,0,225,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,,119063,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,554,New Zealand,NZL,01,Animals; live,1,No Quantity,0,0,673810,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,579,Norway,NOR,01,Animals; live,1,No Quantity,0,0,45,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,13478,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,699,India,IND,01,Animals; live,1,No Quantity,0,,118,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,699,India,IND,01,Animals; live,1,No Quantity,0,0,45185,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,703,Slovakia,SVK,01,Animals; live,1,No Quantity,0,0,83495,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,704,Viet Nam,VNM,01,Animals; live,1,No Quantity,0,,29939,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,710,South Africa,ZAF,01,Animals; live,1,No Quantity,0,0,100,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,320341,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,9957005,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,764,Thailand,THA,01,Animals; live,1,No Quantity,0,0,261610,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,200,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,788,Tunisia,TUN,01,Animals; live,1,No Quantity,0,0,80,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,,185034,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,784,4
+H5,2018,2018,2018,2,0,1,Import,104,Myanmar,MMR,842,USA,USA,01,Animals; live,1,No Quantity,0,0,150,4
+H5,2018,2018,2018,2,0,2,Export,104,Myanmar,MMR,842,USA,USA,01,Animals; live,1,No Quantity,0,0,200,4
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,0,World,WLD,01,Animals; live,1,No Quantity,0,0,22995600,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,0,World,WLD,01,Animals; live,1,No Quantity,0,0,5738400,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,1700,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,71100,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,10300,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,0,2559500,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,233,Estonia,EST,01,Animals; live,1,No Quantity,0,0,850100,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,251,France,FRA,01,Animals; live,1,No Quantity,0,0,298600,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,268,Georgia,GEO,01,Animals; live,1,No Quantity,0,0,100900,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,1902000,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,3400,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,3148100,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,437400,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,376,Israel,ISR,01,Animals; live,1,No Quantity,0,0,888100,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,60100,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,398,Kazakhstan,KAZ,01,Animals; live,1,No Quantity,0,0,125200,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,422,Lebanon,LBN,01,Animals; live,1,No Quantity,0,0,3200,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,428,Latvia,LVA,01,Animals; live,1,No Quantity,0,0,18900,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,440,Lithuania,LTU,01,Animals; live,1,No Quantity,0,0,2758000,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,440,Lithuania,LTU,01,Animals; live,1,No Quantity,0,0,17100,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,442,Luxembourg,LUX,01,Animals; live,1,No Quantity,0,0,15800,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,528,Netherlands,NLD,01,Animals; live,1,No Quantity,0,0,953900,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,4735500,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,616,Poland,POL,01,Animals; live,1,No Quantity,0,0,42900,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,620,Portugal,PRT,01,Animals; live,1,No Quantity,0,0,900,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,1801400,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,643,Russian Federation,RUS,01,Animals; live,1,No Quantity,0,0,4941800,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,724,Spain,ESP,01,Animals; live,1,No Quantity,0,0,1400,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,762,Tajikistan,TJK,01,Animals; live,1,No Quantity,0,0,16200,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,784,United Arab Emirates,ARE,01,Animals; live,1,No Quantity,0,0,34000,0
+H5,2018,2018,2018,2,0,1,Import,112,Belarus,BLR,826,United Kingdom,GBR,01,Animals; live,1,No Quantity,0,0,2482800,0
+H5,2018,2018,2018,2,0,2,Export,112,Belarus,BLR,860,Uzbekistan,UZB,01,Animals; live,1,No Quantity,0,0,453700,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,0,World,WLD,01,Animals; live,1,No Quantity,0,,367138025,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,0,World,WLD,01,Animals; live,1,No Quantity,0,,1322421862,4
+H5,2018,2018,2018,2,0,3,Re-Export,124,Canada,CAN,0,World,WLD,01,Animals; live,1,No Quantity,0,0,12292970,0
+H5,2018,2018,2018,2,0,4,Re-Import,124,Canada,CAN,0,World,WLD,01,Animals; live,1,No Quantity,0,,1165710,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,4,Afghanistan,AFG,01,Animals; live,1,No Quantity,0,,1389,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,8,Albania,ALB,01,Animals; live,1,No Quantity,0,0,8489,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,28,Antigua and Barbuda,ATG,01,Animals; live,1,No Quantity,0,,266,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,31,Azerbaijan,AZE,01,Animals; live,1,No Quantity,0,0,26,0
+H5,2018,2018,2018,2,0,3,Re-Export,124,Canada,CAN,31,Azerbaijan,AZE,01,Animals; live,1,No Quantity,0,0,26,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,32,Argentina,ARG,01,Animals; live,1,No Quantity,0,,667775,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,36,Australia,AUS,01,Animals; live,1,No Quantity,0,,1271398,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,36,Australia,AUS,01,Animals; live,1,No Quantity,0,,2046,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,40,Austria,AUT,01,Animals; live,1,No Quantity,0,,19099,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,40,Austria,AUT,01,Animals; live,1,No Quantity,0,0,1466,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,48,Bahrain,BHR,01,Animals; live,1,No Quantity,0,,385,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,48,Bahrain,BHR,01,Animals; live,1,No Quantity,0,0,41760,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,50,Bangladesh,BGD,01,Animals; live,1,No Quantity,0,,186,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,52,Barbados,BRB,01,Animals; live,1,No Quantity,0,0,1032,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,,15425416,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,387093,4
+H5,2018,2018,2018,2,0,3,Re-Export,124,Canada,CAN,56,Belgium,BEL,01,Animals; live,1,No Quantity,0,0,3370,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,60,Bermuda,BMU,01,Animals; live,1,No Quantity,0,,9927,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,60,Bermuda,BMU,01,Animals; live,1,No Quantity,0,0,1222,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,,28549,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,76,Brazil,BRA,01,Animals; live,1,No Quantity,0,0,2951811,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,100,Bulgaria,BGR,01,Animals; live,1,No Quantity,0,,1679,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,100,Bulgaria,BGR,01,Animals; live,1,No Quantity,0,0,12745,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,112,Belarus,BLR,01,Animals; live,1,No Quantity,0,,2511,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,116,Cambodia,KHM,01,Animals; live,1,No Quantity,0,,256092,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,120,Cameroon,CMR,01,Animals; live,1,No Quantity,0,,282115,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,124,Canada,CAN,01,Animals; live,1,No Quantity,0,,1165710,0
+H5,2018,2018,2018,2,0,4,Re-Import,124,Canada,CAN,124,Canada,CAN,01,Animals; live,1,No Quantity,0,,1165710,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,136,Cayman Isds,CYM,01,Animals; live,1,No Quantity,0,,115,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,144,Sri Lanka,LKA,01,Animals; live,1,No Quantity,0,,463,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,144,Sri Lanka,LKA,01,Animals; live,1,No Quantity,0,0,439645,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,152,Chile,CHL,01,Animals; live,1,No Quantity,0,,808379,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,152,Chile,CHL,01,Animals; live,1,No Quantity,0,0,528324,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,156,China,CHN,01,Animals; live,1,No Quantity,0,,8361917,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,156,China,CHN,01,Animals; live,1,No Quantity,0,0,11146887,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,170,Colombia,COL,01,Animals; live,1,No Quantity,0,,153964,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,170,Colombia,COL,01,Animals; live,1,No Quantity,0,0,166410,4
+H5,2018,2018,2018,2,0,3,Re-Export,124,Canada,CAN,170,Colombia,COL,01,Animals; live,1,No Quantity,0,0,541,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,178,Congo,COG,01,Animals; live,1,No Quantity,0,,209,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,180,Dem. Rep. of the Congo,COD,01,Animals; live,1,No Quantity,0,,1735,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,188,Costa Rica,CRI,01,Animals; live,1,No Quantity,0,,206903,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,188,Costa Rica,CRI,01,Animals; live,1,No Quantity,0,0,102918,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,191,Croatia,HRV,01,Animals; live,1,No Quantity,0,,5716,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,191,Croatia,HRV,01,Animals; live,1,No Quantity,0,0,24738,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,192,Cuba,CUB,01,Animals; live,1,No Quantity,0,,38,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,196,Cyprus,CYP,01,Animals; live,1,No Quantity,0,,231,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,,618767,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,498408,4
+H5,2018,2018,2018,2,0,3,Re-Export,124,Canada,CAN,203,Czechia,CZE,01,Animals; live,1,No Quantity,0,0,12700,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,208,Denmark,DNK,01,Animals; live,1,No Quantity,0,,3074035,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,214,Dominican Rep.,DOM,01,Animals; live,1,No Quantity,0,,27792,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,214,Dominican Rep.,DOM,01,Animals; live,1,No Quantity,0,0,96911,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,218,Ecuador,ECU,01,Animals; live,1,No Quantity,0,,21610,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,218,Ecuador,ECU,01,Animals; live,1,No Quantity,0,0,180030,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,222,El Salvador,SLV,01,Animals; live,1,No Quantity,0,,46351,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,222,El Salvador,SLV,01,Animals; live,1,No Quantity,0,0,10991,4
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,246,Finland,FIN,01,Animals; live,1,No Quantity,0,,117085,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,251,France,FRA,01,Animals; live,1,No Quantity,0,,2761423,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,251,France,FRA,01,Animals; live,1,No Quantity,0,0,94572,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,276,Germany,DEU,01,Animals; live,1,No Quantity,0,,5513304,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,276,Germany,DEU,01,Animals; live,1,No Quantity,0,0,4098666,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,288,Ghana,GHA,01,Animals; live,1,No Quantity,0,,12563,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,300,Greece,GRC,01,Animals; live,1,No Quantity,0,,5039,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,300,Greece,GRC,01,Animals; live,1,No Quantity,0,0,9935,4
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,308,Grenada,GRD,01,Animals; live,1,No Quantity,0,0,2128,4
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,320,Guatemala,GTM,01,Animals; live,1,No Quantity,0,0,256376,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,328,Guyana,GUY,01,Animals; live,1,No Quantity,0,,6856,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,332,Haiti,HTI,01,Animals; live,1,No Quantity,0,,1014,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,344,"China, Hong Kong SAR",HKG,01,Animals; live,1,No Quantity,0,,10506,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,344,"China, Hong Kong SAR",HKG,01,Animals; live,1,No Quantity,0,,27554,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,,604207,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,348,Hungary,HUN,01,Animals; live,1,No Quantity,0,0,42772,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,352,Iceland,ISL,01,Animals; live,1,No Quantity,0,,31971,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,360,Indonesia,IDN,01,Animals; live,1,No Quantity,0,,51642,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,360,Indonesia,IDN,01,Animals; live,1,No Quantity,0,0,874,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,364,Iran,IRN,01,Animals; live,1,No Quantity,0,,1374,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,,1787876,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,372,Ireland,IRL,01,Animals; live,1,No Quantity,0,0,146242,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,376,Israel,ISR,01,Animals; live,1,No Quantity,0,,49202,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,376,Israel,ISR,01,Animals; live,1,No Quantity,0,0,131888,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,381,Italy,ITA,01,Animals; live,1,No Quantity,0,,245947,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,381,Italy,ITA,01,Animals; live,1,No Quantity,0,0,55388,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,384,Côte d'Ivoire,CIV,01,Animals; live,1,No Quantity,0,,103,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,384,Côte d'Ivoire,CIV,01,Animals; live,1,No Quantity,0,0,2022,4
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,388,Jamaica,JAM,01,Animals; live,1,No Quantity,0,,501,0
+H5,2018,2018,2018,2,0,1,Import,124,Canada,CAN,392,Japan,JPN,01,Animals; live,1,No Quantity,0,,7289,0
+H5,2018,2018,2018,2,0,2,Export,124,Canada,CAN,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,21456806,4
+H5,2018,2018,2018,2,0,3,Re-Export,124,Canada,CAN,392,Japan,JPN,01,Animals; live,1,No Quantity,0,0,1630,0

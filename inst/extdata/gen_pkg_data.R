@@ -16,7 +16,7 @@ tt_update_data <- function() {
   .industry_tbl <- tt_read_table(tt_get_path("PATH_INDUSTRY"))
   .industry_tbl_en <- rlang::set_names(.industry_tbl, c("index", "type", "major", "minor", "hscode6", "hscode11", "hscode_dights",
     "hscode", "industry", "reports_version_1", "reports_version_1_order", "reports_version_2",
-    "reports_version_2_order", "reports_version_industry21", "reports_version_industry21_order"))
+    "reports_version_2_order", "reports_version_2_ind_name", "reports_version_industry21", "reports_version_industry21_order"))
 
   # industry21 data -----------------------------
   .tt_ind21_list <- .industry_tbl[.industry_tbl[["reports_version_industry21"]] == 1, ][["\u7DE8\u865F"]]

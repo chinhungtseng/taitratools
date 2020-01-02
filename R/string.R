@@ -6,7 +6,7 @@
 #' @param y hscode vector 2
 #' @param sub integer. The last element to be replaced.
 #'
-#' @return
+#' @return string
 #' @export
 tt_compare_hscode <- function(x, y, sub = NULL) {
   objs <- lapply(list(x, y), function(z) {tt_format_hscode(z, sub = sub, collapse = NULL)})
@@ -28,7 +28,7 @@ tt_compare_hscode <- function(x, y, sub = NULL) {
 #' @param collapse an optional character string to separate the results.
 #' @param .order order
 #'
-#' @return
+#' @return string
 #' @export
 tt_format_hscode <- function(x, sub = NULL, start = "", end = "", collapse = ",", .order = TRUE) {
   stopifnot(length(x) >= 1)

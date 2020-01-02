@@ -52,3 +52,35 @@ period_month <- get_period("month")
 dsecond <- function(new, old) {
   round(as.numeric(new) - as.numeric(old), 3)
 }
+
+#' Parse_date
+#' Parse start date and end date
+#' @param start_date yyyy-mm
+#' @param end_date yyyy-mm
+#' @param period integer
+#'
+#' @return a list
+#' @export
+tt_parse_date <- function(start_date, end_date, period = NA) {
+  start_date <- ym2date(start_date)
+  end_date <- ym2date(end_date)
+  start_year <- format(start_date, "%Y")
+
+  if (is.na(period)) {
+    years <- end_year <- last_year <- NA
+  } else {
+    last_year <- get_past_year(start_date, 1, tf = "%Y")
+    end_year <- get_past_year(start_date, period, tf = "%Y")
+    years <- as.character(sort(seq(start_year, end_year)))
+  }
+
+  list(
+    start_year = start_year,
+    last_year = last_year,
+    end_year = end_year,
+    start_month = format(start_date, "%m"),
+    end_month = format(end_date, "%m"),
+    years = years,
+    period = period
+  )
+}

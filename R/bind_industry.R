@@ -112,7 +112,6 @@ check_ind21 <- function(.df) {
 }
 
 #' convert report_industry_name
-#'
 #' @param major string
 #' @param minor string
 #'
@@ -120,5 +119,5 @@ check_ind21 <- function(.df) {
 #' @export
 tt_convert_industry_name <- function(major, minor) {
   fixed_name <- function(name) stringr::str_replace(name, "^\\d{2}_", "")
-  dplyr::if_else(stringr::str_detect(minor, "全部產品"), fixed_name(major), fixed_name(minor))
+  dplyr::if_else(stringr::str_detect(minor, "\u5168\u90e8\u7522\u54c1"), fixed_name(major), fixed_name(minor))
 }

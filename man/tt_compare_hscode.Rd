@@ -13,6 +13,9 @@ tt_compare_hscode(x, y, sub = NULL)
 
 \item{sub}{integer. The last element to be replaced.}
 }
+\value{
+string
+}
 \description{
 Compare two hscode is the same
 }

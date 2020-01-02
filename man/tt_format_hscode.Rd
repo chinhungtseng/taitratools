@@ -20,6 +20,9 @@ tt_format_hscode(x, sub = NULL, start = "", end = "",
 
 \item{.order}{order}
 }
+\value{
+string
+}
 \description{
 format hscode
 }

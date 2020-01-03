@@ -1,15 +1,28 @@
+#' mof export summary by each country and each industry
+#'
+#' @description
+#' calculate mof export summary by each country and each industry
+#'
+#' @param start_date yyyy-mm
+#' @param end_date yyyy-mm
+#' @param period the period of cagr year
+#' @param country_list filter specified countries
+#' @param money usd or twd
+#' @param industry_type "all_industry", "industry21", "version1", "version2"
+#' @param destdir output directory
+#'
+#' @return a list contains output file name and data
+#' @export
+rpt_mof_export_summary <- function(start_date, end_date, period = 3,
+  country_list = NULL, money = "usd", industry_type = "all_industry", destdir = ".") {
 
-rpt_mof_export_summary_by_each_country_and_industry <- function(start_date, end_date, period = 3, country_list = NULL, money = "usd", destdir = ".") {
   stopifnot(validate_tt_read_mof(start_date, end_date, period, "export", money))
   stopifnot(dir.exists(destdir))
+  stopifnot(check_industry_type(industry_type))
 
   date_info <- tt_parse_date(start_date, end_date, period)
   mof_rawdata <- tt_vroom_mof(start_date, end_date, period = period, money = money, dep_month_cols = TRUE)
-
-  mof_data_with_ind <- mof_rawdata %>%
-    tt_grouped_sum(hscode, country, year) %>%
-    tt_bind_industry(col_more = TRUE, reports = "version2") %>%
-    tt_grouped_sum(type, major, minor, industry, country, year)
+  mof_data_with_ind <- tt_industry_grouped_sum(mof_rawdata, industry_type)$data
 
   mof_data_calculated <- mof_data_with_ind %>%
     tt_append_area() %>%
@@ -39,39 +52,33 @@ rpt_mof_export_summary_by_each_country_and_industry <- function(start_date, end_
     "\u4f54\u6bd4(%)"
   )
 
-  output_file_name <- paste0(
-    date_info$start_year, "\u5e74",
-    date_info$start_month, "-", date_info$end_month, "\u6708",
-    "\u81fa\u7063\u5c0d\u5404\u570b\u51fa\u53e3\u60c5\u52e2_", format(Sys.Date(), "%Y%m%d"), ".xlsx"
-  )
-
   outputs <- mof_data_calculated %>%
     split(.$country) %>%
-    purrr::map(~ .x %>%
+    purrr::map(~ {
+      .x %>%
         dplyr::mutate(share = cal_share(value, .[.$industry == "\u5168\u90e8\u7522\u54c1_\u5168\u90e8\u7522\u54c1", ][["value"]])) %>%
         tt_order_by_industry_for_reports(version = "version2") %>%
         dplyr::mutate(industry = tt_convert_industry_name(major, minor)) %>%
         dplyr::select(country, industry, value, growth_rate, cagr, share) %>%
         rlang::set_names(chinese_column_names)
-    )
+
+    }) %>%
+    purrr::reduce(outputs, dplyr::bind_rows)
 
   if (!is.null(destdir)) {
-    if (!is.null(country_list)) {
-      purrr::iwalk(outputs, ~ xlsx::write.xlsx(as.data.frame(.x), file.path(destdir, output_file_name),
-        sheetName = .y, row.names = FALSE, append = TRUE, showNA = FALSE))
-    } else {
-      xlsx::write.xlsx(as.data.frame(reduce(outputs, bind_rows)),
-        file.path(destdir, output_file_name), row.names = FALSE, append = FALSE, showNA = FALSE)
-    }
-
-    list(
-      filename = output_file_name,
-      data = purrr::reduce(outputs, bind_rows)
+    output_file_name <- paste0(
+      date_info$start_year, "\u5e74",
+      date_info$start_month, "-", date_info$end_month, "\u6708",
+      "\u81fa\u7063\u5c0d\u5404\u570b\u51fa\u53e3\u60c5\u52e2_", format(Sys.Date(), "%Y%m%d"), ".xlsx"
     )
+    readr::write_excel_csv(outputs,
+      file.path(destdir, output_file_name), na = "")
   } else {
-    list(
-      filename = "no output",
-      data = purrr::reduce(outputs, bind_rows)
-    )
+    output_file_name <- "no output"
   }
+
+  list(
+    filename = output_file_name,
+    data = outputs
+  )
 }

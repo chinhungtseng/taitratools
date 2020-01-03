@@ -24,8 +24,7 @@ Imports:
     tidyr (>= 1.0.0),
     tidyselect (>= 0.2.5),
     vroom (>= 1.0.2),
-    xml2 (>= 1.2.2),
-    xlsx (>= 0.6.1)
+    xml2 (>= 1.2.2)
 Suggests: 
     testthat (>= 2.2.1),
     roxygen2 (>= 6.1.1)

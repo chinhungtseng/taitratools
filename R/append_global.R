@@ -46,9 +46,9 @@ tt_append_area <- function(data) {
 }
 
 
-check_contain_global <- function(data) {
-  stopifnot("country" %in% names(data))
-  country_list <- unique(data$country)
+check_contain_global <- function(x) {
+  stopifnot("country" %in% names(x))
+  country_list <- unique(x$country)
   contain_word <- any(grepl(
     str2regex(c("\u5168\u7403", "world", "World"), start = "^", end = "$"),
     country_list

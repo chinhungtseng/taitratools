@@ -1,5 +1,9 @@
-NULL
-
+#' print_with_time
+#'
+#' @param message string
+#'
+#' @return NULL
+#' @export
 print_with_time <- function(message) {
   if (message == "=") {
     message <- paste0(rep("=", 80), collapse = "")
@@ -31,4 +35,26 @@ cleanup <- function(dir, pattern = "*") {
 
   files <- list.files(".", pattern = pattern)
   file.remove(files)
+}
+
+#' contain_any_keywords
+#'
+#' @param x object
+#' @param ... keywords
+#'
+#' @return logical
+#' @export
+contain_any_keywords <- function(x, ...) {
+  any(c(...) %in% x)
+}
+
+#' contain_all_keywords
+#'
+#' @param x object
+#' @param ... keywords
+#'
+#' @return logical
+#' @export
+contain_all_keywords <- function(x, ...) {
+  all(c(...) %in% x)
 }

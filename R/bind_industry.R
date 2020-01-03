@@ -121,3 +121,7 @@ tt_convert_industry_name <- function(major, minor) {
   fixed_name <- function(name) stringr::str_replace(name, "^\\d{2}_", "")
   dplyr::if_else(stringr::str_detect(minor, "\u5168\u90e8\u7522\u54c1"), fixed_name(major), fixed_name(minor))
 }
+
+check_industry_type <- function(x) {
+  contain_any_keywords(x, c("all_industry", "industry21", "version1", "version2"))
+}

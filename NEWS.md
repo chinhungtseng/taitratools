@@ -1,3 +1,14 @@
+# taitratools 1.0.5
+
+## New functions
+
+* `contain_any_keywords()`
+* `contain_all_keywords()`
+* `print_with_time()`
+* `tt_industry_grouped_sum()`
+* `tt_ext_world_value()`
+* `rpt_mof_export_summary()`
+
 # taitratools 1.0.4
 
 * Added a `NEWS.md` file to track changes to the package.

@@ -1,4 +1,4 @@
-# taitratools 1.0.5
+# taitratools 1.0.5 (in development)
 
 ## New functions
 
@@ -8,6 +8,11 @@
 * `tt_industry_grouped_sum()`
 * `tt_ext_world_value()`
 * `rpt_mof_export_summary()`
+* `tt_df_sub_hscode()`
+
+## Major changes
+
+* `tt_bind_industry()` variable `ind21` and `report` are deplicated. New support `industry_type` variable.
 
 # taitratools 1.0.4
 

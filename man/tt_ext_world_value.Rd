@@ -4,12 +4,14 @@
 \alias{tt_ext_world_value}
 \title{tt_ext_world_value}
 \usage{
-tt_ext_world_value(x, column_nm = NULL)
+tt_ext_world_value(x, column_nm = NULL, by_country = FALSE)
 }
 \arguments{
 \item{x}{data.frame}
 
 \item{column_nm}{column name}
+
+\item{by_country}{by country or not}
 }
 \value{
 numeric value

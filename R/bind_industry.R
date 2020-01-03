@@ -6,33 +6,26 @@
 #' @param type Filter specified type.
 #' @param major Filter specified major.
 #' @param minor Filter specified minor.
-#' @param ind21 Boolean, If TRUE, output industry 21 data.
-#' @param reports choose industry by different report version.
+#' @param industry_type "all_industry", "industry21", "version1", "version2"
 #' @param col_more append type, major, minor and industry columns.
-#' @param suppress TRUE or FALSE.
+#' @param verbose TRUE or FALSE.
 #'
 #' @return A data frame
 #'
 #' @export
-tt_bind_industry <- function(.df, sub = 11, index = NULL, type = NULL, major = NULL, minor = NULL, ind21 = FALSE, reports = NULL, col_more = FALSE, suppress = FALSE) {
+tt_bind_industry <- function(.df, sub = 11, index = NULL, type = NULL, major = NULL, minor = NULL,
+  industry_type = "all_industry", col_more = FALSE, verbose = TRUE) {
 
   tmp_tbl <- .industry_tbl_en
-  if (!all("hscode" %in% names(.df))) {stop("Input data.frame MUST contain a column named `hscode`!", call. = FALSE)}
-  stopifnot(!(ind21 & !is.null(reports)))
+  stop_if_df_not_contain(.df, c("hscode", "country", "year", "value"))
 
-  if (ind21) {
-    if (!check_ind21(tmp_tbl)) {stop(sprintf("Industry21 reference table may be changed. Please check and update `%s`!", tt_get_path("PATH_INDUSTRY")), call. = FALSE)}
-    tmp_tbl <- tmp_tbl[tmp_tbl[["index"]] %in% .tt_ind21_list, ]
-
-  } else if (!is.null(reports)) {
-    stopifnot(reports %in% c("version1", "version2"))
-    if (reports == "version1") {
-      tmp_tbl <- tmp_tbl[tmp_tbl[["index"]] %in% .tt_ind_list_verion_1, ]
-
-    } else if (reports == "version2") {
-      tmp_tbl <- tmp_tbl[tmp_tbl[["index"]] %in% .tt_ind_list_verion_2, ]
-    }
-
+  if (!is.null(industry_type)) {
+    stopifnot(check_industry_type(industry_type))
+    switch (industry_type,
+      industry21 = {tmp_tbl <- tmp_tbl[tmp_tbl[["index"]] %in% .tt_ind21_list, ]},
+      version1 = {tmp_tbl <- tmp_tbl[tmp_tbl[["index"]] %in% .tt_ind_list_verion_1, ]},
+      version2 = {tmp_tbl <- tmp_tbl[tmp_tbl[["index"]] %in% .tt_ind_list_verion_2, ]}
+    )
   } else {
     # Filter by index
     if (!is.null(index)) {
@@ -70,9 +63,8 @@ tt_bind_industry <- function(.df, sub = 11, index = NULL, type = NULL, major = N
   # Only keey `hscode` and `industry` columns
   tmp_tbl <- tmp_tbl[c("type", "major", "minor", "hscode", "industry")]
   output <- vector("list", length = nrow(tmp_tbl))
-
   for (i in seq_along(output)) {
-    if (!suppress) print_with_time(sprintf("%s (%3s/%3s)", tmp_tbl[i, ][["industry"]], i, length(output)))
+    if (verbose) print_with_time(sprintf("%s (%3s/%3s)", tmp_tbl[i, ][["industry"]], i, length(output)))
     output_pattern <- str2regex(tmp_tbl[i, ][["hscode"]], sep = ",", sub = sub)
     output_name <- tmp_tbl[i, ][["industry"]]
 
@@ -87,28 +79,14 @@ tt_bind_industry <- function(.df, sub = 11, index = NULL, type = NULL, major = N
       tmp_output$industry <- tmp_tbl[i, ][["industry"]]
     } else {
       tmp_output$index <- tmp_tbl[i, ][["index"]]
-      tmp_output$type <- tmp_tbl[i, ][["type"]]
+      tmp_output$type  <- tmp_tbl[i, ][["type" ]]
       tmp_output$major <- tmp_tbl[i, ][["major"]]
-      tmp_output$minor <-tmp_tbl[i, ][["minor"]]
+      tmp_output$minor <- tmp_tbl[i, ][["minor"]]
       tmp_output$industry <- tmp_tbl[i, ][["industry"]]
     }
     output[[i]] <- tmp_output
   }
   purrr::reduce(output, dplyr::bind_rows)
-}
-
-check_ind21 <- function(.df) {
-  # Package prestore industry 21 data.
-  valid_tbl <- .tt_ind21_tbl_en
-  # User's data.
-  check_tbl <- .df
-
-  # Extract industry 21 with same rule as prestore data.
-  check_tbl <- check_tbl[check_tbl[["index"]] %in% valid_tbl[["index"]], ]
-  check_tbl <- check_tbl[c("index", "industry", "reports_version_industry21_order")]
-
-  # If two data are same, return TRUE, else return FALSE.
-  return(identical(valid_tbl, check_tbl))
 }
 
 #' convert report_industry_name
@@ -124,4 +102,12 @@ tt_convert_industry_name <- function(major, minor) {
 
 check_industry_type <- function(x) {
   contain_any_keywords(x, c("all_industry", "industry21", "version1", "version2"))
+}
+
+stop_if_df_not_contain <- function(x, must_have) {
+  column_names <- names(x)
+  if (!contain_all_keywords(column_names, must_contain_col <- must_have)) {
+    missing_cols <- must_contain_col[!(must_contain_col %in% column_names)]
+    stop("Input data.frame MUST contain column named ", paste0("`", missing_cols, "`", collapse = ", "), "!", call. = FALSE)
+  }
 }

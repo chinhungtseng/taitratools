@@ -4,12 +4,17 @@
 \alias{tt_industry_grouped_sum}
 \title{tt_industry_grouped_sum}
 \usage{
-tt_industry_grouped_sum(x, industryType = "all_industry")
+tt_industry_grouped_sum(x, industry_type = "all_industry", sub = 11,
+  verbose = TRUE)
 }
 \arguments{
 \item{x}{data.frame}
 
-\item{industryType}{"all_industry", "industry21", "version1", "version2"}
+\item{industry_type}{"all_industry", "industry21", "version1", "version2"}
+
+\item{sub}{sub hscode}
+
+\item{verbose}{TRUE or FALSE}
 }
 \value{
 a list

@@ -5,8 +5,8 @@
 \title{Adding industry label to input data.frame}
 \usage{
 tt_bind_industry(.df, sub = 11, index = NULL, type = NULL,
-  major = NULL, minor = NULL, ind21 = FALSE, reports = NULL,
-  col_more = FALSE, suppress = FALSE)
+  major = NULL, minor = NULL, industry_type = "all_industry",
+  col_more = FALSE, verbose = TRUE)
 }
 \arguments{
 \item{.df}{A data frame. Input data.frame MUST contain `hscode` column!}
@@ -21,13 +21,11 @@ tt_bind_industry(.df, sub = 11, index = NULL, type = NULL,
 
 \item{minor}{Filter specified minor.}
 
-\item{ind21}{Boolean, If TRUE, output industry 21 data.}
-
-\item{reports}{choose industry by different report version.}
+\item{industry_type}{"all_industry", "industry21", "version1", "version2"}
 
 \item{col_more}{append type, major, minor and industry columns.}
 
-\item{suppress}{TRUE or FALSE.}
+\item{verbose}{TRUE or FALSE.}
 }
 \value{
 A data frame

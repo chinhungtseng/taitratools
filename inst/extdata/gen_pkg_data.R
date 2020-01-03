@@ -13,7 +13,10 @@ tt_update_data <- function() {
   names(.tt_source_path) <- tmp_path$name
 
   # industry data -----------------------------
-  .industry_tbl <- tt_read_table(tt_get_path("PATH_INDUSTRY"))
+  .industry_tbl <- tt_read_table(tt_get_path("PATH_INDUSTRY")) %>%
+    dplyr::mutate_at(dplyr::vars("reports_version_industry21", "reports_version_1", "reports_version_2"), list(~ tidyr::replace_na(., 0)))
+
+
   .industry_tbl_en <- rlang::set_names(.industry_tbl, c("index", "type", "major", "minor", "hscode6", "hscode11", "hscode_dights",
     "hscode", "industry", "reports_version_1", "reports_version_1_order", "reports_version_2",
     "reports_version_2_order", "reports_version_2_ind_name", "reports_version_industry21", "reports_version_industry21_order"))

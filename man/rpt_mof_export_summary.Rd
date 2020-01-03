@@ -5,8 +5,8 @@
 \title{mof export summary by each country and each industry}
 \usage{
 rpt_mof_export_summary(start_date, end_date, period = 3,
-  country_list = NULL, money = "usd", industry_type = "all_industry",
-  destdir = ".")
+  sub_hs_digits = 11, country_list = NULL, money = "usd",
+  industry_type = "all_industry", destdir = ".", verbose = TRUE)
 }
 \arguments{
 \item{start_date}{yyyy-mm}
@@ -15,6 +15,8 @@ rpt_mof_export_summary(start_date, end_date, period = 3,
 
 \item{period}{the period of cagr year}
 
+\item{sub_hs_digits}{hscode subset}
+
 \item{country_list}{filter specified countries}
 
 \item{money}{usd or twd}
@@ -22,6 +24,8 @@ rpt_mof_export_summary(start_date, end_date, period = 3,
 \item{industry_type}{"all_industry", "industry21", "version1", "version2"}
 
 \item{destdir}{output directory}
+
+\item{verbose}{TRUE or FALSE}
 }
 \value{
 a list contains output file name and data

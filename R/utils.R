@@ -58,3 +58,13 @@ contain_any_keywords <- function(x, ...) {
 contain_all_keywords <- function(x, ...) {
   all(c(...) %in% x)
 }
+
+is_positive <- function(x) {
+  stopifnot(is.numeric(x))
+  x >= 0
+}
+
+is_negative <- function(x) {
+  stopifnot(is.numeric(x))
+  x < 0
+}

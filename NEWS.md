@@ -7,12 +7,13 @@
 * `print_with_time()`
 * `tt_industry_grouped_sum()`
 * `tt_ext_world_value()`
-* `rpt_mof_export_summary()`
 * `tt_df_sub_hscode()`
 * `tt_df_filter_top_and_bottom_n()`
 * `tt_parse_hscode()`
 * `tt_df_mutate_chinese_hscode()`
 * `rpt_mof_export_top_n_product()`
+* `rpt_mof_export_summary()`
+* `rpt_mof_summary_dev()`
 
 ## Major changes
 

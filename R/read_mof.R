@@ -16,7 +16,9 @@
 #' @return data.frame
 #' @export
 tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL, dep_month_cols = FALSE, fixed_cny_nm = FALSE, suppress = FALSE, source_path = "SOURCE_MOF"){
-  stopifnot(validate_tt_read_mof(start_date, end_date, period, direct, money))
+  stopifnot(validate_tt_read_mof(start_date, end_date, period))
+  direct <- match.arg(direct, c("export", "import"))
+  money <- match.arg(money, c("usd", "twd"))
 
   period_list <- period_month(ym2date(start_date), ym2date(end_date), "%Y-%m")
 
@@ -68,7 +70,7 @@ tt_read_mof <- function(start_date, end_date, period = 0, direct = "export", mon
   tmp_df
 }
 
-validate_tt_read_mof <- function(start_date, end_date, period, direct, money) {
+validate_tt_read_mof <- function(start_date, end_date, period) {
   if (ym2date(end_date) >= ym2date(format(Sys.Date(), "%Y-%m"))) {
     stop(paste0("No `", end_date, "` data!"), call. = FALSE)
   }
@@ -78,9 +80,6 @@ validate_tt_read_mof <- function(start_date, end_date, period, direct, money) {
   }
   stopifnot(validate_date(start_date), validate_date(end_date))
   stopifnot(is.numeric(period))
-  stopifnot(direct %in% c("export", "import"))
-  stopifnot(money %in% c("usd", "twd"))
-
   TRUE
 }
 
@@ -129,7 +128,9 @@ fixed_country_names <- function(.tmp_df) {
 #' @return data.frame
 #' @export
 tt_vroom_mof <- function(start_date, end_date, period = 0, direct = "export", money = "usd", columns = NULL, dep_month_cols = FALSE, fixed_cny_nm = FALSE, source_path = "SOURCE_MOF"){
-  stopifnot(validate_tt_read_mof(start_date, end_date, period, direct, money))
+  stopifnot(validate_tt_read_mof(start_date = start_date, end_date = end_date, period = period))
+  direct <- match.arg(direct, c("export", "import"))
+  money <- match.arg(money, c("usd", "twd"))
 
   period_list <- period_month(ym2date(start_date), ym2date(end_date), "%Y-%m")
 

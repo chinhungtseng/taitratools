@@ -1,5 +1,20 @@
+#' rpt_mof_export_top_n_product
+#'
+#' @param start_date start_date
+#' @param end_date end_date
+#' @param period period
+#' @param sub_hs_digits hscode digits
+#' @param n top n
+#' @param country_list country list
+#' @param money usd or twd
+#' @param industry_type `all_industry` or `industry21` or `version1` or `version2`
+#' @param verbose verbose
+#'
+#' @return list
+#' @export
 rpt_mof_export_top_n_product <- function(start_date, end_date, period = 3, sub_hs_digits = 11, n = 3,
   country_list = NULL, money = "usd", industry_type = "all_industry", verbose = TRUE) {
+
   date_info <- tt_parse_date(start_date, end_date, period)
   if (money == "usd") {
     currency <- "\u5343\u7f8e\u5143"
@@ -10,7 +25,7 @@ rpt_mof_export_top_n_product <- function(start_date, end_date, period = 3, sub_h
   tmp_data <- mof_rawdata %>%
     tt_df_sub_hscode(end = sub_hs_digits) %>%
     tt_append_area() %>%
-    tt_bind_industry(sub = sub_hs_digits, industry_type = "industry21", verbose = verbose) %>%
+    tt_bind_industry(sub = sub_hs_digits, industry_type = industry_type, verbose = verbose) %>%
     tt_spread_value(by = "year") %>%
     dplyr::mutate(id = paste0(country, "-", industry))
 
@@ -34,16 +49,17 @@ rpt_mof_export_top_n_product <- function(start_date, end_date, period = 3, sub_h
     tt_df_mutate_chinese_hscode() %>%
     dplyr::mutate(info = paste0(
       hscode, ",", hscode_ch, ",",
-      "出口額:", !!rlang::sym(date_info$start_year), currency, ",",
-      "成長率:", growth_rate, "%", ",",
-      "佔比:", share, "%", ",",
-      "差異:", difference, currency
+      "\u51fa\u53e3\u984d:", !!rlang::sym(date_info$start_year), currency, ",",
+      "\u6210\u9577\u7387:", growth_rate, "%", ",",
+      "\u4f54\u6bd4:", share, "%", ",",
+      "\u5dee\u7570:", difference, currency
     )) %>%
     dplyr::select(id, info, sub_info) %>%
     dplyr::filter(!is.na(sub_info)) %>%
     tidyr::complete(id, sub_info) %>%
     tidyr::spread(sub_info, info) %>%
-    tidyr::separate(id, into = c("country", "industry"), sep = "-")
+    tidyr::separate(id, into = c("country", "industry"), sep = "-") %>%
+    dplyr::select(country, industry, dplyr::contains("\u589e\u984d"), dplyr::contains("\u6e1b\u984d"))
 
   if (!is.null(country_list)) {
     tmp_data_by_id_info <- tmp_data_by_id_info %>% dplyr::filter(country %in% country_list)
@@ -62,17 +78,17 @@ get_pn_label <- function(x, n) {
   # positive
   if (plen != 0) {
     if (plen >= n) {
-      output[seq_len(n)] <- paste0("增額", seq_len(n))
+      output[seq_len(n)] <- paste0("\u589e\u984d", seq_len(n))
     } else if (plen < n) {
-      output[seq_along(plen)] <- paste0("增額", seq_len(plen))
+      output[seq_along(plen)] <- paste0("\u589e\u984d", seq_len(plen))
     }
   }
   # negative
   if (nlen != 0) {
     if (nlen >= n) {
-      output[length(output):(length(output) - n + 1)] <- paste0("減額", seq_len(n))
+      output[length(output):(length(output) - n + 1)] <- paste0("\u6e1b\u984d", seq_len(n))
     } else if (nlen < n) {
-      output[length(output):(length(output) - nlen + 1)] <- paste0("減額", seq_len(nlen))
+      output[length(output):(length(output) - nlen + 1)] <- paste0("\u6e1b\u984d", seq_len(nlen))
     }
   }
   output

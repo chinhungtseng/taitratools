@@ -31,7 +31,7 @@ devtools::install_github("chinhungtseng/taitratools")
 ```
 ## Example
 
-### get data source path
+### Get data source path
 
 ```{r, include=FALSE}
 library(taitratools)
@@ -39,12 +39,12 @@ library(taitratools)
 tt_ls()
 ```
 
-Get source path with `tt_get_path(PATH NAME)`
-Read file with `tt_read_table`
+### Read data
+
+* Get source path with `tt_get_path(PATH NAME)`
+* Read file with `tt_read_table`
 
 ```{r}
-library(taitratools)
-
 path <- tt_get_path("PATH_AREA")
 path
 
@@ -52,73 +52,70 @@ area_tbl <- tt_read_table(path)
 head(area_tbl)
 ```
 
-### MOF 
+* read mof data
+  * `tt_vroom_mof()`
+  * `tt_read_mof()`
 
-This is a basic example which shows you how to read data from MOF:
+This is a basic example which shows you how to read data from MOF, 
+if you want to read data with past year, you can set `period = N`
 
 ```{r}
 # Default is `export` and `usd`
-sample1 <- tt_read_mof("2019-01", "2019-02")
-head(sample1)
+mof_data <- tt_vroom_mof("2019-01", "2019-02", period = 1, direct = "export", money = "usd", dep_month_cols = TRUE)
+head(mof_data)
 ```
 
-If you want to read data with past year, you can set `period = N`,
+### Data Transform
+
+#### Industry data transforming
+* `tt_bind_industry()`
+* `tt_industry_grouped_sum()`
 
 ```{r}
-# Read this year and last year, set period = 1
-sample2 <- tt_read_mof("2019-01", "2019-02", period = 1)
-head(sample2)
-```
-
-Read mof data and input specified industry
-
-```{r}
-ind_sample1 <- rpt_mof_industry_region("2019-01", "2019-03", "手工具", "country")
-# The output is a list.
-head(ind_sample1[[1]])
-
-ind_sample2 <- rpt_mof_industry_region("2019-01", "2019-03", "手工具", "area")
-head(ind_sample2[[2]])
-```
-
-### Other functions
-
-```{r}
-# Create a sample data
-sample3 <- tt_read_mof("2019-01", "2019-03", period = 1)
-
-# output by year
-output3_1 <- rpt_country_value(sample3, by = "year")
-
-head(output3_1)
-
-# output by month
-output3_2 <- rpt_country_value(sample3, by = "month")
-
-head(output3_2)
+# industry_type => "all_industry", "industry21", "version1", "version2"
+mof_data %>% 
+  tt_bind_industry(sub = 8, col_more = TRUE, industry_type = "industry21", verbose = FALSE) %>% 
+  head(5)
 ```
 
 ```{r}
-# Create a sample data
-sample4 <- tt_read_mof("2019-01", "2019-03", period = 1)
+mof_industry_data <- mof_data %>% 
+  tt_industry_grouped_sum(industry_type = "industry21", sub = 6, verbose = FALSE)
 
-# output by year
-head(rpt_area_value(sample4, by = "year"))
-
-# output by month
-head(rpt_area_value(sample4, by = "month"))
+str(mof_industry_data)
+head(mof_industry_data$data, 5)
 ```
 
+#### Area data transforming
+* `tt_bind_area()`
+* `tt_append_global()`
+* `tt_append_area()`
 
+Adding a area column 
+```{r}
+mof_industry_data$data %>% tt_bind_area() %>% head(5)
+```
 
+Append area data
+```{r}
+mof_industry_data$data %>% tt_append_area() %>% head(5)
+```
 
+Append only world data
+```{r}
+mof_industry_data$data %>% tt_append_global() %>% head(5)
+```
 
+#### Others
+* `tt_grouped_sum()`
+* `tt_df_sub_hscode()`
 
-
-
-
-
-
-
-
+grouped data and sum the value
+```{r}
+mof_data %>% tt_grouped_sum(country, year, by = "value") %>% head(5)
+mof_data %>% tt_grouped_sum(year, month, by = "count") %>% head(5)
+mof_data %>%
+  tt_bind_industry(industry_type = "industry21", verbose = FALSE) %>% 
+  tt_grouped_sum(industry, country, year, by = "weight") %>% head(5)
+```
 

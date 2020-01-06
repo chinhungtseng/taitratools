@@ -21,14 +21,16 @@ devtools::install_github("chinhungtseng/taitratools")
 
 ## Example
 
-### get data source path
+### Get data source path
 
-Get source path with `tt_get_path(PATH NAME)` Read file with
-`tt_read_table`
+### Read data
+
+  - Get source path with `tt_get_path(PATH NAME)`
+  - Read file with `tt_read_table`
+
+<!-- end list -->
 
 ``` r
-library(taitratools)
-
 path <- tt_get_path("PATH_AREA")
 path
 #> [1] "//172.26.1.102/dstore/重要資料/area.xlsx"
@@ -46,179 +48,163 @@ head(area_tbl)
 #> 6 南美洲   厄瓜多,巴西,巴拉圭,其他南美洲地區,委內瑞拉,法屬圭亞那,阿根廷,玻利維亞,哥倫比亞,烏拉圭,秘魯,智利,圭亞那,蘇利南,福~
 ```
 
-### MOF
+  - read mof data
+      - `tt_vroom_mof()`
+      - `tt_read_mof()`
 
-This is a basic example which shows you how to read data from MOF:
+This is a basic example which shows you how to read data from MOF, if
+you want to read data with past year, you can set `period = N`
 
 ``` r
 # Default is `export` and `usd`
-sample1 <- tt_read_mof("2019-01", "2019-02")
-#> [2019-10-25 12:51:37] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-25 12:51:38] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-head(sample1)
-#> # A tibble: 6 x 10
+mof_data <- tt_vroom_mof("2019-01", "2019-02", period = 1, direct = "export", money = "usd", dep_month_cols = TRUE)
+head(mof_data)
+#> # A tibble: 6 x 11
 #>   hscode hscode_ch hscode_en country count count_unit weight weight_unit
 #>   <chr>  <chr>     <chr>     <chr>   <dbl> <chr>       <dbl> <chr>      
-#> 1 01061~ 海豹、海獅及海象~ " Seals,~ 中國大陸~     0 "-   "        176 "KGM "     
-#> 2 01061~ 松鼠      " Squirr~ 馬來西亞~     0 "-   "          3 "KGM "     
-#> 3 01062~ 鱉（甲魚）及苗~ " Soft-s~ 中國大陸~     0 "-   "      19839 "KGM "     
-#> 4 01062~ 其他陸龜（象龜）~ " Other ~ 菲律賓      0 "-   "         50 "KGM "     
-#> 5 01063~ 鸚鵡目﹝包括鸚鵡~ " Psitta~ 伊拉克      0 "-   "        105 "KGM "     
-#> 6 01063~ 鸚鵡目﹝包括鸚鵡~ " Psitta~ 孟加拉      0 "-   "         50 "KGM "     
-#> # ... with 2 more variables: value <dbl>, year <chr>
+#> 1 01061~ 海豹、海獅及海象~ Seals, s~ 中國大陸~     0 -             176 KGM        
+#> 2 01061~ 松鼠      Squirrel~ 馬來西亞~     0 -               3 KGM        
+#> 3 01062~ 鱉（甲魚）及苗~ Soft-she~ 中國大陸~     0 -           19839 KGM        
+#> 4 01062~ 其他陸龜（象龜）~ Other to~ 菲律賓      0 -              50 KGM        
+#> 5 01063~ 鸚鵡目﹝包括鸚鵡~ Psittaci~ 伊拉克      0 -             105 KGM        
+#> 6 01063~ 鸚鵡目﹝包括鸚鵡~ Psittaci~ 孟加拉      0 -              50 KGM        
+#> # ... with 3 more variables: value <dbl>, year <chr>, month <chr>
 ```
 
-If you want to read data with past year, you can set `period = N`,
+### Data Transform
+
+#### Industry data transforming
+
+  - `tt_bind_industry()`
+  - `tt_industry_grouped_sum()`
+
+<!-- end list -->
 
 ``` r
-# Read this year and last year, set period = 1
-sample2 <- tt_read_mof("2019-01", "2019-02", period = 1)
-#> [2019-10-25 12:51:38] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-25 12:51:38] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-#> [2019-10-25 12:51:38] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
-#> [2019-10-25 12:51:39] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
-head(sample2)
-#> # A tibble: 6 x 10
+# industry_type => "all_industry", "industry21", "version1", "version2"
+mof_data %>% 
+  tt_bind_industry(sub = 8, col_more = TRUE, industry_type = "industry21", verbose = FALSE) %>% 
+  head(5)
+#> # A tibble: 5 x 15
 #>   hscode hscode_ch hscode_en country count count_unit weight weight_unit
 #>   <chr>  <chr>     <chr>     <chr>   <dbl> <chr>       <dbl> <chr>      
-#> 1 01061~ 海豹、海獅及海象~ " Seals,~ 中國大陸~     0 "-   "        176 "KGM "     
-#> 2 01061~ 松鼠      " Squirr~ 馬來西亞~     0 "-   "          3 "KGM "     
-#> 3 01062~ 鱉（甲魚）及苗~ " Soft-s~ 中國大陸~     0 "-   "      19839 "KGM "     
-#> 4 01062~ 其他陸龜（象龜）~ " Other ~ 菲律賓      0 "-   "         50 "KGM "     
-#> 5 01063~ 鸚鵡目﹝包括鸚鵡~ " Psitta~ 伊拉克      0 "-   "        105 "KGM "     
-#> 6 01063~ 鸚鵡目﹝包括鸚鵡~ " Psitta~ 孟加拉      0 "-   "         50 "KGM "     
-#> # ... with 2 more variables: value <dbl>, year <chr>
-```
-
-Read mof data and input specified industry
-
-``` r
-ind_sample1 <- rpt_mof_industry_region("2019-01", "2019-03", "手工具", "country")
-#> [2019-10-25 12:51:39] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-25 12:51:40] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-#> [2019-10-25 12:51:40] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
-#> [2019-10-25 12:51:40] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
-#> [2019-10-25 12:51:40] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
-#> [2019-10-25 12:51:40] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
-#> [2019-10-25 12:51:41] 手工具_全部產品 (  1/  4)
-#> [2019-10-25 12:51:41] 手工具_非動力手工具 (  2/  4)
-#> [2019-10-25 12:51:42] 手工具_動力手工具(氣動類) (  3/  4)
-#> [2019-10-25 12:51:42] 手工具_動力手工具(電動類) (  4/  4)
-#> [2019-10-25 12:51:42] 手工具_全部產品
-#> [2019-10-25 12:51:42] 手工具_非動力手工具
-#> [2019-10-25 12:51:42] 手工具_動力手工具(氣動類)
-#> [2019-10-25 12:51:42] 手工具_動力手工具(電動類)
-# The output is a list.
-head(ind_sample1[[1]])
-#> # A tibble: 6 x 8
-#>   country  `2018` `2019` difference growth_rate shared industry   period   
-#>   <chr>     <dbl>  <dbl>      <dbl>       <dbl>  <dbl> <chr>      <chr>    
-#> 1 全球     926671 921305      -5366      -0.579 100    手工具_全部產品~ 2019-01 ~
-#> 2 美國     307267 325853      18586       6.05   35.4  手工具_全部產品~ 2019-01 ~
-#> 3 中國大陸 106101  84563     -21538     -20.3     9.18 手工具_全部產品~ 2019-01 ~
-#> 4 德國      55770  61686       5916      10.6     6.70 手工具_全部產品~ 2019-01 ~
-#> 5 日本      50204  57659       7455      14.8     6.26 手工具_全部產品~ 2019-01 ~
-#> 6 荷蘭      33303  31416      -1887      -5.67    3.41 手工具_全部產品~ 2019-01 ~
-
-ind_sample2 <- rpt_mof_industry_region("2019-01", "2019-03", "手工具", "area")
-#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
-#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
-#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
-#> [2019-10-25 12:51:42] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
-#> [2019-10-25 12:51:43] 手工具_全部產品 (  1/  4)
-#> [2019-10-25 12:51:43] 手工具_非動力手工具 (  2/  4)
-#> [2019-10-25 12:51:43] 手工具_動力手工具(氣動類) (  3/  4)
-#> [2019-10-25 12:51:43] 手工具_動力手工具(電動類) (  4/  4)
-#> [2019-10-25 12:51:43] 手工具_全部產品
-#> [2019-10-25 12:51:44] 手工具_非動力手工具
-#> [2019-10-25 12:51:44] 手工具_動力手工具(氣動類)
-#> [2019-10-25 12:51:44] 手工具_動力手工具(電動類)
-head(ind_sample2[[2]])
-#> # A tibble: 6 x 8
-#>   area   `2018` `2019` difference growth_rate shared industry    period    
-#>   <chr>   <dbl>  <dbl>      <dbl>       <dbl>  <dbl> <chr>       <chr>     
-#> 1 全球   683846 685060       1214       0.178  100   手工具_非動力手工具~ 2019-01 t~
-#> 2 北美洲 206802 227110      20308       9.82    33.2 手工具_非動力手工具~ 2019-01 t~
-#> 3 歐洲   219097 221675       2578       1.18    32.4 手工具_非動力手工具~ 2019-01 t~
-#> 4 歐盟   199249 198286       -963      -0.483   28.9 手工具_非動力手工具~ 2019-01 t~
-#> 5 亞洲   202860 185302     -17558      -8.66    27.0 手工具_非動力手工具~ 2019-01 t~
-#> 6 新南向  71146  73190       2044       2.87    10.7 手工具_非動力手工具~ 2019-01 t~
-```
-
-### Other functions
-
-``` r
-# Create a sample data
-sample3 <- tt_read_mof("2019-01", "2019-03", period = 1)
-#> [2019-10-25 12:51:44] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-25 12:51:44] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-#> [2019-10-25 12:51:44] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
-#> [2019-10-25 12:51:44] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
-#> [2019-10-25 12:51:44] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
-#> [2019-10-25 12:51:45] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
-
-# output by year
-output3_1 <- rpt_country_value(sample3, by = "year")
-
-head(output3_1)
-#> # A tibble: 6 x 3
-#>   country    `2018`   `2019`
-#>   <chr>       <dbl>    <dbl>
-#> 1 全球     79223812 75921015
-#> 2 中國大陸 23176617 20290969
-#> 3 美國      8852361 10589106
-#> 4 香港      9621928  8804760
-#> 5 日本      5446953  5727070
-#> 6 南韓      3441669  4109946
-
-# output by month
-output3_2 <- rpt_country_value(sample3, by = "month")
-
-head(output3_2)
-#> # A tibble: 6 x 7
-#>   country  `2018-01` `2018-02` `2018-03` `2019-01` `2019-02` `2019-03`
-#>   <chr>        <dbl>     <dbl>     <dbl>     <dbl>     <dbl>     <dbl>
-#> 1 全球      27261431  22169528  29792853  27121493  20319551  28479971
-#> 2 中國大陸   7614588   5809144   9752885   7133549   5285370   7872050
-#> 3 美國       3130234   2611255   3110872   3793811   2887835   3907460
-#> 4 香港       3509566   2503032   3609330   3131667   2171534   3501559
-#> 5 日本       1879262   1571175   1996516   2129904   1536020   2061146
-#> 6 南韓       1270958    958835   1211876   1524769   1033680   1551497
+#> 1 01061~ 海豹、海獅及海象~ Seals, s~ 中國大陸~     0 -             176 KGM        
+#> 2 01061~ 松鼠      Squirrel~ 馬來西亞~     0 -               3 KGM        
+#> 3 01062~ 鱉（甲魚）及苗~ Soft-she~ 中國大陸~     0 -           19839 KGM        
+#> 4 01062~ 其他陸龜（象龜）~ Other to~ 菲律賓      0 -              50 KGM        
+#> 5 01063~ 鸚鵡目﹝包括鸚鵡~ Psittaci~ 伊拉克      0 -             105 KGM        
+#> # ... with 7 more variables: value <dbl>, year <chr>, month <chr>,
+#> #   type <chr>, major <chr>, minor <chr>, industry <chr>
 ```
 
 ``` r
-# Create a sample data
-sample4 <- tt_read_mof("2019-01", "2019-03", period = 1)
-#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-01.tsv
-#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-02.tsv
-#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2019-03.tsv
-#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-01.tsv
-#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-02.tsv
-#> [2019-10-25 12:51:46] //172.26.1.102/dstore/Projects/data/mof-export-usd/2018-03.tsv
+mof_industry_data <- mof_data %>% 
+  tt_industry_grouped_sum(industry_type = "industry21", sub = 6, verbose = FALSE)
 
-# output by year
-head(rpt_area_value(sample4, by = "year"))
-#> # A tibble: 6 x 3
-#>   area     `2018`   `2019`
-#>   <chr>     <dbl>    <dbl>
-#> 1 全球   79223812 75921015
-#> 2 亞洲   59079781 54112189
-#> 3 新南向 16474004 14754963
-#> 4 東協   14105461 12451742
-#> 5 北美洲  9463534 11221635
-#> 6 歐洲    7473543  7413348
+str(mof_industry_data)
+#> List of 2
+#>  $ industry_type: chr "industry21"
+#>  $ data         :Classes 'tbl_df', 'tbl' and 'data.frame':   6152 obs. of  7 variables:
+#>   ..$ type    : chr [1:6152] "全部產品" "全部產品" "全部產品" "全部產品" ...
+#>   ..$ major   : chr [1:6152] "全部產品" "全部產品" "全部產品" "全部產品" ...
+#>   ..$ minor   : chr [1:6152] "全部產品" "全部產品" "全部產品" "全部產品" ...
+#>   ..$ industry: chr [1:6152] "全部產品_全部產品" "全部產品_全部產品" "全部產品_全部產品" "全部產品_全部產品" ...
+#>   ..$ country : chr [1:6152] "千里達及托巴哥" "千里達及托巴哥" "土耳其" "土耳其" ...
+#>   ..$ year    : chr [1:6152] "2018" "2019" "2018" "2019" ...
+#>   ..$ value   : num [1:6152] 6282 4776 271304 144290 166 ...
+head(mof_industry_data$data, 5)
+#> # A tibble: 5 x 7
+#>   type     major    minor    industry          country        year   value
+#>   <chr>    <chr>    <chr>    <chr>             <chr>          <chr>  <dbl>
+#> 1 全部產品 全部產品 全部產品 全部產品_全部產品 千里達及托巴哥 2018    6282
+#> 2 全部產品 全部產品 全部產品 全部產品_全部產品 千里達及托巴哥 2019    4776
+#> 3 全部產品 全部產品 全部產品 全部產品_全部產品 土耳其         2018  271304
+#> 4 全部產品 全部產品 全部產品 全部產品_全部產品 土耳其         2019  144290
+#> 5 全部產品 全部產品 全部產品 全部產品_全部產品 土庫曼         2018     166
+```
 
-# output by month
-head(rpt_area_value(sample4, by = "month"))
-#> # A tibble: 6 x 7
-#>   area   `2018-01` `2018-02` `2018-03` `2019-01` `2019-02` `2019-03`
-#>   <chr>      <dbl>     <dbl>     <dbl>     <dbl>     <dbl>     <dbl>
-#> 1 全球    27261431  22169528  29792853  27121493  20319551  28479971
-#> 2 亞洲    20356166  16020030  22703585  19182961  14419201  20510027
-#> 3 新南向   5868901   4735744   5869359   5095198   4255484   5404281
-#> 4 東協     5064797   4025488   5015176   4289785   3639528   4522429
-#> 5 北美洲   3337289   2803944   3322301   4040667   3045491   4135477
-#> 6 歐洲     2476206   2362397   2634940   2733210   1989521   2690617
+#### Area data transforming
+
+  - `tt_bind_area()`
+  - `tt_append_global()`
+  - `tt_append_area()`
+
+Adding a area column
+
+``` r
+mof_industry_data$data %>% tt_bind_area() %>% head(5)
+#> # A tibble: 5 x 8
+#>   type     major    minor   industry        country      year   value area 
+#>   <chr>    <chr>    <chr>   <chr>           <chr>        <chr>  <dbl> <chr>
+#> 1 全部產品 全部產品 全部產品~ 全部產品_全部產品~ 千里達及托巴哥~ 2018    6282 全球 
+#> 2 全部產品 全部產品 全部產品~ 全部產品_全部產品~ 千里達及托巴哥~ 2019    4776 全球 
+#> 3 全部產品 全部產品 全部產品~ 全部產品_全部產品~ 土耳其       2018  271304 全球 
+#> 4 全部產品 全部產品 全部產品~ 全部產品_全部產品~ 土耳其       2019  144290 全球 
+#> 5 全部產品 全部產品 全部產品~ 全部產品_全部產品~ 土庫曼       2018     166 全球
+```
+
+Append area data
+
+``` r
+mof_industry_data$data %>% tt_append_area() %>% head(5)
+#> # A tibble: 5 x 7
+#>   type     major    minor    industry          country    year    value
+#>   <chr>    <chr>    <chr>    <chr>             <chr>      <chr>   <dbl>
+#> 1 全部產品 全部產品 全部產品 全部產品_全部產品 大洋洲     2018   622281
+#> 2 全部產品 全部產品 全部產品 全部產品_全部產品 大洋洲     2019   615697
+#> 3 全部產品 全部產品 全部產品 全部產品_全部產品 中東及近東 2018  1189816
+#> 4 全部產品 全部產品 全部產品 全部產品_全部產品 中東及近東 2019   859674
+#> 5 全部產品 全部產品 全部產品 全部產品_全部產品 中美洲     2018   493986
+```
+
+Append only world data
+
+``` r
+mof_industry_data$data %>% tt_append_global() %>% head(5)
+#> # A tibble: 5 x 7
+#>   type        major         minor  industry           country year    value
+#>   <chr>       <chr>         <chr>  <chr>              <chr>   <chr>   <dbl>
+#> 1 全部產品    全部產品      全部產品~ 全部產品_全部產品  全球    2018   4.94e7
+#> 2 全部產品    全部產品      全部產品~ 全部產品_全部產品  全球    2019   4.74e7
+#> 3 財政部定義產業~ 01_活動物,動物產品~ 全部產品~ 01_活動物,動物產品_全部產品~ 全球    2018   3.47e5
+#> 4 財政部定義產業~ 01_活動物,動物產品~ 全部產品~ 01_活動物,動物產品_全部產品~ 全球    2019   3.18e5
+#> 5 財政部定義產業~ 02_植物產品   全部產品~ 02_植物產品_全部產品~ 全球    2018   1.14e5
+```
+
+#### Others
+
+  - `tt_grouped_sum()`
+  - `tt_df_sub_hscode()`
+
+grouped data and sum the value
+
+``` r
+mof_data %>% tt_grouped_sum(country, year, by = "value") %>% head(5)
+#> # A tibble: 5 x 3
+#>   country        year   value
+#>   <chr>          <chr>  <dbl>
+#> 1 千里達及托巴哥 2018    6282
+#> 2 千里達及托巴哥 2019    4776
+#> 3 土耳其         2018  271304
+#> 4 土耳其         2019  144290
+#> 5 土庫曼         2018     166
+mof_data %>% tt_grouped_sum(year, month, by = "count") %>% head(5)
+#> # A tibble: 4 x 3
+#>   year  month        count
+#>   <chr> <chr>        <dbl>
+#> 1 2018  01    115226513407
+#> 2 2018  02     92634718086
+#> 3 2019  01    107429262706
+#> 4 2019  02     73474545476
+mof_data %>%
+  tt_bind_industry(industry_type = "industry21", verbose = FALSE) %>% 
+  tt_grouped_sum(industry, country, year, by = "weight") %>% head(5)
+#> # A tibble: 5 x 4
+#>   industry                    country        year  weight
+#>   <chr>                       <chr>          <chr>  <dbl>
+#> 1 01_活動物,動物產品_全部產品 千里達及托巴哥 2018  786310
+#> 2 01_活動物,動物產品_全部產品 千里達及托巴哥 2019  306143
+#> 3 01_活動物,動物產品_全部產品 土耳其         2019    9026
+#> 4 01_活動物,動物產品_全部產品 大溪地         2018   16550
+#> 5 01_活動物,動物產品_全部產品 大溪地         2019   15207
 ```

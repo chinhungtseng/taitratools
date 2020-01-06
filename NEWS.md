@@ -2,16 +2,16 @@
 
 ## New functions
 
-* `contain_any_keywords()`
-* `contain_all_keywords()`
-* `print_with_time()`
-* `tt_industry_grouped_sum()`
-* `tt_ext_world_value()`
-* `tt_df_sub_hscode()`
-* `tt_df_filter_top_and_bottom_n()`
-* `tt_parse_hscode()`
-* `tt_df_mutate_chinese_hscode()`
-* `rpt_mof_export_top_n_product()`
+* `contain_any_keywords()` check a character vector contain specified words 
+* `contain_all_keywords()` check a character vector contain all specified words 
+* `print_with_time()` fancy print
+* `tt_industry_grouped_sum()` input data bind industry and grouped sum the value
+* `tt_ext_world_value()` 
+* `tt_df_sub_hscode()` cut the length of hscode, and sum the value
+* `tt_df_filter_top_and_bottom_n()` filter a data.frame top n and bottom n rows
+* `tt_parse_hscode()` input hscode, output hscode chinese name
+* `tt_df_mutate_chinese_hscode()` same as `tt_parse_hscode()` but input is data.frame, output data.frame
+* `rpt_mof_export_top_n_product()` 
 * `rpt_mof_export_summary()`
 * `rpt_mof_summary_dev()`
 

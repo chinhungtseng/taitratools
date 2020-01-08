@@ -51,7 +51,7 @@ rpt_mof_summary_dev <- function(start_date, end_date, period = 3, sub_hs_digits 
   tmp_data_by_id_info <- tmp_data_by_id %>%
     purrr::map(~ {
       .x %>%
-        dplyr::filter(!!rlang::sym(date_info$start_year) != 0 & !!rlang::sym(date_info$last_year) != 0 ) %>%
+        dplyr::filter(!!rlang::sym(date_info$start_year) != 0) %>%
         dplyr::mutate(
           difference = !!rlang::sym(date_info$start_year) - !!rlang::sym(date_info$last_year),
           growth_rate = cal_growth_rate(!!rlang::sym(date_info$start_year), !!rlang::sym(date_info$last_year)),
@@ -133,13 +133,17 @@ rpt_mof_summary_dev <- function(start_date, end_date, period = 3, sub_hs_digits 
     output_file_name <- paste0(
       date_info$start_year, "\u5e74",
       date_info$start_month, "-", date_info$end_month, "\u6708",
-      "\u81fa\u7063\u5c0d\u5404\u570b\u51fa\u53e3\u60c5\u52e2_", format(Sys.Date(), "%Y%m%d"), ".csv"
+      "\u81fa\u7063\u5c0d\u5404\u570b", port, "\u60c5\u52e2_",
+      currency, "_", industry_type, "_",
+      format(Sys.Date(), "%Y%m%d"), ".csv"
     )
     readr::write_excel_csv(outputs,
       file.path(destdir, output_file_name), na = "")
   } else {
     output_file_name <- "no output"
   }
+
+  cat(sprintf("Output file path => %s\n", file.path(destdir, output_file_name)))
 
   list(
     filename      = output_file_name,

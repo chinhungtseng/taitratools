@@ -4,3 +4,4 @@
 ^notes$
 ^data-raw$
 ^README\.Rmd$
+^\.github$

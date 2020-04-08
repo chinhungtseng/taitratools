@@ -4,9 +4,17 @@
 \alias{rpt_mof_export_summary}
 \title{mof export summary by each country and each industry}
 \usage{
-rpt_mof_export_summary(start_date, end_date, period = 3,
-  sub_hs_digits = 11, country_list = NULL, money = "usd",
-  industry_type = "all_industry", destdir = ".", verbose = TRUE)
+rpt_mof_export_summary(
+  start_date,
+  end_date,
+  period = 3,
+  sub_hs_digits = 11,
+  country_list = NULL,
+  money = "usd",
+  industry_type = "all_industry",
+  destdir = ".",
+  verbose = TRUE
+)
 }
 \arguments{
 \item{start_date}{yyyy-mm}

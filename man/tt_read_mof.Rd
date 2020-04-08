@@ -4,9 +4,18 @@
 \alias{tt_read_mof}
 \title{Read Data from MOF SOURCE}
 \usage{
-tt_read_mof(start_date, end_date, period = 0, direct = "export",
-  money = "usd", columns = NULL, dep_month_cols = FALSE,
-  fixed_cny_nm = FALSE, suppress = FALSE, source_path = "SOURCE_MOF")
+tt_read_mof(
+  start_date,
+  end_date,
+  period = 0,
+  direct = "export",
+  money = "usd",
+  columns = NULL,
+  dep_month_cols = FALSE,
+  fixed_cny_nm = FALSE,
+  suppress = FALSE,
+  source_path = "SOURCE_MOF"
+)
 }
 \arguments{
 \item{start_date}{Start date with "year-month" format. ex> "2019-01".}

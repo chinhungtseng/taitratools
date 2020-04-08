@@ -4,8 +4,7 @@
 \alias{tt_df_sub_hscode}
 \title{tt_df_sub_hscode}
 \usage{
-tt_df_sub_hscode(x, start = 1L, end = -1L, by = "value",
-  forct_year = TRUE)
+tt_df_sub_hscode(x, start = 1L, end = -1L, by = "value", forct_year = TRUE)
 }
 \arguments{
 \item{x}{data}

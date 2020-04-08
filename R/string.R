@@ -43,6 +43,16 @@ tt_format_hscode <- function(x, sub = NULL, start = "", end = "", collapse = ","
   paste0(start, str, end, collapse = collapse)
 }
 
+#' str2regex
+#'
+#' @param x hscode string
+#'
+#' @param sep a
+#' @param sub a
+#' @param start a
+#' @param end a
+#'
+#' @return string
 #' @export
 str2regex <- function(x, sep = ",", sub = 1e2, start = "^", end = "") {
   tmp <- trimws(unlist(strsplit(x, sep)))
@@ -51,6 +61,13 @@ str2regex <- function(x, sep = ",", sub = 1e2, start = "^", end = "") {
   paste0(start, tmp, end, collapse = "|")
 }
 
+
+#' break_line
+#'
+#' @param text a
+#' @param length a
+#'
+#' @return string
 #' @export
 break_line <- function(text, length = 25) {
   stopifnot(length(text) == 1)
@@ -69,6 +86,12 @@ break_line <- function(text, length = 25) {
   }, tmp_text)
 }
 
+
+#' toChString
+#'
+#' @param x a
+#'
+#' @return a
 #' @export
 toChString <- function(x = "") {
   if (length(x) == 1) return(x)

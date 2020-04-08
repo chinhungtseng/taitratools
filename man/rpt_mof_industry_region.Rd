@@ -4,9 +4,15 @@
 \alias{rpt_mof_industry_region}
 \title{Output report 1}
 \usage{
-rpt_mof_industry_region(.start_date, .end_date, .industry_keyword,
-  .region = "country", .direct = "export", .money = "usd",
-  .fixed_cny_nm = TRUE)
+rpt_mof_industry_region(
+  .start_date,
+  .end_date,
+  .industry_keyword,
+  .region = "country",
+  .direct = "export",
+  .money = "usd",
+  .fixed_cny_nm = TRUE
+)
 }
 \arguments{
 \item{.start_date}{start date}

@@ -1,17 +1,31 @@
 # date, time utils ---------------------------------------------
 
-# Convert "year" to date. ex> "2019" ==> "2019-01-01"
+#' y2date
+#'
+#' Convert "year" to date. ex> "2019" ==> "2019-01-01"
+#' @param .date_var a
+#'
 #' @export
 y2date <- function(.date_var) {
   as.Date(paste0(.date_var, "-01-01"), "%Y-%m-%d")
 }
 
-# Convert "year-month" to date. ex> "2019-01" ==> "2019-01-01"
+#' ym2date
+#'
+#' Convert "year-month" to date. ex> "2019-01" ==> "2019-01-01"
+#' @param .date_var a
+#'
 #' @export
 ym2date <- function(.date_var) {
   as.Date(paste0(.date_var, "-01"), "%Y-%m-%d")
 }
 
+#' get_past_year
+#' @param .date_var a
+#'
+#' @param period a
+#' @param tf a
+#'
 #' @export
 get_past_year <- function(.date_var, period = 1, tf = "%Y-%m") {
   if (all(stringr::str_detect(.date_var, "^\\d{4}-\\d{2}$"))) {

@@ -4,10 +4,19 @@
 \alias{rpt_mof_summary_dev}
 \title{rpt_mof_summary_dev}
 \usage{
-rpt_mof_summary_dev(start_date, end_date, period = 3,
-  sub_hs_digits = 11, n = 3, country_list = NULL,
-  direct = "export", money = "usd", industry_type = "all_industry",
-  destdir = ".", verbose = TRUE)
+rpt_mof_summary_dev(
+  start_date,
+  end_date,
+  period = 3,
+  sub_hs_digits = 11,
+  n = 3,
+  country_list = NULL,
+  direct = "export",
+  money = "usd",
+  industry_type = "all_industry",
+  destdir = ".",
+  verbose = TRUE
+)
 }
 \arguments{
 \item{start_date}{.}

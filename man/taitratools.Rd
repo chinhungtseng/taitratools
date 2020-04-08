@@ -3,7 +3,6 @@
 \docType{package}
 \name{taitratools}
 \alias{taitratools}
-\alias{taitratools-package}
 \title{taitratools: A package for work.}
 \description{
 The taitratools package provides two categories of important functions:

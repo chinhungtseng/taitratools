@@ -4,9 +4,17 @@
 \alias{rpt_mof_export_top_n_product}
 \title{rpt_mof_export_top_n_product}
 \usage{
-rpt_mof_export_top_n_product(start_date, end_date, period = 3,
-  sub_hs_digits = 11, n = 3, country_list = NULL, money = "usd",
-  industry_type = "all_industry", verbose = TRUE)
+rpt_mof_export_top_n_product(
+  start_date,
+  end_date,
+  period = 3,
+  sub_hs_digits = 11,
+  n = 3,
+  country_list = NULL,
+  money = "usd",
+  industry_type = "all_industry",
+  verbose = TRUE
+)
 }
 \arguments{
 \item{start_date}{start_date}

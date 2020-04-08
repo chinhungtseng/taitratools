@@ -4,9 +4,17 @@
 \alias{tt_vroom_mof}
 \title{vroom Data from MOF SOURCE}
 \usage{
-tt_vroom_mof(start_date, end_date, period = 0, direct = "export",
-  money = "usd", columns = NULL, dep_month_cols = FALSE,
-  fixed_cny_nm = FALSE, source_path = "SOURCE_MOF")
+tt_vroom_mof(
+  start_date,
+  end_date,
+  period = 0,
+  direct = "export",
+  money = "usd",
+  columns = NULL,
+  dep_month_cols = FALSE,
+  fixed_cny_nm = FALSE,
+  source_path = "SOURCE_MOF"
+)
 }
 \arguments{
 \item{start_date}{Start date with "year-month" format. ex> "2019-01".}

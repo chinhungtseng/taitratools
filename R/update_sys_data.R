@@ -7,16 +7,19 @@ tt_update_sys_data <- function() {
   .tt_update_data()
 }
 
+.sysinst <- system.file(package = "taitratools")
+.syspath <- file.path(system.file(package = "taitratools"), "..", "R", "sysdata.rda")
+
 .getsourcepath <- function() {
-  tmp_path <- readxl::read_xlsx("inst/extdata/tt_source_path.xlsx")
+  tmp_path <- readxl::read_xlsx(file.path(.sysinst, "extdata/tt_source_path.xlsx"))
   .tt_source_path <- as.list(tmp_path$path)
   names(.tt_source_path) <- tmp_path$name
-  save(.tt_source_path, file = "R/sysdata.rda", compress='xz')
+  save(.tt_source_path, file = .syspath, compress='xz')
 }
 
 .tt_update_data <- function() {
   # tt_source_path data -------------------------
-  tmp_path <- readxl::read_xlsx("inst/extdata/tt_source_path.xlsx")
+  tmp_path <- readxl::read_xlsx(file.path(.sysinst, "extdata/tt_source_path.xlsx"))
   .tt_source_path <- as.list(tmp_path$path)
   names(.tt_source_path) <- tmp_path$name
 
@@ -86,5 +89,5 @@ tt_update_sys_data <- function() {
     .tt_ind_verion_2_tbl_en, .tt_ind_list_verion_2,
     .full_hscode_tbl, .area_tbl, .country_ref_list,
     .mof_export_usd_sample_data,
-    file = "R/sysdata.rda", compress='xz')
+    file = .syspath, compress='xz')
 }

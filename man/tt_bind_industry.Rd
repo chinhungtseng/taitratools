@@ -4,9 +4,17 @@
 \alias{tt_bind_industry}
 \title{Adding industry label to input data.frame}
 \usage{
-tt_bind_industry(.df, sub = 11, index = NULL, type = NULL,
-  major = NULL, minor = NULL, industry_type = "all_industry",
-  col_more = FALSE, verbose = TRUE)
+tt_bind_industry(
+  .df,
+  sub = 11,
+  index = NULL,
+  type = NULL,
+  major = NULL,
+  minor = NULL,
+  industry_type = "all_industry",
+  col_more = FALSE,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{.df}{A data frame. Input data.frame MUST contain `hscode` column!}

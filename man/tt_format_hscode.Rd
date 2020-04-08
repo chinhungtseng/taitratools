@@ -4,8 +4,14 @@
 \alias{tt_format_hscode}
 \title{format hscode}
 \usage{
-tt_format_hscode(x, sub = NULL, start = "", end = "",
-  collapse = ",", .order = TRUE)
+tt_format_hscode(
+  x,
+  sub = NULL,
+  start = "",
+  end = "",
+  collapse = ",",
+  .order = TRUE
+)
 }
 \arguments{
 \item{x}{hscode charactor}

@@ -7,11 +7,11 @@ tt_update_sys_data <- function() {
   .tt_update_data()
 }
 
-.sysbase <- system.file(package = "taitratools")
-.syspath <- file.path(.sysbase, "R", "sysdata.rda")
+.sysinst <- system.file(package = "taitratools")
+.syspath <- file.path(.sysinst, "..", "R", "sysdata.rda")
 
 .getsourcepath <- function() {
-  tmp_path <- readxl::read_xlsx(file.path(.sysbase, "inst/extdata/tt_source_path.xlsx"))
+  tmp_path <- readxl::read_xlsx(file.path(.sysinst, "extdata/tt_source_path.xlsx"))
   .tt_source_path <- as.list(tmp_path$path)
   names(.tt_source_path) <- tmp_path$name
   save(.tt_source_path, file = .syspath, compress='xz')
@@ -19,7 +19,7 @@ tt_update_sys_data <- function() {
 
 .tt_update_data <- function() {
   # tt_source_path data -------------------------
-  tmp_path <- readxl::read_xlsx(file.path(.sysbase, "inst/extdata/tt_source_path.xlsx"))
+  tmp_path <- readxl::read_xlsx(file.path(.sysinst, "extdata/tt_source_path.xlsx"))
   .tt_source_path <- as.list(tmp_path$path)
   names(.tt_source_path) <- tmp_path$name
 

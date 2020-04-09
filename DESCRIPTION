@@ -1,6 +1,6 @@
 Package: taitratools
 Title: TAITRA Tools
-Version: 1.0.6.1
+Version: 1.0.7
 Authors@R: 
     person(given = "Peter", family = "Tseng", role = c("aut", "cre"), email = "chinhung@taitra.org.tw")
 Description: Miscellaneous Tools for Work.
@@ -29,6 +29,5 @@ Suggests:
     testthat (>= 2.2.1),
     roxygen2 (>= 6.1.1)
 Encoding: UTF-8
-StagedInstall: no
 LazyData: true
 RoxygenNote: 7.1.0

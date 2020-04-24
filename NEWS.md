@@ -1,4 +1,12 @@
-# taitratools 1.0.6.1 (in development)
+# 1.0.8
+
+## Update package data
+
+* Add new industries:
+    * 伺服器 847150
+    * 手機用光學鏡頭 900219
+
+# taitratools 1.0.6.1
 
 ## New functions
 

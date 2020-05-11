@@ -1,3 +1,11 @@
+# 1.0.9
+
+## Update package data
+
+* Add new hscodes:
+    * 407199010 第０１０５節及第０１０６．３３目所列物種之禽種蛋（不包括雞種蛋）
+    * 407199090 其他禽種蛋
+
 # 1.0.8
 
 ## Update package data

@@ -82,4 +82,5 @@ tt_update_data <- function() {
 }
 
 getsourcepath()
+load_all()
 tt_update_data()

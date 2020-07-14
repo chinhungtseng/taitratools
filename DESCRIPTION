@@ -1,6 +1,6 @@
 Package: taitratools
 Title: TAITRA Tools
-Version: 1.0.11
+Version: 1.0.12
 Authors@R: 
     person(given = "Peter", family = "Tseng", role = c("aut", "cre"), email = "chinhung@taitra.org.tw")
 Description: Miscellaneous Tools for Work.
@@ -24,7 +24,10 @@ Imports:
     tidyr (>= 1.0.0),
     tidyselect (>= 0.2.5),
     vroom (>= 1.0.2),
-    xml2 (>= 1.2.2)
+    xml2 (>= 1.2.2),
+    utils,
+    httr (>= 1.4.1),
+    jsonlite (>= 1.6.1)
 Suggests: 
     testthat (>= 2.2.1),
     roxygen2 (>= 6.1.1)

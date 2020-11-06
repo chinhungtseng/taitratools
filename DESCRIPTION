@@ -1,6 +1,6 @@
 Package: taitratools
 Title: TAITRA Tools
-Version: 1.0.13
+Version: 1.1.2
 Authors@R: 
     person(given = "Peter", family = "Tseng", role = c("aut", "cre"), email = "chinhung@taitra.org.tw")
 Description: Miscellaneous Tools for Work.
@@ -30,7 +30,10 @@ Imports:
     jsonlite (>= 1.6.1)
 Suggests: 
     testthat (>= 2.2.1),
-    roxygen2 (>= 6.1.1)
+    roxygen2 (>= 6.1.1),
+    knitr,
+    rmarkdown
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.0
+VignetteBuilder: knitr

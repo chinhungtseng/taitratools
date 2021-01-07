@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# taitratools
+# taitratools <a href=''><img src='man/figures/logo.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -44,7 +44,7 @@ tt_ls()
 * Get source path with `tt_get_path(PATH NAME)`
 * Read file with `tt_read_table`
 
-```{r}
+```{r, eval = FALSE}
 path <- tt_get_path("PATH_AREA")
 path
 
@@ -59,7 +59,7 @@ head(area_tbl)
 This is a basic example which shows you how to read data from MOF, 
 if you want to read data with past year, you can set `period = N`
 
-```{r}
+```{r, eval = FALSE}
 # Default is `export` and `usd`
 mof_data <- tt_vroom_mof("2019-01", "2019-02", period = 1, direct = "export", money = "usd", dep_month_cols = TRUE)
 head(mof_data)
@@ -71,14 +71,14 @@ head(mof_data)
 * `tt_bind_industry()`
 * `tt_industry_grouped_sum()`
 
-```{r}
+```{r, eval = FALSE}
 # industry_type => "all_industry", "industry21", "version1", "version2"
 mof_data %>% 
   tt_bind_industry(sub = 8, col_more = TRUE, industry_type = "industry21", verbose = FALSE) %>% 
   head(5)
 ```
 
-```{r}
+```{r, eval = FALSE}
 mof_industry_data <- mof_data %>% 
   tt_industry_grouped_sum(industry_type = "industry21", sub = 6, verbose = FALSE)
 
@@ -92,17 +92,17 @@ head(mof_industry_data$data, 5)
 * `tt_append_area()`
 
 Adding a area column 
-```{r}
+```{r, eval = FALSE}
 mof_industry_data$data %>% tt_bind_area() %>% head(5)
 ```
 
 Append area data
-```{r}
+```{r, eval = FALSE}
 mof_industry_data$data %>% tt_append_area() %>% head(5)
 ```
 
 Append only world data
-```{r}
+```{r, eval = FALSE}
 mof_industry_data$data %>% tt_append_global() %>% head(5)
 ```
 
@@ -111,7 +111,7 @@ mof_industry_data$data %>% tt_append_global() %>% head(5)
 * `tt_df_sub_hscode()`
 
 grouped data and sum the value
-```{r}
+```{r, eval = FALSE}
 mof_data %>% tt_grouped_sum(country, year, by = "value") %>% head(5)
 mof_data %>% tt_grouped_sum(year, month, by = "count") %>% head(5)
 mof_data %>%

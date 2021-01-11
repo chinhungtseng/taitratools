@@ -1,6 +1,6 @@
 Package: taitratools
 Title: TAITRA Tools
-Version: 1.1.2
+Version: 1.1.4
 Authors@R: 
     person(given = "Peter", family = "Tseng", role = c("aut", "cre"), email = "chinhung@taitra.org.tw")
 Description: Miscellaneous Tools for Work.
